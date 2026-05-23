@@ -11,10 +11,10 @@ import yaml
 S2_BASE = "https://api.semanticscholar.org/graph/v1"
 
 
-def get_api_key() -> str:
-    key = os.environ.get("S2_API_KEY", "")
+def get_api_key(cfg: dict) -> str:
+    key = cfg.get("settings", {}).get("s2_api_key", "") or os.environ.get("S2_API_KEY", "")
     if not key:
-        print("Warning: No S2_API_KEY set. Requests will be heavily rate-limited.")
+        print("Warning: No S2 API key found in config or S2_API_KEY env var.")
     return key
 
 
@@ -72,14 +72,14 @@ def search_author(name: str, api_key: str) -> dict | None:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python bootstrap_ids.py <config.yaml>")
+        print("Usage: python3 .agents/skills/daily-opener/research-digest/bootstrap_ids.py .agents/skills/daily-opener/research-digest/config.yaml")
         sys.exit(1)
 
     config_path = sys.argv[1]
     with open(config_path) as f:
         cfg = yaml.safe_load(f)
 
-    api_key = get_api_key()
+    api_key = get_api_key(cfg)
     modified = False
 
     print("\n=== Resolving seed paper IDs ===\n")

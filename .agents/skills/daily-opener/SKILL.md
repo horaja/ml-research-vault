@@ -72,17 +72,17 @@ The digest is an automated research paper discovery step. It fetches papers from
 
 1. Install dependencies if needed:
    ```
-   pip install -r research-digest/requirements.txt
+   pip install -r .agents/skills/daily-opener/research-digest/requirements.txt
    ```
 
 2. Fetch raw candidates:
    ```
-   python research-digest/fetch_papers.py research-digest/config.yaml /tmp/raw_candidates.json
+   python .agents/skills/daily-opener/research-digest/fetch_papers.py .agents/skills/daily-opener/research-digest/config.yaml /tmp/raw_candidates.json
    ```
 
 3. Deduplicate:
    ```
-   python research-digest/dedup.py /tmp/raw_candidates.json /tmp/candidates.json
+   python .agents/skills/daily-opener/research-digest/dedup.py /tmp/raw_candidates.json /tmp/candidates.json
    ```
 
 4. Read `/tmp/candidates.json` to get the candidate pool.
@@ -114,7 +114,7 @@ The digest is an automated research paper discovery step. It fetches papers from
    - If multiple highly-scored papers share a theme not covered by existing queries, add a new query.
    - If a query is too broad, refine it.
    - Log any changes in the daily note.
-   - Update `research-digest/config.yaml` with changes and hit count shifts.
+   - Update `.agents/skills/daily-opener/research-digest/config.yaml` with changes and hit count shifts.
 
 10. If fetching fails entirely (no web access), write `### digest (auto)\n*skipped — no web access*` and continue.
 
