@@ -1,0 +1,37 @@
+### Some notes on Phase 3
+Main Idea: Integrate which patches to select in this VLM loop.
+
+Currently, VLM/VLA are **autoregressive**:
+- Input: image, text
+- Output: next token prediction of language
+
+New Idea:
+- Next token prediction of image patch
+- In other words, treat image tokens as language
+
+Implementation:
+1. Dataset for supervised learning
+	1. labels: patch IDs, language tokens, STOP token?
+	2. Incorporate LD prior through this dataset
+2. VLM to fine-tune with
+	1. Outputs: patch IDs
+		1. Re-run VLM model
+		2. Similar to **TEST-TIME SCALING**, however we are trying to include vision into this as well...?
+	2. Language prompt to reason about exactly what next token we need
+3. Evaluation Metrics/specific tasks
+
+Sources: [[Liu et al. (2025)]]
+
+### Some Notes on Phase 2 - integration with VLA
+Still useful, linking shape with action
+
+Answers **WHY** shape—well, it helps with *action* efficiency, etc.
+
+Regression Task should be enough.
+
+
+## TODO:
+1. experiment 1.2.1 and 2.0
+	1. MAE/DINO and CLIP only
+2. integration with regressive task in Phase 2
+3. Look into papers and understand Phase 3

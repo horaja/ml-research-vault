@@ -1,0 +1,31 @@
+### [MUST DO] Specify the Problem Statement Formally
+**Note 1**: Evolve from pure efficiency/engineering problem. Create space for importance/contribution of higher-level *semantic understanding*.
+- e.g. Using shape-bias as an auxillary representation for a minimal selction of patches for downstream tasks in visual encoding - too engineering heavy.
+**Note 2**: After specifying the problem, specify the ideal outcome (hypothesis)
+- Architecture-wise, aim for two of the three following features:
+	- learned selector
+	- iterative selector
+	- in-ViT selector
+One possible avenue of higher-level conclusion: **Affordance Prediction**
+- Possible use *higher level goal/top-down context* of affordance prediction in loss function for a learned selector (just as an example).
+- ['Cognitive Control' by David Badre](https://www.annualreviews.org/docserver/fulltext/psych/76/1/annurev-psych-022024-103901.pdf?expires=1768876099&id=id&accname=guest&checksum=3739950F5C5050E91D9D5EB12D703FB2)
+	- Heirarchical stack of feedback loops implies hierarchical cognitive control
+		- low level: stimuli
+		- mid-level: context/rules
+		- high-level: policy/goal
+- Affordance is closely related to RL
+	- Can we **mathematically model** affordance as a related equation to an MDP?
+
+#### [[Rao et al. (2024)]]
+- **Embodied Cognition**
+	- What is it? How can it be abstracted and applied? How can the theory be furthered?
+#### [[Rao et al. (2023)]]
+- compositional representations, part-whole hierarchies... etc
+	- Use to abstract away from line drawings.
+- [SEARCH]: "Xiaolong Wang UCSD Affordance"
+
+### [MUST DO] IMPLEMENTATION NOTES
+1. Error: Random Selection weights toward top left
+	1. Is this just visualization error, or true error?
+	2. Done
+

@@ -1,0 +1,37 @@
+## Phases
+### Phase 1: Classification Task - ViT-backbone
+**SOURCE**: [[Ye et al. (2024)]]
+
+##### A question:
+**Less Patches + larger model vs more patches + smaller model?**
+### Phase 2: Action Task - SmolVLA-backbone
+- start with openvla-oft
+	- switch out with smolVLA
+**OpenVLA's Dataset**
+Treat it as continuous regression task (correlation) over 7D vector
+### Phase 3: Advanced
+1. Iterative Process of selecting patches
+	1. *Test-time compute/scaling* - Hot Topic Alert!
+		1. Not many applications to vision
+	2. Idea 1:
+		1. Given a high resolution, crowdy image
+		2. Use a lower resolution
+			1. At some point, generate a *'zoom-in'* token
+				1. Construct a dataset with this
+				2. Use our encoder to determine which section to zoom in
+	3. Idea 2:
+		1. LLM-based Generative Recommendation System
+			1. **Next-token prediction**, but instead of a word, predict the next video id that the user wants (e.g. tiktok)
+		2. Use ***VLM*** to select patches to *'zoom in'* to and attend to next
+		3. Similar: Gaze Predictions
+			1. Neural Theory, Neural Datasets
+		4. Feature: Control the order of patches that model looks at
+			1. e.g. shape first, texture after
+			2. Use line drawing for this
+		5. Outputs of the language model used to 'prune'/'append' to vision token pools, then run visual encoder again
+		6. long chain reasoning using dynamic token selection
+			1. Neural Datasets/Shape Datasets, Construct Dataset
+			2. Build off of Segmentation, use baseline system to create this
+				1. Labels: image patches that we want to process
+				2. Bias the labels through prompting GPT and using its high-level planning
+		7. **TODO**: LITERATURE RESEARCH

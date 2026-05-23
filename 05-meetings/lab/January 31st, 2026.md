@@ -1,0 +1,37 @@
+
+### Pre-Presentation Notes
+Below are some notes while reading/reviewing [[Frank et al. (2012)]]
+
+#### Notes on Abstract
+- Paper's Key Question: How does the hierarchical organization in the PFC support **hierarchical cognitive control** and the rapid discovery of **abstraction action rules**?
+	- What is hierarchical cognitive control?
+		- Cognitive Control: "The ability to select mappings between states and actions, based on internally maintained representations of context, goals, and anticipated outcomes."
+	- What abstraction action rules?
+		- High-level rules/policies that are followed
+		- NOT stimuli-based responses
+- Key Contributions:
+	- "Computational Models at Different Levels of Description"
+		- **Neural Circuit Model**
+			- Computation Simulation of a specific network in brain
+			- Simulates *interacting* corticostriatal circuits organized **hierarchically**.
+				- Each circuit loosely follows **PBWM Model** (in relation to BG Gating).
+				- **Learning** in each circuit via 'dopaminergic' reward prediction error signals
+					- Exhibits **conditional** hypothesis testing and to learn "rapidly in environments with hierarchical structure"
+						- Intuitively—conditional via gating, hierarchical structure influences model to learn higher-level **rule** behind the task.
+		- **Hybrid Bayesian—RL Mixture of Experts** Model
+			- Statistical *tool* they built to analyze humans who played their 'game'.
+			- Predicts the most likely **hypothesis state** of individual participants based upon their observed sequence of choices and rewards.
+				- Validated on neural circuit model by recovering the hidden attentional states of model by the MoE model.
+			- Used in **2-pronged modeling approach**.
+
+### Structural Outline
+1. Introduction
+	1. Cortical Mechanisms of Action Selection and Hierarchical Reinforcement Learning
+2. Materials and Methods
+	1. Corticostriatal Neural Circuit Model
+	2. Bayesian-RL MoE Model
+	3. Learning the Reliability of Individual Experts
+	4. Arbitration
+	5. Hierarchical Experts
+	6. Quantitative Fits to Human and Neural Circuit Choices
+3. Results

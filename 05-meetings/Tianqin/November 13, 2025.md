@@ -1,0 +1,48 @@
+## Notes about [[Project Overview - DISCONTINUED]]
+
+Some General Notes
+ - **Gestalt Principles && Kenisa Triangle**
+	1. Use circuits for this -> depth mapping
+
+ - Use Depth map as Proxy
+
+ - Depth Map requires many labels
+
+ - ***For Segmentation***:
+	 - Use simple CNN
+		 - *Mask R-CNN*
+
+#### Research Goal - *Update [[Project Overview - DISCONTINUED]]*
+ - Reduce # patches with some kind of shape-prior or shape-bias
+ - Use 70%-ish patch percentage as baseline
+	 - Frame our overall goal as doing extra modules to get this down to 40% at the same accuracy
+- **Create a Plug and Play 2-stage system**:
+	- Dual Stream:
+		1. Fast Process
+			1. Gives real-time system better response time at the sacrifice of accuracy
+			2. Patch Selection is the most important part
+		2. Process Details with more time
+			1. Any improvements want to make?
+	 - Fusion (architecture agnostic)
+		 - Iterative Process
+			- First processes shape, acts as global context/skeleton
+			- Process details and texture
+		- Cross Attention?
+- *Note: Very similar to Masked Auto-Encoder*
+	- Process small amount of patches to get a representation equivalent to 100% of patches
+	- Token compression
+	- Use **MAE/DINO**, and randomly remove 30%, 60% of patches, see how they do.
+		- Hypothesis: random dropping of patches is most likely very hard.
+		- **Use as Baseline**
+		- Instead of random dropping, use the same patches selected from LD
+			- Pass this through MAE
+				- Replace ViT backbone with MAE/DINOv3
+					- Load weights, freeze, and train classifier
+
+#### Spatial Bias Module Enhancements
+ - Center optimizable (x,y location <- COG..? Learnable?)
+	 - Have 2x2 Gaussian Matrix (kernel, Learnable)
+	 - NN outputs: x, y, variance (2x2 matrix above)
+		 - Input Layer?
+		 - Architecture?
+	- Prior Idea from paper

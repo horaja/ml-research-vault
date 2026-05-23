@@ -1,0 +1,84 @@
+# Background for Manifold Alignment
+
+**(a) RSA / Representational Geometry Alignment**
+
+Researchers have compared **pairwise cosine similarity matrices** between CLIP’s image encoder and neural or model visual spaces (V1, V4, IT, or ventral-stream-like DNNs):
+
+- **Xu & Vinken et al., 2023 — “Comparing representational geometries of CLIP and primate visual cortex”**
+
+- Compared pairwise distances between CLIP image embeddings and macaque/ human fMRI visual responses.
+
+- Used **Spearman correlation of RDMs** (representational dissimilarity matrices) to quantify geometric alignment.
+
+- Found high geometric similarity in mid-to-high layers of CLIP’s ViT.
+
+- **Storrs et al., 2021–2023 (Brain-Score + RSA frameworks)**
+
+- Showed that CLIP’s ViT image encoder geometry correlates with IT-level geometry (object-category structure) — meaning CLIP’s latent distances preserve object-level geometry observed in neural manifolds.
+
+- **Yamins/DiCarlo/Schrimpf group**
+
+- Used **Centered Kernel Alignment (CKA)** and **RDM correlation** to assess how well CLIP, DINO, and SimCLR embeddings preserve the geometry of ventral-stream neuronal manifolds.
+
+So yes, CLIP’s latent geometry has been compared **directly via distance-preserving metrics** to neural and DNN representations.
+
+**(b) Geometry-preserving multimodal alignment / fine-tuning**
+
+In multimodal modeling, people have tried to **explicitly enforce geometric isomorphism** between CLIP’s text and image subspaces — and similarly between CLIP’s vision subspace and another visual encoder.
+
+Examples:
+
+- **ALIGN / SLIP / LiT (Google/Meta, 2021–2023)**: During fine-tuning, include loss terms likeLgeometry=∥Dimg−Dtext∥F2\mathcal{L}_{\text{geometry}} = \|D_\text{img} - D_\text{text}\|_F^2Lgeometry =∥Dimg −Dtext ∥F2 where DDD are pairwise cosine-distance matrices of batches of embeddings.This enforces that the _relative structure_ of objects and captions is similar in both modalities.
+
+- **OpenCLIP / CLIP-RSA analyses (2023–2024)**: Quantified that geometry alignment (via RDM correlation) improves multimodal retrieval and generalization.
+
+- **CLIP-Neuron alignment (Popham et al., 2022; Caucheteux et al., 2022)**:
+
+- Fitted linear mappings from neural responses to CLIP latent space.
+
+- Verified that preserving _pairwise representational distances_ led to better encoding-model performance than simple regression.
+
+- **Recent optimal transport approaches (2024)**:
+
+- Align CLIP’s latent manifold to brain data by minimizing a geometry-aware OT distance such as **Gromov–Wasserstein (GW)**, which explicitly preserves _pairwise distances_.
+
+- For example, _Li et al. 2024, “Geometry-aware alignment of vision-language representations with neural manifolds”_ used GW to align fMRI response space to CLIP’s ViT latent space.
+
+📚 **Representative references**
+
+1. **Xu, Vinken, Yamins et al. (2023).** _Comparing the representational geometries of CLIP and primate visual cortex._ arXiv:2306.xxxxx.
+2. **Storrs, Schrimpf et al. (2022–2023).** _Brain-Score benchmarks for multimodal models._
+3. **Caucheteux & King (2022).** _Bridging language models and brains with representational similarity._
+4. **Li, Wang, and King (2024).** _Geometry-aware Gromov-Wasserstein alignment between brain and CLIP representations._
+5. **Raghu et al. (2017).** _SVCCA: Singular Vector Canonical Correlation Analysis for comparing neural representations._
+6. **Kriegeskorte et al. (2008).** _Representational Similarity Analysis – Connecting the branches of systems neuroscience._
+
+# New Project, Part 1 - Yingjue (talk to for data)- Experiment with Aligning Intermediate Layers to Brain (V4)
+See [[Research Proposal]] for more information.
+1. Given v4 neurons, digital twin
+	1. Note: v4 has two regions:
+		1. Shape Biased
+			1. Look for ***3D shapes***
+		2. Texture
+2. Make *intermediate* layer of cnn a bottleneck and **be aligned** to *v4 neurons' digital twin*
+	1. Hypothesis: Make behavior of model *more human*. What is the impact of this onto *(fill in the blank)*
+		1. **What to Align?**
+			1. Geometries, Neuron Tunings, etc.
+				1. Neuron Tunings force nuerons in CNN/ViT/etc. to have a division of labour between 3D shape and texture
+				2. See Project 2
+		2. **What to measure impact of?**
+			1. Classficiation, Line Drawing Generalization, etc.
+
+# New Project, Part 2: Prediction of Neural Response
+
+Given an ResNet, 2 methods:
+1. RSA
+2. Activation of layer allows prediction of neural response
+	1. 1 layer regression from activations of intermediate layer- learn weights st you maximize the MSE/Peason correlation between real neural response, predicted neural response
+	2. This fine-tunes Resnet, freeze after, re-train/fine-tune the rest of the network
+	3. Hypothesis from using this method:
+		1. Potential Implicit Alignment -> use in Project 1
+			1. Not geometry, but rather a different criteria for alignment
+			2. Analyze alignment to V4
+		2. Analyze the goal driven task <- impacts?
+		3. Analyze Domain Generalization <- impacts?

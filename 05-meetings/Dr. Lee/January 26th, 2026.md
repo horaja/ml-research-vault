@@ -1,0 +1,43 @@
+### Agenda
+1. VLA Project
+	1. Lay out goals, reformulate project
+		1. Formalize the Problem Space/Niche
+		2. Work towards formalizing our Research Question
+	2. Review Parts of the Roadmap
+	3. Work on Learned/Iterative Selector
+		1. Motivation
+			1. VLA Testing
+		2. Learned Selector Idea
+			1. Motivation
+			2. Implementation Plan
+			3. Testing Plan/Hypothesis
+		3. Iterative Selector
+			1. Literature Review
+				1. MAPPO for token pruning across layers
+				2. POMDP for VLA Models
+					1. 'Belief State' is approximated by a *memory*, or a hidden recurrent state from previous timesteps.
+					2. Natural Extension: Our **Belief State Approximation** can be a 'learned mixture' of a recurrent state but also a shape-biased auxiliary representation of the current image
+						1. Most similar to Dorsal Stream neuroscience abstraction
+			2. Notes
+				1. RL/Control-theoretic Heavy
+					1. Cognitive Control Theory paradigms involving an auxiliary Representation?
+				2. Expand to entire VLA processing
+2. Cognitive Control Project
+	1. SURF Application
+
+### Notes
+#### Problem Reformation
+We want a model architecture that follows a *policy* where it iteratively/sequentially decides where to '**look**' at, practicing optimal stopping when needed.
+- Lean **heavily** toward learning a control-theoretic policy, using pre-trained weights + RLFT over large VLM/VLA model.
+
+**Motivation**: Explore a new paradigm of exploration of visual patches. Sequential Reasoning => Improves performance on ALL tasks.
+- Similar to Humans, dense tasks require multiple iterations of viewing.
+	- Gaze Prediction
+- Key Idea: Flexibility (gained from LLM backbone and RLFT)
+
+>TODO: LITERATURE REVIEW NECESSARY
+>CONSIDER: A more fundamental research project to start...
+>- Frame it as a novel paradigm in vision, ensure its not engineering and llm bs
+
+### Surf Proposal
+- Add in Human/Cognitive Aspect (V4 DATA).

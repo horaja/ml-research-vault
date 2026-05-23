@@ -1,0 +1,368 @@
+{
+  "main": {
+    "id": "781d9f9eec897a44",
+    "type": "split",
+    "children": [
+      {
+        "id": "c20071d0080c6b34",
+        "type": "tabs",
+        "dimension": 51.207186973610334,
+        "children": [
+          {
+            "id": "67092591d48bbaa5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-projects/surf/Project Formalization and Proposal.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Project Formalization and Proposal"
+            }
+          },
+          {
+            "id": "74d42c638186e630",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Task-Dependant Reconstruction Shift Metric Integration.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Task-Dependant Reconstruction Shift Metric Integration"
+            }
+          },
+          {
+            "id": "551481bc55bf3ced",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-projects/surf/Module 1/Overview.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Overview"
+            }
+          },
+          {
+            "id": "d2ccce9a98d34d37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Oracle Similarity Metric Integration.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Oracle Similarity Metric Integration"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "36a44f2fd2325adf",
+        "type": "split",
+        "dimension": 48.792813026389666,
+        "children": [
+          {
+            "id": "14b0fd5eafac75e4",
+            "type": "tabs",
+            "dimension": 39.442567567567565,
+            "children": [
+              {
+                "id": "b7cd40bc626c1668",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "02-projects/surf/Module 1/Implementation Plans/Prior Design Algorithms/Contrastive Alignment.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Contrastive Alignment"
+                }
+              },
+              {
+                "id": "7b52af886922be75",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "02-projects/surf/Project Formalization and Proposal.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Project Formalization and Proposal"
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "51a003f987022605",
+            "type": "tabs",
+            "dimension": 60.557432432432435,
+            "children": [
+              {
+                "id": "68eb0b856486ef57",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "99-attachments/images/model_architecture.jpeg"
+                  },
+                  "icon": "lucide-image",
+                  "title": "model_architecture"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "42c7391059b56681",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf0f80dc7e444ed1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5d215c22a285e849",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9c7cceb93fbb361c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ef90c9139343da35",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 277.5
+  },
+  "right": {
+    "id": "0bde2a5074a6b6b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "941cbd34bf2a2b10",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11bdc48cd03fd1dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02-projects/surf/Module 1/Overview.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Overview"
+            }
+          },
+          {
+            "id": "c0f5b3892bcb923c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02-projects/surf/Module 1/Overview.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Overview"
+            }
+          },
+          {
+            "id": "015b5694230ce151",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5a3e7070b5e59e83",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-ghost",
+              "title": "all-properties"
+            }
+          },
+          {
+            "id": "7d54f0e6d2aadb45",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02-projects/surf/Module 1/Overview.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Overview"
+            }
+          },
+          {
+            "id": "f4cac52b8bff1911",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "82a045d934b51303",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13b037124c7e2221",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "551481bc55bf3ced",
+  "lastOpenFiles": [
+    "02-projects/surf/Project Formalization and Proposal.md",
+    "02-projects/surf/Module 1/Overview.md",
+    "02-projects/surf/Module 1/Implementation Plans/Prior Design Algorithms/Variational Spatial Prior.md",
+    "02-projects/Archive.zip",
+    "05-meetings/Dr. Lee/April 06, 2026.md",
+    "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Task-Dependant Reconstruction Shift Metric Integration.md",
+    "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Oracle Similarity Metric Integration.md",
+    "99-attachments/images/model_architecture.jpeg",
+    "05-meetings/Dr. Lee/March 23rd, 2026.md",
+    "02-projects/surf/Module 1/Implementation Plans/Prior Design Algorithms",
+    "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics",
+    "04-papers/Mees et al. (2023).md",
+    "02-projects/surf/Module 1/Implementation Plans/Prior Design Algorithms/Contrastive Alignment.md",
+    "05-meetings/Dr. Lee/March 8th, 2026.md",
+    "02-projects/surf/Module 1/Implementation Plans",
+    "04-papers/Jiang et al. (2025).md",
+    "02-projects/vlm/Experiments.md",
+    "02-projects/surf/Module 1",
+    "02-projects/surf",
+    "05-meetings/lab/January 31st, 2026.md",
+    "N.md",
+    "02-projects/vlm/Technical Details/Towards a New Selector.md",
+    "02-projects/vlm/Roadmap.md",
+    "05-meetings/Dr. Lee/January 26th, 2026.md",
+    "04-papers/Frank et al. (2012).md",
+    "99-attachments/images/Learned Selector Visualization.md",
+    "04-papers/Lu et al. (2025).md",
+    "04-papers/Xiao et al. (2025).md",
+    "04-papers/Wang et al. ().md",
+    "02-projects/idek/Project Overview.md",
+    "04-papers/Tishby et al. (2015).md",
+    "06-reference/Patch Selection and Sparsity Theory.md",
+    "02-projects/vlm/Discontinued",
+    "02-projects/idek",
+    "magno_stream_encoder/selective_magno_vit/models",
+    "magno_stream_encoder/selective_magno_vit"
+  ]
+}
