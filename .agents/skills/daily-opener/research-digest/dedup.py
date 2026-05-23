@@ -5,8 +5,7 @@ import argparse
 import json
 import re
 import sys
-
-from rapidfuzz import fuzz
+from difflib import SequenceMatcher
 
 
 def normalize_title(title: str) -> str:
@@ -67,7 +66,7 @@ def dedup(papers: list[dict], fuzzy_threshold: int = 90) -> list[dict]:
             matched_idx = by_doi[doi]
         else:
             for i, existing_norm in enumerate(norm_titles):
-                if fuzz.ratio(norm, existing_norm) >= fuzzy_threshold:
+                if SequenceMatcher(None, norm, existing_norm).ratio() * 100 >= fuzzy_threshold:
                     matched_idx = i
                     break
 
