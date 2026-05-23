@@ -1,9 +1,0 @@
-{
-  "citationExportFormat": "biblatex",
-  "literatureNoteTitleTemplate": "{{entry.author.0.family}} et al. ({{year}})",
-  "literatureNoteFolder": "04-papers",
-  "literatureNoteContentTemplate": "# {{title}}\n\n**Authors:** {{authorString}}  \n**Year:** {{year}}  \n**Venue:** {{publicationTitle}}  \n[Open in Zotero]({{zoteroSelectURI}})  \n\n---\n\n**Abstract:**  \n{{abstract}}\n\n---\n\n**My Notes:**  \n\n- \n",
-  "markdownCitationTemplate": "@{{citekey}}",
-  "alternativeMarkdownCitationTemplate": "@{{citekey}}",
-  "citationExportPath": "04-papers/My Library.bib"
-}
