@@ -1,0 +1,206 @@
+seed_papers:
+  - title: "Token Merging: Your ViT But Faster"
+    s2_id: ""
+  - title: "DynamicViT: Efficient Vision Transformers with Dynamic Token Sparsification"
+    s2_id: ""
+  - title: "TRIPS: Efficient Vision-and-Language Pre-training with Text-Relevant Image Patch Selection"
+    s2_id: ""
+  - title: "Masked Autoencoders Are Scalable Vision Learners"
+    s2_id: ""
+  - title: "Learning to generate line drawings that convey geometry and semantics"
+    s2_id: ""
+  - title: "Grounding Language with Visual Affordances over Unstructured Data"
+    s2_id: ""
+  - title: "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
+    s2_id: ""
+  - title: "AVA-VLA: Improving Vision-Language-Action models with Active Visual Attention"
+    s2_id: ""
+  - title: "Active Predictive Coding: A Unified Neural Framework"
+    s2_id: ""
+  - title: "Octo: An Open-Source Generalist Robot Policy"
+    s2_id: ""
+  - title: "Adaptive Computation Time for Recurrent Neural Networks"
+    s2_id: ""
+  - title: "Deep Variational Information Bottleneck"
+    s2_id: ""
+  - title: "ToSA: Token Merging with Spatial Awareness"
+    s2_id: ""
+  - title: "Next Patch Prediction for Autoregressive Visual Generation"
+    s2_id: ""
+  - title: "V-Thinker: Interactive Thinking with Images"
+    s2_id: ""
+
+tracked_authors:
+  # Core neighborhood
+  - name: "Tai Sing Lee"
+    s2_id: ""
+    tier: core
+  - name: "Kaiming He"
+    s2_id: ""
+    tier: core
+  - name: "Saining Xie"
+    s2_id: ""
+    tier: core
+  - name: "Ross Girshick"
+    s2_id: ""
+    tier: core
+  - name: "Chelsea Finn"
+    s2_id: ""
+    tier: core
+  - name: "Sergey Levine"
+    s2_id: ""
+    tier: core
+  - name: "Karl Pertsch"
+    s2_id: ""
+    tier: core
+  - name: "Jitendra Malik"
+    s2_id: ""
+    tier: core
+  - name: "Phillip Isola"
+    s2_id: ""
+    tier: core
+  - name: "Deva Ramanan"
+    s2_id: ""
+    tier: core
+  - name: "Christoph Feichtenhofer"
+    s2_id: ""
+    tier: core
+  - name: "Judy Hoffman"
+    s2_id: ""
+    tier: core
+  - name: "Rajesh Rao"
+    s2_id: ""
+    tier: core
+  - name: "Oier Mees"
+    s2_id: ""
+    tier: core
+  - name: "Cho-Jui Hsieh"
+    s2_id: ""
+    tier: core
+  - name: "Dorsa Sadigh"
+    s2_id: ""
+    tier: core
+  - name: "Ted Xiao"
+    s2_id: ""
+    tier: core
+  - name: "Daniel Bolya"
+    s2_id: ""
+    tier: core
+  - name: "Chunyuan Li"
+    s2_id: ""
+    tier: core
+  - name: "Yejin Choi"
+    s2_id: ""
+    tier: core
+  - name: "Cordelia Schmid"
+    s2_id: ""
+    tier: core
+  - name: "Dragomir Anguelov"
+    s2_id: ""
+    tier: core
+  # Well-rounded awareness
+  - name: "Geoffrey Hinton"
+    s2_id: ""
+    tier: horizon
+  - name: "Yoshua Bengio"
+    s2_id: ""
+    tier: horizon
+  - name: "Richard Sutton"
+    s2_id: ""
+    tier: horizon
+  - name: "Pieter Abbeel"
+    s2_id: ""
+    tier: horizon
+  - name: "Sanjeev Arora"
+    s2_id: ""
+    tier: horizon
+
+queries:
+  - text: "token pruning vision transformer"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "token merging visual efficiency"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "selective visual attention VLA"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "adaptive computation vision"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "visual token selection language model"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "patch selection vision language"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "vision language action model"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "visual grounding manipulation robot"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "shape prior object recognition neural"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "visual compute budget efficiency"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "multimodal reasoning visual tokens"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "active perception embodied agent"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "vision transformer architecture scaling"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "image tokenization VQ autoregressive"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+  - text: "visual instruction tuning multimodal"
+    source: manual
+    added: "2026-05-23"
+    hit_counts: [0, 0, 0, 0, 0, 0, 0]
+
+arxiv:
+  primary: [cs.CV, cs.CL, cs.LG]
+  secondary: [cs.AI, cs.RO]
+
+rss_feeds:
+  # Verified working 2026-05-23. Anthropic, Meta AI, and AI2 have no public RSS feeds.
+  - name: Google DeepMind
+    url: https://deepmind.google/blog/rss.xml
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+  - name: OpenAI
+    url: https://openai.com/blog/rss.xml
+  - name: Microsoft Research
+    url: https://www.microsoft.com/en-us/research/feed/
+  - name: Hugging Face
+    url: https://huggingface.co/blog/feed.xml
+  - name: BAIR
+    url: https://bair.berkeley.edu/blog/feed.xml
+  - name: NVIDIA AI
+    url: https://blogs.nvidia.com/blog/category/deep-learning/feed/
+
+settings:
+  max_papers: 10
+  s2_api_key: s2k-YbXEbvM0Ek7htFpf12iqgtLrTQ1ffqoG05XGSuYV
+  lookback_days: 7
+  arxiv_lookback_hours: 48
+  title_fuzzy_threshold: 90

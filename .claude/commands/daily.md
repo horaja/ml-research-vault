@@ -6,7 +6,7 @@ argument-hint: [optional context]
 Read `AGENTS.md`.
 Read `.agents/skills/daily-opener/SKILL.md`.
 
-Run Daily Opener.
+Run Daily Opener, including the digest phase (fetch papers, score, write digest).
 
 Args / context:
 $ARGUMENTS

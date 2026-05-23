@@ -20,4 +20,6 @@ date: {{date}}
 
 ## links
 
+## news / external signals
+
 ## durable updates
