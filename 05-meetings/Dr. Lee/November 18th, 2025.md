@@ -1,5 +1,5 @@
 
-### [[02-projects/manifolds/V4-Guided Domain Generalization/Experiments|Experiments]]
+### [[98-archive/projects/manifolds/V4-Guided Domain Generalization/Experiments|Experiments]]
 - Evaluate **Experiment 1.1 with Brain-Score** metric
 - How to **ALIGN**:
 	- Optimal transport

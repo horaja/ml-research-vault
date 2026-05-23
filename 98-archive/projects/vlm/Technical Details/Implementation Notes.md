@@ -18,7 +18,7 @@ For specific experiments ran, see [[Implementation Notes]].
 Instead of direct pruning, merge tokens together.
 Key Idea: Tokens merged **BEFORE EVERY TRANSFORMER LAYER**. Use this idea!
 
-#### Depth Map & FG/BG Segmentation - [Phase 2] in [[02-projects/vlm/Experiments|Experiments]]
+#### Depth Map & FG/BG Segmentation - [Phase 2] in [[98-archive/projects/vlm/Experiments|Experiments]]
 **Background Notes**:
  - Explicitly separating foregrounds and background enhances ViT training and reduces biases [[Nauen et al. (2025)]]
  - Explicitly doing figure-ground segmentation increases shape-bias of the model --> better robustness and accuracy *[find source]*
@@ -82,7 +82,7 @@ Key Idea: Tokens merged **BEFORE EVERY TRANSFORMER LAYER**. Use this idea!
 		1. LD
 		2. Depth Maps
 		3. FG/BG Segmentation Info
-#### [[02-projects/vlm/Experiments#*[TODO]* Experiment 2.1 Augment Patch Selector Module with Depth Awareness|Experiments]] - Details
+#### [[98-archive/projects/vlm/Experiments#*[TODO]* Experiment 2.1 Augment Patch Selector Module with Depth Awareness|Experiments]] - Details
 - **Option 1**: 3D Gaussian Kernel
 ```
 def adaptive_depth_cog(disparity_map, line_drawing):
