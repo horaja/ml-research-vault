@@ -13,9 +13,9 @@ Instruction-conditioned patch scoring may select more task-relevant patches than
 - Manipulation instructions can disambiguate which object or region matters.
 - A contrastive selector can score patch-language compatibility directly.
 
-## missing evidence
-- No language-conditioned selector exists in the current repo.
-- No zero-language ablation.
+## needed evidence
+- Zero-language ablation.
+- Learned visual scorer without language.
 - DAA gaze supervision may not teach action relevance if gaze and action-relevant regions diverge.
 
 ## baseline that could kill it

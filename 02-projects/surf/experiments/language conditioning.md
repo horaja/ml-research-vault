@@ -26,9 +26,6 @@ Instruction-conditioned patch scoring selects more task-relevant patches than ta
 - Task-relevant reconstruction from [[eval/reconstruction]].
 - Downstream action success when VLA setup exists.
 
-## result
-Not run.
-
 ## risks
 - Language may not contain useful spatial information.
 - DAA gaze supervision may not transfer to BEHAVIOR-style scenes.

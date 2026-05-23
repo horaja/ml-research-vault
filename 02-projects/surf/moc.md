@@ -8,9 +8,8 @@ project: surf
 ## problem
 Learning where to look: selective visual computation for VLA-style systems.
 
-Current verified evidence is classification-only. VLA/action relevance is still open.
-
 ## state
+- [[synthesis/architecture]]
 - [[roadmap]]
 - [[questions]]
 - [[reading]]
@@ -46,6 +45,7 @@ Current verified evidence is classification-only. VLA/action relevance is still 
 - [[eval/behavior]]
 
 ## synthesis
+- [[synthesis/architecture]]
 - [[synthesis/where to look]]
 - [[synthesis/prior vs learned]]
 - [[synthesis/shape and action]]

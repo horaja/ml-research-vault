@@ -24,9 +24,6 @@ Iterative coarse-to-fine selection improves performance under matched compute by
 - Additional patches requested per example.
 - Failure cases where early selection omitted critical regions.
 
-## result
-Not run.
-
 ## links
 - [[claims/iterative selection]]
 - [[concepts/variational prior]]

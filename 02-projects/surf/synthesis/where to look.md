@@ -9,22 +9,21 @@ project: surf
 What should guide selective visual computation for VLA-style systems?
 
 ## current view
-The strongest current evidence supports a structural line prior for ImageNet-10 classification. The central research risk is whether classification-useful structure overlaps with action-relevant structure.
+The project should be judged by whether selected visual evidence improves task behavior under a visual budget. The organizing architecture is [[synthesis/architecture]].
 
-## supported
-- [[experiments/e001]] supports lower-compute selective patch processing in the current classification repo.
-
-## speculative
-- Structural priors may help VLA action prediction.
-- V4-inspired preferences may provide useful mid-level shape guidance.
-- Iterative selection may reduce wasted visual compute.
+## mechanisms
+- Structural priors can bias selection toward contours, shape, and object boundaries.
+- Language-conditioned priors can make selection task-specific.
+- V4 or mid-level shape priors may provide richer structural guidance.
+- Efficiency/RL mechanisms can decide whether to stop or refine.
 
 ## tensions
-- Biological motivation is useful, but current evidence does not show biological faithfulness.
 - Gaze alignment may not track action relevance.
-- Strong baselines could explain much of the observed benefit.
+- Center bias and edge-density baselines can explain apparent attention quality.
+- Biological motivation should guide inductive-bias design without becoming a biological-faithfulness claim.
 
 ## links
+- [[synthesis/architecture]]
 - [[claims/structure helps]]
 - [[claims/efficiency without collapse]]
 - [[experiments/vla adaptation]]

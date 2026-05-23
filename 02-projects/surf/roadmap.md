@@ -7,12 +7,12 @@ status: active
 # roadmap
 
 ## current framing
-Selective visual computation should be evaluated as a way to preserve task-relevant information under a visual budget, not as a biological-faithfulness claim.
+surf is organized around a three-module architecture for learning where to look:
+- prior module: proposes or biases spatial regions
+- VLA/action module: consumes selected visual evidence for task behavior
+- efficiency/RL module: controls adaptive allocation under a visual budget
 
-The current implemented system is a line-guided ViT for ImageNet-style classification. The project direction is to test whether similar priors help VLA-style action prediction.
-
-## verified evidence
-- [[experiments/e001]]: line-guided selective patch processing improves ImageNet-10 Top-1 in the checked-in repo while using lower reported GFLOPs.
+See [[synthesis/architecture]].
 
 ## live claims
 - [[claims/structure helps]]
@@ -21,23 +21,28 @@ The current implemented system is a line-guided ViT for ImageNet-style classific
 - [[claims/iterative selection]]
 - [[claims/v4 relevance]]
 
+## evidence
+- [[experiments/e001]] motivates the prior module with a line-guided patch selection result.
+- [[sources/proposal]] preserves the larger VLA/action and adaptive-computation framing.
+- [[99-attachments/images/model_architecture.jpeg|model architecture sketch]] records the current three-module architecture.
+
 ## missing evidence
-- VLA/action prediction evidence.
-- A center-bias and Canny edge-density comparison for the current line prior.
-- Evidence that line drawings select action-relevant regions, not just class-discriminative contours.
-- Evidence that V4-derived preferences add useful information beyond generic shape/edge priors.
+- Baselines that distinguish structure from center bias and generic edge density.
+- Action-task evaluation showing whether selected visual evidence improves task behavior.
+- Operational evidence for V4 alignment in action tasks.
+- Training objective for adaptive where-to-look decisions under budget.
 
 ## falsifiers
-- Center bias matches or beats line-guided selection at the same visual budget.
-- Language-conditioned selectors do not beat a zero-language ablation.
-- Selective processing improves classification but harms action prediction under matched compute.
-- Gaze alignment improves while task success does not, showing biological-plausibility metrics are not measuring action relevance.
+- Center bias matches or beats structural priors under the same visual budget.
+- Language-conditioned selection does not beat a zero-language ablation.
+- Adaptive refinement spends extra compute without improving task success, compute efficiency, sample efficiency, or generalization.
+- Gaze alignment improves while task performance does not.
 
 ## next experiments
-- Validate current ImageNet-10 result and baselines in [[experiments/e001]].
-- Run the language-conditioning ablation in [[experiments/language conditioning]].
-- Implement task-relevance metrics in [[eval/reconstruction]] before claiming VLA relevance.
-- Treat [[experiments/vla adaptation]] as planned until repo support exists.
+- Strengthen [[experiments/e001]] with kill baselines from [[eval/baselines]].
+- Run [[experiments/language conditioning]] to test instruction-conditioned spatial selection.
+- Use [[eval/reconstruction]] and [[eval/behavior]] to connect selection with task relevance.
+- Use [[experiments/iterative selection]] to test whether refinement policies improve compute allocation.
 
 ## central papers
 - [[Chan et al. (2022)]]

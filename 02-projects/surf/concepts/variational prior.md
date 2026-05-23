@@ -6,7 +6,7 @@ project: surf
 # variational prior
 
 ## definition
-A planned latent-variable selector with a language-conditioned prior `p(z | l)` and an image-conditioned posterior `q(z | x, l)` over patch relevance.
+A latent-variable selector with a language-conditioned prior `p(z | l)` and an image-conditioned posterior `q(z | x, l)` over patch relevance.
 
 ## purpose
 - Produce a language-only first-pass attention map.
@@ -22,9 +22,6 @@ Optimize action prediction while regularizing posterior attention toward the pri
 - Attention mode collapse to fixed regions.
 - Gaze-language decorrelation.
 - Circular dependency if selector sees selected-patch downstream features.
-
-## status
-Design plan only. Not implemented in the current repo.
 
 ## links
 - [[claims/iterative selection]]

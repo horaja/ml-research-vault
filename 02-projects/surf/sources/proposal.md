@@ -6,7 +6,7 @@ project: surf
 # proposal
 
 ## status
-Historical/project framing. Current notes and repo facts override proposal language.
+Historical and high-level framing.
 
 ## title
 Biologically-Guided Token Selection for Efficient Vision-Language-Action Models.
@@ -28,8 +28,6 @@ Learning where to look through selective visual computation for VLA-style system
 ## preliminary reported result
 The proposal reports line-drawing guided selective attention at `75.8%` ImageNet-10 accuracy while processing `40%` of patches, reducing computation from `1.408` GFLOPs to `0.448` GFLOPs.
 
-This matches the current repo README/docs directionally, but should remain classification-only evidence.
-
 ## planned evaluation axes
 - Task success.
 - Compute per action / GFLOPs.
@@ -49,5 +47,6 @@ Biological motivation is allowed, but do not overclaim biological faithfulness.
 ## links
 - [[sources/repo]]
 - [[roadmap]]
+- [[synthesis/architecture]]
 - [[claims/v4 relevance]]
 - [[synthesis/where to look]]

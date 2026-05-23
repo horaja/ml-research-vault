@@ -8,9 +8,6 @@ project: surf
 ## question
 Does shape or line structure identify regions that matter for action?
 
-## current view
-Line structure is useful in the current classification setup. Action relevance remains unproven.
-
 ## possible mechanism
 Manipulation may depend on object boundaries, affordance geometry, contact regions, and obstacles. Line drawings may preserve some of this structure while discarding texture/background.
 
@@ -25,6 +22,7 @@ Manipulation may depend on object boundaries, affordance geometry, contact regio
 - Baselines in [[eval/baselines]].
 
 ## links
+- [[synthesis/architecture]]
 - [[claims/structure helps]]
 - [[concepts/task relevance]]
 - [[claims/v4 relevance]]

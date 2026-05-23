@@ -8,14 +8,16 @@ project: surf
 ## definition
 A selector maps an image, optional prior features, and optional instruction context to a patch score map, then chooses a subset of patches under a visual budget.
 
-## current interface
-Current repo:
-- input: color image plus optional line drawing
-- score: line drawing density and spatial weighting
-- select: random or spatially biased sampled indices
-- output: selected ViT patch embeddings plus positional embeddings
+## interface
+- input: visual evidence, prior features, and optional instruction context
+- score: patch or region relevance
+- select: patches or regions under a visual budget
+- output: selected visual evidence for the VLA/action module
 
-## planned variants
+## implementation example
+[[sources/repo]] contains a selector that scores line drawing density with spatial weighting and feeds selected ViT patch embeddings forward.
+
+## variants
 - Contrastive language-conditioned selector.
 - Variational prior/posterior selector.
 - Iterative coarse-to-fine selector.

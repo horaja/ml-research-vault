@@ -11,7 +11,7 @@ project: surf
 - [[Mees et al. (2023)]]
   - why: language-conditioned spatial grounding for manipulation.
 - [[Chan et al. (2022)]]
-  - why: source for informative line drawings used by the current implementation.
+  - why: source for informative line drawings used by the line-prior source artifact.
 
 ## Skim
 - [[Bolya et al. (2023)]]

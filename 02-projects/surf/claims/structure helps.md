@@ -7,7 +7,7 @@ status: supported
 # structure helps
 
 ## claim
-Line drawings are a structural prior for patch selection. Current support is classification-only: the repo reports improved ImageNet-10 accuracy at lower compute when line-guided selection is used.
+Line drawings are a structural prior for patch selection. Preliminary line-guided patch selection results motivate using structure as part of the prior module.
 
 ## evidence
 - Code/result: [[sources/repo]]
@@ -15,11 +15,10 @@ Line drawings are a structural prior for patch selection. Current support is cla
 - Paper context: [[Chan et al. (2022)]]
 
 ## assumptions
-- Line drawings preserve useful object structure rather than only class-discriminative contours.
+- Line drawings preserve useful object structure.
 - Structural patches relevant for classification may overlap with patches relevant for manipulation.
 
 ## counterevidence
-- No current VLA/action result.
 - Center bias and Canny edge-density baselines may explain part of the gain.
 
 ## baseline

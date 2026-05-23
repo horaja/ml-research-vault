@@ -5,23 +5,26 @@ project: surf
 
 # questions
 
+## architecture
+- How should the prior, VLA/action, and efficiency/RL modules exchange information?
+- Which outputs from the VLA/action module should trigger refinement?
+- Should adaptive compute be trained as a policy, a threshold rule, or a value-of-information objective?
+
 ## action relevance
-- Does a line prior select regions needed for action prediction, or only regions useful for classification?
+- What makes a patch task-relevant for action?
 - Are affordance/contact regions recoverable from structural cues alone?
+- Does line structure help because of affordance relevance, shape invariance, or removal of nuisance detail?
 
 ## priors
 - Does language conditioning improve spatial selection beyond a learned visual scorer with language removed?
-- Is a V4-derived prior meaningfully different from generic line/edge density?
+- How should V4 alignment be operationalized for action tasks?
+- When should the selector refine rather than stop?
 
 ## evaluation
+- Which baselines would kill the structural-prior claim?
 - Can [[eval/reconstruction]] avoid measuring MAE reconstruction artifacts instead of prior quality?
-- Does [[eval/gaze]] measure task relevance, or only similarity to human gaze?
+- Does [[eval/gaze]] measure task relevance, or similarity to human gaze?
 - How much of the apparent signal is explained by center bias?
 
 ## implementation
-- The current repo implements classification only. What is the minimal VLA/action setup that tests the core claim?
 - Can selector inputs stay independent of selected-patch downstream features and avoid circular dependency?
-
-## contradictions
-- The project motivation leans on biological vision, but current evidence is ImageNet-10 classification.
-- Human gaze alignment may be useful but does not by itself establish action relevance.

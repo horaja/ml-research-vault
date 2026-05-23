@@ -58,6 +58,10 @@ Do **not** create persistent sections like:
 
 These may be useful in conversation, but they are not durable vault objects.
 
+### Source authority and project state
+
+Project notes define the current research framing; code repositories define implementation state; papers define external evidence; experiments define observed results; meetings define advice, constraints, and decisions. No single source type should silently dominate the others. In particular, a local repository only constrains claims about that repository. It must not be used to conclude that broader project modules, remote implementations, or conceptual architecture do not exist. Avoid writing absence-of-evidence caveats such as “not observed in the repo” into active durable notes. If implementation status is uncertain, either omit it from the active note or record it in a temporary audit/refactor report. Durable notes should phrase implementation facts positively and narrowly, e.g. “the local line-biased-vision-encoder repo contains the line-prior vision prototype,” rather than using repo absence to narrow the project.
+
 ---
 
 ## 2. Permission Rules

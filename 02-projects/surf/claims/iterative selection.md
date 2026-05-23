@@ -14,9 +14,9 @@ Coarse-to-fine selection may outperform one-shot top-k selection by using uncert
 - Later passes can refine with image evidence or posterior uncertainty.
 - This matches the project goal of allocating visual compute only where needed.
 
-## missing evidence
-- No iterative selector exists in the current repo.
-- No comparison against fixed one-shot top-k at equal compute.
+## needed evidence
+- Comparison against fixed one-shot top-k at equal compute.
+- Stopping/refinement rule that improves task success, compute efficiency, sample efficiency, or generalization.
 
 ## baseline that could kill it
 - One-shot top-k performs equally well at the same GFLOPs.

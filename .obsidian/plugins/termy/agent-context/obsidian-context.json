@@ -1,17 +1,24 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-05-23T15:29:30.319Z",
+  "updatedAt": "2026-05-23T15:50:18.612Z",
   "vaultRoot": "Users/husain/Documents/cmu/research/ml-research-vault",
   "workspaceFolders": [
     "Users/husain/Documents/cmu/research/ml-research-vault"
   ],
   "activeFile": {
-    "filePath": "/Users/husain/Documents/cmu/research/ml-research-vault/99-attachments/images/model_architecture.jpeg",
-    "vaultPath": "99-attachments/images/model_architecture.jpeg",
-    "fileUrl": "file:///Users/husain/Documents/cmu/research/ml-research-vault/99-attachments/images/model_architecture.jpeg",
+    "filePath": "/Users/husain/Documents/cmu/research/ml-research-vault/02-projects/surf/roadmap.md",
+    "vaultPath": "02-projects/surf/roadmap.md",
+    "fileUrl": "file:///Users/husain/Documents/cmu/research/ml-research-vault/02-projects/surf/roadmap.md",
     "hasFocus": false
   },
-  "openFiles": [],
+  "openFiles": [
+    {
+      "filePath": "/Users/husain/Documents/cmu/research/ml-research-vault/02-projects/surf/roadmap.md",
+      "vaultPath": "02-projects/surf/roadmap.md",
+      "fileUrl": "file:///Users/husain/Documents/cmu/research/ml-research-vault/02-projects/surf/roadmap.md",
+      "isActive": true
+    }
+  ],
   "selection": null
 }

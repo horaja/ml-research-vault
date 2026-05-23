@@ -10,18 +10,21 @@
           {
             "id": "70d0229b59b38dcc",
             "type": "tabs",
-            "dimension": 50.69444444444444,
+            "dimension": 43.20987654320987,
             "children": [
               {
                 "id": "d7af6a0cd9b924bb",
                 "type": "leaf",
                 "state": {
-                  "type": "image",
+                  "type": "markdown",
                   "state": {
-                    "file": "99-attachments/images/model_architecture.jpeg"
+                    "file": "02-projects/surf/roadmap.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
                   },
-                  "icon": "lucide-image",
-                  "title": "model_architecture"
+                  "icon": "lucide-file",
+                  "title": "roadmap"
                 }
               }
             ]
@@ -29,7 +32,7 @@
           {
             "id": "d93186086457685f",
             "type": "tabs",
-            "dimension": 49.30555555555556,
+            "dimension": 56.79012345679012,
             "children": [
               {
                 "id": "476932ee1644f06f",
@@ -165,13 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99-attachments/images/model_architecture.jpeg",
+                "file": "02-projects/surf/roadmap.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of model_architecture"
+              "title": "Outline of roadmap"
             }
           },
           {
@@ -223,13 +226,23 @@
       "termy:Open terminal": false
     }
   },
-  "active": "d7af6a0cd9b924bb",
+  "active": "476932ee1644f06f",
   "lastOpenFiles": [
-    "02-projects/surf/questions.md",
-    "02-projects/surf/moc.md",
+    "04-papers/Rao et al. (2021).md",
     "02-projects/surf/roadmap.md",
-    "98-archive/refactor/surf/2026-05-23/refactor map.md",
+    "04-papers/Bolya et al. (2023).md",
+    "04-papers/He et al. (2021).md",
+    "04-papers/Mees et al. (2023).md",
+    "04-papers/Jiang et al. (2025).md",
+    "04-papers/Chan et al. (2022).md",
+    "98-archive/projects/manifolds/V4-Guided Domain Generalization/Experiments.md",
     "02-projects/surf/refactor map.md",
+    "99-attachments/images/model_architecture.jpeg",
+    "02-projects/surf/synthesis/architecture.md",
+    "02-projects/surf/moc.md",
+    "AGENTS.md",
+    "02-projects/surf/questions.md",
+    "98-archive/refactor/surf/2026-05-23/refactor map.md",
     "02-projects/surf/eval/baselines.md",
     "02-projects/surf/eval/gaze.md",
     "02-projects/surf/concepts/oracle map.md",
@@ -243,15 +256,6 @@
     "02-projects/surf/eval/behavior.md",
     "02-projects/surf/eval/reconstruction.md",
     "02-projects/surf/experiments/vla adaptation.md",
-    "02-projects/surf/experiments/iterative selection.md",
-    "02-projects/surf/experiments/language conditioning.md",
-    "02-projects/surf/experiments/e001.md",
-    "02-projects/surf/concepts/variational prior.md",
-    "02-projects/surf/concepts/task relevance.md",
-    "02-projects/surf/concepts/visual budget.md",
-    "02-projects/surf/concepts/selector.md",
-    "02-projects/surf/concepts/v4 prior.md",
-    "02-projects/surf/concepts/line prior.md",
     "02-projects/surf/sources",
     "02-projects/surf/eval",
     "02-projects/surf/concepts",
@@ -260,7 +264,6 @@
     "98-archive/refactor/surf/2026-05-23/originals/Module 1/Implementation Plans",
     "98-archive/refactor/surf/2026-05-23/originals/synthesis",
     "98-archive/refactor/surf/2026-05-23/originals/experiments",
-    "98-archive/refactor/surf/2026-05-23/originals/definitions",
-    "99-attachments/images/model_architecture.jpeg"
+    "98-archive/refactor/surf/2026-05-23/originals/definitions"
   ]
 }
