@@ -1,0 +1,129 @@
+#!/usr/bin/env bash
+# Cross-agent pre-commit safety check for the ml-research-vault.
+#
+# Soft reminder only — never blocks the commit (always exits 0).
+# Agent-agnostic: runs at the git layer, so it works the same whether you
+# commit from Claude Code, Gemini CLI, Codex, or the plain terminal.
+#
+# Activate once per clone with:
+#   git config core.hooksPath .githooks
+#
+# What it checks:
+#   1. Broken Obsidian wikilinks in staged .md files (best-effort, basename match)
+#   2. Large files (> 5MB) staged for commit
+#   3. .obsidian/ config changes (intentional, but worth flagging)
+#   4. Newly-staged notes with no body (likely accidental empties)
+#
+# It does NOT replace the `git-safety` skill. Run that for deeper review
+# (risky structural changes, suggested commit message, link semantics).
+
+set -u
+
+GIT_ROOT=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
+cd "$GIT_ROOT" || exit 0
+
+# tput colors if interactive
+if [ -t 1 ] && command -v tput >/dev/null 2>&1; then
+  BOLD=$(tput bold); DIM=$(tput dim); YEL=$(tput setaf 3); CYA=$(tput setaf 6); RST=$(tput sgr0)
+else
+  BOLD=""; DIM=""; YEL=""; CYA=""; RST=""
+fi
+
+warned=0
+warn() { printf "%s[vault pre-commit]%s %s\n" "$YEL" "$RST" "$1"; warned=1; }
+info() { printf "%s[vault pre-commit]%s %s\n" "$CYA" "$RST" "$1"; }
+
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+[ -z "$staged" ] && exit 0
+
+# 1. Large files (>5MB)
+while IFS= read -r f; do
+  [ -f "$f" ] || continue
+  size=$(wc -c < "$f" 2>/dev/null | tr -d ' ')
+  [ -z "$size" ] && continue
+  if [ "$size" -gt 5242880 ]; then
+    mb=$(( size / 1048576 ))
+    warn "large file staged: $f (~${mb} MB)"
+  fi
+done <<< "$staged"
+
+# 2. .obsidian/ config changes
+obs_changes=$(printf "%s\n" "$staged" | grep -E '^\.obsidian/' || true)
+if [ -n "$obs_changes" ]; then
+  count=$(printf "%s\n" "$obs_changes" | wc -l | tr -d ' ')
+  info "$count .obsidian/ file(s) staged — confirm config changes are intentional"
+fi
+
+# 3. Empty new notes
+new_md=$(git diff --cached --name-only --diff-filter=A | grep -E '\.md$' || true)
+while IFS= read -r f; do
+  [ -z "$f" ] && continue
+  [ -f "$f" ] || continue
+  # Strip frontmatter and headings; count non-blank body lines
+  body_lines=$(awk '
+    BEGIN { in_fm=0; seen_fm=0 }
+    NR==1 && /^---[[:space:]]*$/ { in_fm=1; seen_fm=1; next }
+    in_fm && /^---[[:space:]]*$/ { in_fm=0; next }
+    in_fm { next }
+    /^[[:space:]]*$/ { next }
+    /^#/ { next }
+    { count++ }
+    END { print count+0 }
+  ' "$f")
+  if [ "$body_lines" -lt 2 ]; then
+    warn "new note has little/no body: $f"
+  fi
+done <<< "$new_md"
+
+# 4. Broken wikilinks (best-effort basename match)
+md_files=$(printf "%s\n" "$staged" | grep -E '\.md$' || true)
+if [ -n "$md_files" ]; then
+  # Build vault basename index once (note titles without extension)
+  index=$(mktemp)
+  trap 'rm -f "$index"' EXIT
+  # Index everything currently in the vault (committed + working tree)
+  { git ls-files '*.md'; printf "%s\n" "$md_files"; } \
+    | sort -u \
+    | while IFS= read -r p; do
+        base=${p##*/}
+        printf "%s\n" "${base%.md}"
+      done | sort -u > "$index"
+
+  broken=0
+  while IFS= read -r f; do
+    [ -z "$f" ] && continue
+    [ -f "$f" ] || continue
+    # Extract [[target]] and [[target|alias]] — keep target only, drop heading anchors
+    grep -oE '\[\[[^]|#]+' "$f" 2>/dev/null \
+      | sed 's/^\[\[//' \
+      | while IFS= read -r tgt; do
+          # Trim whitespace
+          tgt=$(printf "%s" "$tgt" | sed 's/[[:space:]]*$//' | sed 's/^[[:space:]]*//')
+          [ -z "$tgt" ] && continue
+          # Skip embeds of images / pdfs / attachments
+          case "$tgt" in
+            *.png|*.jpg|*.jpeg|*.gif|*.pdf|*.svg|*.webp) continue ;;
+          esac
+          # Basename match against the vault index
+          base=${tgt##*/}
+          if ! grep -Fxq "$base" "$index"; then
+            printf "  %s -> [[%s]]\n" "$f" "$tgt"
+            broken=$((broken+1))
+          fi
+        done
+  done <<< "$md_files" > /tmp/.vault_broken_links.$$
+
+  if [ -s /tmp/.vault_broken_links.$$ ]; then
+    warn "possible broken wikilinks (basename match):"
+    sed "s|^|  $DIM|;s|$|$RST|" /tmp/.vault_broken_links.$$
+  fi
+  rm -f /tmp/.vault_broken_links.$$
+fi
+
+if [ "$warned" -eq 1 ]; then
+  printf "%s[vault pre-commit]%s %sreminder:%s run the %sgit-safety%s skill for a deeper review before pushing.\n" \
+    "$YEL" "$RST" "$BOLD" "$RST" "$BOLD" "$RST"
+fi
+
+# Always succeed — this is a soft reminder, not a gate.
+exit 0
