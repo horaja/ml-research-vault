@@ -1,0 +1,15 @@
+description = "Process or deep-read a paper note."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/paper/SKILL.md`.
+
+Run the Paper workflow.
+
+Input:
+{{args}}
+
+Default: propose-only unless I explicitly say apply.
+Do not add project relevance inside the paper note.
+Suggest project links separately.
+"""

@@ -1,0 +1,14 @@
+description = "Prepare for a meeting or process meeting notes/transcript."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/meeting/SKILL.md`.
+
+Run the Meeting workflow.
+
+Input:
+{{args}}
+
+Default: propose-only unless I explicitly ask to create/update a meeting note.
+Do not update roadmap or project notes automatically.
+"""

@@ -1,0 +1,14 @@
+description = "Build or update a reading list."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/reading-list/SKILL.md`.
+
+Run Reading List Builder.
+
+Scope:
+{{args}}
+
+Mode: propose-only.
+Group papers by research purpose, not generic topic.
+"""

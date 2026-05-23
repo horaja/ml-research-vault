@@ -1,0 +1,14 @@
+description = "Build grounded synthesis across papers, claims, and experiments."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/synthesis/SKILL.md`.
+
+Run Synthesis Builder.
+
+Topic / inputs:
+{{args}}
+
+Mode: propose-only unless I explicitly say apply.
+Separate supported, plausible, speculative, and contradictory points.
+"""

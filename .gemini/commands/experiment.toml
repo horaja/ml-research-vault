@@ -1,0 +1,15 @@
+description = "Plan or summarize an experiment."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/experiment/SKILL.md`.
+
+Run the Experiment workflow.
+
+Input:
+{{args}}
+
+Default: propose-only.
+Distinguish result from interpretation.
+Ask what baseline would kill the claim.
+"""

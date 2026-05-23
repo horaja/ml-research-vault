@@ -1,0 +1,14 @@
+description = "Run weekly research review."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/weekly-review/SKILL.md`.
+
+Run Weekly Review.
+
+Week / scope:
+{{args}}
+
+Mode: propose-only.
+Do not scan the whole vault unless needed.
+"""

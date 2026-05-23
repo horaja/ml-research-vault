@@ -1,0 +1,14 @@
+description = "Update roadmap, archive plan, or graph pass."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/roadmap-archive-graph/SKILL.md`.
+
+Run the relevant workflow: Roadmap Update, Archive Planner, or Graph Pass.
+
+Input:
+{{args}}
+
+Mode: propose-only unless I explicitly say apply.
+Do not move/archive files without permission.
+"""

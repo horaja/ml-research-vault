@@ -1,0 +1,14 @@
+description = "Refactor a note into graph-friendly durable structure."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/note-refactor/SKILL.md`.
+
+Run Note Refactor.
+
+Input:
+{{args}}
+
+Mode: propose-only.
+Do not flatten valuable messiness into generic summary.
+"""

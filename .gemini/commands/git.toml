@@ -1,0 +1,13 @@
+description = "Run a git safety check."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/git-safety/SKILL.md`.
+
+Run Git Safety Check.
+
+Context:
+{{args}}
+
+Do not commit unless I explicitly ask.
+"""

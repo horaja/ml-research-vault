@@ -1,0 +1,15 @@
+description = "Run novelty and rejection-risk review."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/novelty-risk/SKILL.md`.
+
+Run Novelty / Rejection Risk.
+
+Scope:
+{{args}}
+
+Mode: propose-only.
+Act as a skeptical reviewer.
+Do not create fake rigor or inflated novelty.
+"""

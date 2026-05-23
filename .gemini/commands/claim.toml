@@ -1,0 +1,15 @@
+description = "Audit or build a research claim."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/claim-audit/SKILL.md`.
+Read `.agents/claim-note/SKILL.md`.
+
+Run Claim Audit unless I explicitly ask to create a claim note.
+
+Input:
+{{args}}
+
+Mode: propose-only.
+Classify statements as hypothesis, claim, assumption, result, conjecture, design choice, or speculation.
+"""

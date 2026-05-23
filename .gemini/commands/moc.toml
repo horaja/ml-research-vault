@@ -1,0 +1,14 @@
+description = "Build or maintain a MOC."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/moc/SKILL.md`.
+
+Run MOC Maintainer.
+
+Input:
+{{args}}
+
+Mode: propose-only unless I explicitly say apply.
+Avoid link spam.
+"""

@@ -1,0 +1,14 @@
+description = "Run the daily opener workflow."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/daily-opener/SKILL.md`.
+
+Run Daily Opener.
+
+Args / context:
+{{args}}
+
+Default: apply only to today's daily note if the path already exists; otherwise propose the path first.
+Do not create other durable notes.
+"""

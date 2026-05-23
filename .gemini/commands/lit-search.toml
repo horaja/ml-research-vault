@@ -1,0 +1,15 @@
+description = "Search external literature when web access is available."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/literature-search/SKILL.md`.
+
+Run External Literature Search Intake.
+
+Search topic:
+{{args}}
+
+Mode: propose-only.
+Use primary sources where possible.
+Do not add papers to the vault automatically.
+"""

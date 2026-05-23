@@ -1,0 +1,14 @@
+description = "Create or refine a central definition note."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/definition/SKILL.md`.
+
+Run Definition Note Builder.
+
+Term / context:
+{{args}}
+
+Mode: propose-only.
+Create a definition note only if the term is central enough.
+"""

@@ -1,0 +1,15 @@
+description = "Run inbox triage on rough notes."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/inbox/SKILL.md`.
+
+Run Inbox Triage.
+
+Input:
+{{args}}
+
+Mode: propose-only.
+
+Do not move, rewrite, archive, delete, or create notes until I approve the plan.
+"""

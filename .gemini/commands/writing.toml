@@ -1,0 +1,14 @@
+description = "Draft research prose or memo in chat."
+
+prompt = """
+Read `AGENTS.md`.
+Read `.agents/writing/SKILL.md`.
+
+Run Writing Memo.
+
+Target / inputs:
+{{args}}
+
+Default: draft in chat.
+Do not create a persistent note unless I explicitly ask.
+"""
