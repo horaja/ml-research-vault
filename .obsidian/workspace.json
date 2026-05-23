@@ -39,33 +39,18 @@
             }
           },
           {
-            "id": "551481bc55bf3ced",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-projects/surf/Module 1/Overview.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Overview"
-            }
-          },
-          {
             "id": "d2ccce9a98d34d37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Oracle Similarity Metric Integration.md",
+                "file": "PROMPTS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Oracle Similarity Metric Integration"
+              "title": "PROMPTS"
             }
           }
         ],
@@ -207,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-projects/surf/Module 1/Overview.md",
+                "file": "PROMPTS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +202,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Overview"
+              "title": "Backlinks for PROMPTS"
             }
           },
           {
@@ -226,12 +211,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-projects/surf/Module 1/Overview.md",
+                "file": "PROMPTS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Overview"
+              "title": "Outgoing links from PROMPTS"
             }
           },
           {
@@ -269,13 +254,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-projects/surf/Module 1/Overview.md",
+                "file": "PROMPTS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Overview"
+              "title": "Outline of PROMPTS"
             }
           },
           {
@@ -326,15 +311,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4cac52b8bff1911",
+  "active": "d2ccce9a98d34d37",
   "lastOpenFiles": [
-    "02-projects/surf/Project Formalization and Proposal.md",
+    "AGENTS.md",
+    "PROMPTS.md",
+    "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Oracle Similarity Metric Integration.md",
+    "02-projects/vlm/Discontinued/Project Overview - DISCONTINUED.md",
     "02-projects/surf/Module 1/Overview.md",
+    "02-projects/surf/Project Formalization and Proposal.md",
     "02-projects/surf/Module 1/Implementation Plans/Prior Design Algorithms/Variational Spatial Prior.md",
     "02-projects/Archive.zip",
     "05-meetings/Dr. Lee/April 06, 2026.md",
     "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Task-Dependant Reconstruction Shift Metric Integration.md",
-    "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Oracle Similarity Metric Integration.md",
     "99-attachments/images/model_architecture.jpeg",
     "05-meetings/Dr. Lee/March 23rd, 2026.md",
     "02-projects/surf/Module 1/Implementation Plans/Prior Design Algorithms",
@@ -358,8 +346,6 @@
     "04-papers/Xiao et al. (2025).md",
     "04-papers/Wang et al. ().md",
     "02-projects/idek/Project Overview.md",
-    "04-papers/Tishby et al. (2015).md",
-    "06-reference/Patch Selection and Sparsity Theory.md",
     "02-projects/vlm/Discontinued",
     "02-projects/idek",
     "magno_stream_encoder/selective_magno_vit/models",
