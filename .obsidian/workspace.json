@@ -10,15 +10,18 @@
           {
             "id": "70d0229b59b38dcc",
             "type": "tabs",
+            "dimension": 50.69444444444444,
             "children": [
               {
                 "id": "d7af6a0cd9b924bb",
                 "type": "leaf",
                 "state": {
-                  "type": "empty",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "New tab"
+                  "type": "image",
+                  "state": {
+                    "file": "99-attachments/images/model_architecture.jpeg"
+                  },
+                  "icon": "lucide-image",
+                  "title": "model_architecture"
                 }
               }
             ]
@@ -26,6 +29,7 @@
           {
             "id": "d93186086457685f",
             "type": "tabs",
+            "dimension": 49.30555555555556,
             "children": [
               {
                 "id": "476932ee1644f06f",
@@ -161,12 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "99-attachments/images/model_architecture.jpeg",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of model_architecture"
             }
           },
           {
@@ -218,44 +223,44 @@
       "termy:Open terminal": false
     }
   },
-  "active": "476932ee1644f06f",
+  "active": "d7af6a0cd9b924bb",
   "lastOpenFiles": [
-    "02-projects/surf/open questions.md",
-    "02-projects/surf/reading list.md",
-    "02-projects/surf/roadmap.md",
+    "02-projects/surf/questions.md",
     "02-projects/surf/moc.md",
-    "02-projects/surf/Module 1/Implementation Plans/Evaluation Metrics/Oracle Similarity Metric Integration.md",
-    "98-archive/projects/vlm/Technical Details/Towards a New Selector.md",
-    "98-archive/projects/vlm/Technical Details/Implementation Notes.md",
-    "98-archive/projects/vlm/Technical Details/Architecture Deep Dive.md",
-    "98-archive/projects/vlm/Discontinued/Project Overview - DISCONTINUED.md",
-    "98-archive/projects/vlm/Background/Literature Review.md",
-    "98-archive/projects/vlm/Background/Background Overview.md",
-    "98-archive/projects/vlm/Technical Details",
-    "98-archive/projects/vlm/Tasks.md",
-    "98-archive/projects/vlm/Roadmap.md",
-    "98-archive/projects/vlm/Experiments.md",
-    "98-archive/projects/vlm/Discontinued",
-    "98-archive/projects/vlm/Background",
-    "98-archive/projects/vlm",
-    "98-archive/projects/manifolds/V4-Guided Domain Generalization/Resources.md",
-    "98-archive/projects/manifolds/V4-Guided Domain Generalization/Research Proposal.md",
-    "98-archive/projects/manifolds/V4-Guided Domain Generalization/Experiments.md",
-    "98-archive/projects/manifolds/DARL/Manifold Disentanglement Brainstorm.md",
-    "98-archive/projects/manifolds/DARL/Manifold Alignment Loss.md",
-    "98-archive/projects/manifolds/DARL/Disentangled Abstract Representational Learning (DARL) - George Liu.md",
-    "98-archive/projects/manifolds/V4-Guided Domain Generalization",
-    "98-archive/projects/manifolds/Manifolds.md",
-    "98-archive/projects/manifolds/Manifold Generalization.md",
-    "98-archive/projects/manifolds/DARL",
-    "98-archive/projects/manifolds",
-    "98-archive/projects/idek/Project Overview.md",
-    "98-archive/projects/idek",
-    "06-reference/templates/definition.md",
-    "06-reference/templates/synthesis.md",
-    "06-reference/templates/moc.md",
-    "98-archive/projects",
-    "98-archive/inbox",
+    "02-projects/surf/roadmap.md",
+    "98-archive/refactor/surf/2026-05-23/refactor map.md",
+    "02-projects/surf/refactor map.md",
+    "02-projects/surf/eval/baselines.md",
+    "02-projects/surf/eval/gaze.md",
+    "02-projects/surf/concepts/oracle map.md",
+    "06-reference/library/Core Transformer Theory.md",
+    "06-reference/library",
+    "02-projects/surf/sources/proposal.md",
+    "02-projects/surf/sources/repo.md",
+    "02-projects/surf/synthesis/shape and action.md",
+    "02-projects/surf/synthesis/prior vs learned.md",
+    "02-projects/surf/synthesis/where to look.md",
+    "02-projects/surf/eval/behavior.md",
+    "02-projects/surf/eval/reconstruction.md",
+    "02-projects/surf/experiments/vla adaptation.md",
+    "02-projects/surf/experiments/iterative selection.md",
+    "02-projects/surf/experiments/language conditioning.md",
+    "02-projects/surf/experiments/e001.md",
+    "02-projects/surf/concepts/variational prior.md",
+    "02-projects/surf/concepts/task relevance.md",
+    "02-projects/surf/concepts/visual budget.md",
+    "02-projects/surf/concepts/selector.md",
+    "02-projects/surf/concepts/v4 prior.md",
+    "02-projects/surf/concepts/line prior.md",
+    "02-projects/surf/sources",
+    "02-projects/surf/eval",
+    "02-projects/surf/concepts",
+    "98-archive/refactor/surf/2026-05-23/originals/Module 1/Implementation Plans/Prior Design Algorithms",
+    "98-archive/refactor/surf/2026-05-23/originals/Module 1/Implementation Plans/Evaluation Metrics",
+    "98-archive/refactor/surf/2026-05-23/originals/Module 1/Implementation Plans",
+    "98-archive/refactor/surf/2026-05-23/originals/synthesis",
+    "98-archive/refactor/surf/2026-05-23/originals/experiments",
+    "98-archive/refactor/surf/2026-05-23/originals/definitions",
     "99-attachments/images/model_architecture.jpeg"
   ]
 }

@@ -6,32 +6,49 @@ project: surf
 # surf
 
 ## problem
-Learning where to look: selective visual computation for VLA-style systems, with emphasis on priors, task-relevant visual allocation, efficiency, and downstream action/task performance.
+Learning where to look: selective visual computation for VLA-style systems.
 
-## core notes
+Current verified evidence is classification-only. VLA/action relevance is still open.
+
+## state
 - [[roadmap]]
-- [[open questions]]
-- [[reading list]]
+- [[questions]]
+- [[reading]]
+- [[sources/repo]]
+- [[sources/proposal]]
 
 ## claims
-- `02-projects/surf/claims/`
-
-## papers
-- See [[reading list]].
-
-## experiments
-- `02-projects/surf/experiments/`
+- [[claims/structure helps]]
+- [[claims/efficiency without collapse]]
+- [[claims/language helps]]
+- [[claims/iterative selection]]
+- [[claims/v4 relevance]]
 
 ## concepts
-- `02-projects/surf/definitions/`
+- [[concepts/line prior]]
+- [[concepts/v4 prior]]
+- [[concepts/selector]]
+- [[concepts/visual budget]]
+- [[concepts/task relevance]]
+- [[concepts/oracle map]]
+- [[concepts/variational prior]]
 
-## questions
-- [[open questions]]
+## experiments
+- [[experiments/e001]]
+- [[experiments/language conditioning]]
+- [[experiments/iterative selection]]
+- [[experiments/vla adaptation]]
+
+## evaluation
+- [[eval/reconstruction]]
+- [[eval/gaze]]
+- [[eval/baselines]]
+- [[eval/behavior]]
 
 ## synthesis
-- `02-projects/surf/synthesis/`
+- [[synthesis/where to look]]
+- [[synthesis/prior vs learned]]
+- [[synthesis/shape and action]]
 
-## archive
-- `98-archive/projects/vlm/`
-- `98-archive/projects/manifolds/`
-- `98-archive/projects/idek/`
+## trace
+- [[refactor map]]

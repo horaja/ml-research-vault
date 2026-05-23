@@ -6,8 +6,8 @@ Agenda:
 			1. This is for Scene Understanding
 		2. Moving Camera's implicitly create a 'center bias'
 			1. e.g. a human wearing a camera will always place the banana at the center of the FOV
-	3. [[Contrastive Alignment]]
-	4. [[Variational Spatial Prior]]
+	3. [[experiments/language conditioning|Contrastive Alignment]]
+	4. [[concepts/variational prior|Variational Spatial Prior]]
 2. Evaluating Priors
 	1. Task-based R.S. to define "Informative-ness"
 	2. Spatial Similarity to an 'Oracle Heatmap'

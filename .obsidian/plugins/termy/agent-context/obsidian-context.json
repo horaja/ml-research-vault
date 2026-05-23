@@ -1,12 +1,17 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-05-23T13:45:04.466Z",
+  "updatedAt": "2026-05-23T15:29:30.319Z",
   "vaultRoot": "Users/husain/Documents/cmu/research/ml-research-vault",
   "workspaceFolders": [
     "Users/husain/Documents/cmu/research/ml-research-vault"
   ],
-  "activeFile": null,
+  "activeFile": {
+    "filePath": "/Users/husain/Documents/cmu/research/ml-research-vault/99-attachments/images/model_architecture.jpeg",
+    "vaultPath": "99-attachments/images/model_architecture.jpeg",
+    "fileUrl": "file:///Users/husain/Documents/cmu/research/ml-research-vault/99-attachments/images/model_architecture.jpeg",
+    "hasFocus": false
+  },
   "openFiles": [],
   "selection": null
 }
