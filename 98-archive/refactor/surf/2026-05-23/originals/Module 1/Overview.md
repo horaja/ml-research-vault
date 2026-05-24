@@ -70,7 +70,7 @@ Key ==Flawed Assumption==: If $W$ derived from gaze, and we claim that prior is 
 
 #### Key Obstacle: Fusion Mechanism between LD and L.E.
 
-~~**Idea 1**: [R. Yang, H. Xu, Y. Wu, and X. Wang. Multi-task reinforcement learning with soft modularization.|Routing Networks]~~
+~~**Idea 1**: [R. Yang, H. Xu, Y. Wu, and X. Wang. Multi-task reinforcement learning with soft modularization.|Routing Networks]~~ ^860db0
 - Reframe problem as: "How does the language embedding/task/instruction **modulate** which spatial regions matter?"
 	- Where spatial regions are patches of *line drawing*. Each layer is an iterative refinement of weights over patches.
 - **Cons**: Routing may not be the correct abstraction for this problem, as it is designed for **functional abstraction**, not *spatial selection*.

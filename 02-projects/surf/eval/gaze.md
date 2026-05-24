@@ -12,6 +12,8 @@ Does the prior attend to regions where humans look during manipulation?
 ## data
 The old plan uses DAA gaze data: image frames, language descriptions, and left/right gaze coordinates. A durable DAA paper note is missing.
 
+Creates an [[oracle map]] via per-frame vergence-modulated Gaussians centered at the gaze point.
+
 ## metrics
 - NSS: sample normalized attention at gaze locations.
 - AUC-Judd: classify fixated vs non-fixated pixels.

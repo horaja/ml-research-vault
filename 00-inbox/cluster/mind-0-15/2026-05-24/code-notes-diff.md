@@ -7,7 +7,7 @@
 
 ## experiments
 ### missing vault summaries (code exists, no note)
-- `docs/contrastive_alignment.md` — detailed design doc for contrastive alignment Module 1 (TRIPS-inspired cross-modal patch scoring, DAA gaze pre-training, BEHAVIOR-1K fine-tuning). No vault experiment note or synthesis note references this document. It contains architecture decisions, training recipes, and evaluation plans that are not captured in any vault note.
+- `docs/contrastive_alignment.md` — see [[contrastive_alignment]] detailed design doc for contrastive alignment Module 1 (TRIPS-inspired cross-modal patch scoring, DAA gaze pre-training, BEHAVIOR-1K fine-tuning). No vault experiment note or synthesis note references this document. It contains architecture decisions, training recipes, and evaluation plans that are not captured in any vault note.
 - `slurm_scripts/` pipeline (01–04, `run_behavior.sh`) — a multi-step BEHAVIOR-1K environment setup pipeline (SIF pull, dataset download, eval framework install, eval tests, behavior run). No vault note documents this infrastructure or its current status.
 
 ### ghost code refs (note exists, code absent)
