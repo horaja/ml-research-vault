@@ -13,24 +13,21 @@ Do not automatically update project roadmaps or project notes. Suggest follow-up
 Include current state, strongest current claim, weakest assumption, recent results, papers/evidence to mention, questions to ask, what not to overclaim, and decision points.
 
 ## transcript processor
-1. Create or update a meeting note.
-2. Preserve valuable nuance.
-3. Do not delete important raw content unless explicitly asked.
-4. Extract compact summary, action items, advice, decisions, unresolved questions, and links.
-5. Categorize advice as instruction, suggestion, open question, warning, or possible direction.
-6. Propose project/roadmap updates separately.
+1. Open the existing meeting note (the user pre-fills the minimal template below with raw pre/post-meeting thoughts; the agent runs on those + the transcript). If no note exists yet, create one at `05-meetings/<counterpart>/YYYY-MM-DD.md`.
+2. Preserve `## context` and `## links` as-written. Preserve `## notes` content; when extracting structured advice, move the raw bullets verbatim to `## raw` rather than deleting them.
+3. Append structured sections: `## summary` (3-6 sentences), `## advice` with the five sub-categories, `## decisions`. Merge user-written `## actions` and `## questions` with anything extracted from the transcript; do not overwrite.
+4. Categorize advice as instruction, suggestion, open question, warning, or possible direction.
+5. Flip `status: raw` → `status: processed` in the frontmatter when done.
+6. Propose project/roadmap updates separately — never apply them silently.
 
-## template
+## template (user-filled, minimal)
+The minimal capture template the user pre-fills lives at `06-reference/templates/meeting.md`. Do not duplicate it here — read that file when you need to scaffold a new note.
+
+## processed shape (agent-produced)
+After the transcript processor runs, the note grows the structured sections below (on top of the user's original content):
+
 ```md
----
-type: meeting
-date: YYYY-MM-DD
----
-
-# <short meeting title>
-
 ## summary
-## actions
 ## advice
 ### instructions
 ### suggestions
@@ -38,8 +35,6 @@ date: YYYY-MM-DD
 ### warnings
 ### possible directions
 ## decisions
-## questions
-## links
 ## raw
 ```
 

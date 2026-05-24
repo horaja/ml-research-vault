@@ -26,7 +26,7 @@ See [[Project Overview - DISCONTINUED]] for more information about the Project, 
 - Purpose: should be able to see more difference btwn DINO and ImageNet Pretrained.
 #### *[TODO]* Experiment 1.1.9: Baseline with a more complex dataset
 - Imagenet-100, with proper held-out test dataset
-#### *[TODO]* Experiment 1.1.10: [[December 18th, 2025#A question|Key Scaling Question]].
+#### *[TODO]* Experiment 1.1.10: [[2025-12-18#A question|Key Scaling Question]].
 #### *[TODO]* Experiment 1.2.1
 Hypothesis: Patch Sparsification exhibits consistent efficiency-allocation tradeoffs across different pretrained visual representations
 - Shows Patch Selection Method is Representation-Agnostic

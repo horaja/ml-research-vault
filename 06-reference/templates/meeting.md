@@ -1,30 +1,26 @@
 ---
 type: meeting
 date: {{date}}
+with: [{{with}}]
+project: surf
+status: raw
 ---
 
 # {{title}}
 
-## summary
+## context
+
+## agenda
+-
+
+## notes
+-
 
 ## actions
-
-## advice
-
-### instructions
-
-### suggestions
-
-### open questions
-
-### warnings
-
-### possible directions
-
-## decisions
+-
 
 ## questions
+-
 
 ## links
-
-## raw
+-
