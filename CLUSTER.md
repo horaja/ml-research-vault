@@ -43,8 +43,28 @@ laptop.
 
 Keep filenames short. One file per run is fine.
 
-## sync
+## cluster-side skills
 
-Use the `/vault-sync` skill (`.agents/skills/vault-sync/SKILL.md`) to push
-mid-session. Otherwise the cluster's `Stop` hook and cron timer handle pull
-and push automatically.
+All three write only into the drop folder; `vault-sync`'s boundary check
+enforces this on push.
+
+- `/vault-sync` (`.agents/skills/vault-sync/SKILL.md`) — pull-rebase the
+  vault and push the drop folder. Push mid-session if needed; otherwise
+  the cluster's `Stop` hook and cron timer handle pull and push
+  automatically.
+- `/code-notes-diff` (`.agents/skills/code-notes-diff/SKILL.md`) — audit
+  an experiment repo against vault experiments, claims, and roadmap.
+  Writes one divergence report to the drop folder. Strictly descriptive;
+  laptop-side triage decides what (if anything) becomes durable.
+- `/run-summary` (`.agents/skills/run-summary/SKILL.md`) — summarize a
+  single run's config + metrics + short logs into a structured draft in
+  the drop folder. Uses `status: drop` so it is never mistaken for a
+  durable experiment note; promoted laptop-side via `PROMPTS.md` §24.
+
+## laptop-side triage
+
+Drops are not durable until a laptop session triages them. Use existing
+`PROMPTS.md` workflows: §2 / §3 (Inbox Triage / Apply) for general drops,
+§24 (Code-to-Vault Experiment Sync) to promote run drafts and
+missing-summary findings, §19 (Roadmap Update) for confirmed stale
+roadmap entries, §20 (Archive Planner) for ghost refs.

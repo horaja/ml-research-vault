@@ -2,6 +2,8 @@
 
 Read `AGENTS.md` first.
 
+If `$VAULT_DIR` is set (cluster context), also read `CLUSTER.md`.
+
 Use `.agents/<skill>/SKILL.md` for named workflows.
 
 Default to propose-only before editing vault files.

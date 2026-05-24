@@ -62,6 +62,10 @@ These may be useful in conversation, but they are not durable vault objects.
 
 Project notes define the current research framing; code repositories define implementation state; papers define external evidence; experiments define observed results; meetings define advice, constraints, and decisions. No single source type should silently dominate the others. In particular, a local repository only constrains claims about that repository. It must not be used to conclude that broader project modules, remote implementations, or conceptual architecture do not exist. Avoid writing absence-of-evidence caveats such as “not observed in the repo” into active durable notes. If implementation status is uncertain, either omit it from the active note or record it in a temporary audit/refactor report. Durable notes should phrase implementation facts positively and narrowly, e.g. “the local line-biased-vision-encoder repo contains the line-prior vision prototype,” rather than using repo absence to narrow the project.
 
+### 1.3 Cluster context
+
+If `$VAULT_DIR` is set, the agent is running on the remote cluster. Also read `CLUSTER.md` before any project notes. Cluster agents may only write under `00-inbox/cluster/<hostname>/<YYYY-MM-DD>/`; the `vault-sync` script refuses to push edits outside that path. Reports from cluster skills such as `code-notes-diff` and `run-summary` are temporary audit/draft artifacts per §1.2, not durable notes — laptop-side triage decides what survives.
+
 ---
 
 ## 2. Permission Rules

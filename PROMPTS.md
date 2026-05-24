@@ -1510,6 +1510,138 @@ archive stale projects
 
 ---
 
+## 26. Code-Notes Disparity
+
+Use cluster-side. Audit an experiment repo against the vault's experiments, claims, and roadmap. Strictly descriptive — write the report into the drop folder; do not edit durable notes.
+
+### Inputs
+
+- `$VAULT_DIR` on the cluster (default `$HOME/vault`)
+- experiment repo path (default: current working directory)
+- optional scope: `experiments` | `claims` | `roadmap` | `all` (default)
+
+### Prompt
+
+```text
+Read AGENTS.md, CLUSTER.md, and PROMPTS.md.
+Run the Code-Notes Disparity workflow.
+
+Repo:
+<REPO PATH or .>
+
+Scope: <experiments | claims | roadmap | all>
+
+Mode: apply (write to drop folder only).
+
+Read the active project notes (MOC, roadmap, experiments/, claims/) and
+scan the repo (git log, configs, runs/outputs/wandb if present, HEAD
+commit). For each vault experiment, check whether cited commits exist,
+whether hyperparameters and metrics match the latest config/log, and
+whether ungrounded references remain. For each repo run/config artifact,
+surface missing vault summaries. For each supported/weakened/falsified
+claim, check that the grounding experiment's code is present. For
+roadmap "next experiments" entries, classify as stale (done in code) or
+phantom (no matching code).
+
+Phrase findings narrowly per AGENTS.md §1.2 — local-repo absence does
+not constrain project-wide claims. Do not invoke git against the vault
+directly.
+
+Write one report to:
+$VAULT_DIR/00-inbox/cluster/<hostname>/<YYYY-MM-DD>/code-notes-diff.md
+
+Do not write anywhere else in the vault.
+```
+
+### Output contract
+
+```md
+# code-notes diff — <repo>@<commit-short>
+
+## scope
+## experiments
+### missing vault summaries
+### ghost code refs
+### hyperparameter / metric drift
+## claims
+### claims with no supporting code
+### implementations with no claim/experiment link
+## roadmap
+### stale entries
+### phantom entries
+## proposed triage actions (laptop-side)
+## confidence notes
+```
+
+Laptop-side promotion uses §24 (missing summaries), §19 (confirmed stale roadmap entries), §20 (ghost refs to archive), and §2/§3 (general drop triage).
+
+---
+
+## 27. Run Summary
+
+Use cluster-side after a run. Summarize one run's config + metrics + short logs into a structured draft in the drop folder. Promotion to a durable `experiments/eYYY.md` happens laptop-side via §24.
+
+### Inputs
+
+- `$VAULT_DIR` on the cluster
+- run directory (default: most recent under `runs/` / `outputs/` / `wandb/`)
+- optional related claim or experiment note for hypothesis context
+
+### Prompt
+
+```text
+Read AGENTS.md, CLUSTER.md, and PROMPTS.md.
+Run the Run Summary workflow.
+
+Run directory:
+<RUN PATH or auto-detect latest>
+
+Related vault note (optional):
+<CLAIM OR EXPERIMENT PATH>
+
+Mode: apply (write to drop folder only).
+
+Read the run's config, metric summary, and short log files. Do not copy
+raw logs. Distinguish result (from logs) from interpretation (cautious
+one-liner). If hypothesis is not provided, infer cautiously from config
+naming and mark it inferred. Leave unknown fields blank or "unknown" —
+do not fabricate.
+
+Write to:
+$VAULT_DIR/00-inbox/cluster/<hostname>/<YYYY-MM-DD>/run-<run-id>.md
+
+Use frontmatter `status: drop` (non-standard sentinel — explicitly not a
+durable status). The laptop triage converts `drop` to a real status
+during §24 promotion.
+
+Do not write anywhere else in the vault.
+```
+
+### Output contract
+
+```md
+---
+type: experiment-draft
+project: surf
+status: drop
+source-run: <repo>@<commit>:<run path>
+---
+
+# run-<id>
+
+## hypothesis
+## setup
+## baselines
+## metric
+## result
+## interpretation
+## failure
+## next
+## links
+```
+
+---
+
 # Common Invocation Examples
 
 ## Daily opener
