@@ -92,13 +92,25 @@ def main():
     args = parser.parse_args()
 
     with open(args.input) as f:
-        papers = json.load(f)
+        data = json.load(f)
+
+    # Accept both the new {"_meta", "papers"} schema and the legacy flat list.
+    if isinstance(data, dict) and "papers" in data:
+        papers = data["papers"]
+        meta = data.get("_meta", {})
+    else:
+        papers = data
+        meta = {}
 
     deduped = dedup(papers, args.threshold)
     print(f"Dedup: {len(papers)} → {len(deduped)} papers")
 
     with open(args.output, "w") as f:
-        json.dump(deduped, f, indent=2, ensure_ascii=False)
+        if meta:
+            meta = {**meta, "deduped_total": len(deduped)}
+            json.dump({"_meta": meta, "papers": deduped}, f, indent=2, ensure_ascii=False)
+        else:
+            json.dump(deduped, f, indent=2, ensure_ascii=False)
 
 
 if __name__ == "__main__":

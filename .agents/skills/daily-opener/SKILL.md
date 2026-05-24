@@ -85,7 +85,7 @@ The digest is an automated research paper discovery step. It fetches papers from
    python .agents/skills/daily-opener/research-digest/dedup.py /tmp/raw_candidates.json /tmp/candidates.json
    ```
 
-4. Read `/tmp/candidates.json` to get the candidate pool.
+4. Read `/tmp/candidates.json` to get the candidate pool. Both scripts now emit a `{"_meta": {...}, "papers": [...]}` envelope; read `data["papers"]` (or fall back to the value itself if it's a list, for legacy outputs). The `_meta.counts` block holds per-source counts (`s2_keyword`, `s2_recommend`, `s2_author`, `arxiv`, `rss`).
 
 5. Read vault context before scoring:
    - Last 3-5 daily notes from `01-daily-notes/`
@@ -116,7 +116,7 @@ The digest is an automated research paper discovery step. It fetches papers from
    - Log any changes in the daily note.
    - Update `.agents/skills/daily-opener/research-digest/config.yaml` with changes and hit count shifts.
 
-10. If fetching fails entirely (no web access), write `### digest (auto)\n*skipped — no web access*` and continue.
+10. If `fetch_papers.py` exits non-zero (every source returned zero — pipeline failure, not a quiet news day), write `### digest (auto)\n*skipped — pipeline failure (see /tmp/raw_candidates.json _meta.counts)*` and continue. If only some sources are zero but the overall total is nonzero, the digest is still valid; note the affected sources in `**query health:**` rather than skipping.
 
 ### output format
 

@@ -317,21 +317,43 @@ def main():
     settings = cfg["settings"]
     all_categories = cfg["arxiv"]["primary"] + cfg["arxiv"]["secondary"]
 
-    all_papers = []
-    all_papers.extend(fetch_s2_keyword(cfg["queries"], api_key))
+    s2_keyword = fetch_s2_keyword(cfg["queries"], api_key)
     seed_ids = [p["s2_id"] for p in cfg["seed_papers"] if p.get("s2_id")]
-    all_papers.extend(fetch_s2_recommendations(seed_ids, api_key))
-    all_papers.extend(fetch_s2_authors(cfg["tracked_authors"], api_key, settings["lookback_days"]))
-    all_papers.extend(fetch_arxiv(all_categories, settings["arxiv_lookback_hours"]))
-    all_papers.extend(fetch_rss(cfg["rss_feeds"], settings.get("rss_lookback_hours", 168)))
+    s2_recommend = fetch_s2_recommendations(seed_ids, api_key)
+    s2_author = fetch_s2_authors(cfg["tracked_authors"], api_key, settings["lookback_days"])
+    arxiv_papers = fetch_arxiv(all_categories, settings["arxiv_lookback_hours"])
+    rss_posts = fetch_rss(cfg["rss_feeds"], settings.get("rss_lookback_hours", 168))
 
+    all_papers = s2_keyword + s2_recommend + s2_author + arxiv_papers + rss_posts
+
+    counts = {
+        "s2_keyword": len(s2_keyword),
+        "s2_recommend": len(s2_recommend),
+        "s2_author": len(s2_author),
+        "arxiv": len(arxiv_papers),
+        "rss": len(rss_posts),
+    }
+    meta = {
+        "ts": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "counts": counts,
+        "total": len(all_papers),
+    }
+
+    log.info("Per-source counts: %s", counts)
     log.info("Total raw candidates: %d", len(all_papers))
 
     with open(args.output, "w") as f:
-        json.dump(all_papers, f, indent=2, ensure_ascii=False)
+        json.dump({"_meta": meta, "papers": all_papers}, f, indent=2, ensure_ascii=False)
 
     print(f"Wrote {len(all_papers)} candidates to {args.output}")
 
+    # Exit non-zero if every source returned zero — distinguishes pipeline
+    # failure from a genuinely quiet news day.
+    if all(v == 0 for v in counts.values()):
+        log.error("All sources returned zero results — likely pipeline failure")
+        return 2
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main() or 0)
