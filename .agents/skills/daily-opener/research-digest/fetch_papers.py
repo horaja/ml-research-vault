@@ -18,6 +18,8 @@ log = logging.getLogger(__name__)
 
 S2_BASE = "https://api.semanticscholar.org/graph/v1"
 S2_FIELDS = "title,abstract,authors,venue,citationCount,publicationDate,tldr,externalIds,url"
+# /author/{id}/papers rejects tldr (HTTP 400); use this reduced field set there.
+S2_AUTHOR_FIELDS = "title,abstract,authors,venue,citationCount,publicationDate,externalIds,url"
 ARXIV_API = "https://export.arxiv.org/api/query"
 
 # S2 rate limit is 1 req/s across all endpoints, even with a key.
@@ -141,7 +143,8 @@ def fetch_s2_recommendations(seed_ids: list[str], api_key: str | None) -> list[d
             continue
         log.info("S2 recommendations for seed: %s", sid)
         url = f"https://api.semanticscholar.org/recommendations/v1/papers/forpaper/{sid}"
-        data = _s2_rec_get(url, {"fields": S2_FIELDS, "limit": 10}, api_key)
+        # Recommendations API also rejects tldr; reuse the author-safe field set.
+        data = _s2_rec_get(url, {"fields": S2_AUTHOR_FIELDS, "limit": 10}, api_key)
         if data:
             for p in data.get("recommendedPapers", []):
                 if p and (p.get("publicationDate") or "") >= cutoff:
@@ -158,14 +161,17 @@ def fetch_s2_authors(authors: list[dict], api_key: str | None, lookback_days: in
         if not aid:
             continue
         log.info("S2 author papers: %s (%s)", author["name"], aid)
+        # Endpoint does not support sort; fetch a larger window and filter by date.
         data = _s2_get(f"/author/{aid}/papers", {
-            "fields": S2_FIELDS,
-            "limit": 5,
+            "fields": S2_AUTHOR_FIELDS,
+            "limit": 100,
         }, api_key)
         if data and "data" in data:
-            for p in data["data"]:
-                if p and (p.get("publicationDate") or "") >= cutoff:
-                    papers.append(_normalize_paper(p, "s2_author"))
+            recent = [p for p in data["data"]
+                      if p and (p.get("publicationDate") or "") >= cutoff]
+            recent.sort(key=lambda p: p.get("publicationDate") or "", reverse=True)
+            for p in recent[:10]:
+                papers.append(_normalize_paper(p, "s2_author"))
         time.sleep(S2_DELAY)
     return papers
 
@@ -246,9 +252,9 @@ def fetch_arxiv(categories: list[str], lookback_hours: int = 48) -> list[dict]:
 RSS_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; research-digest/1.0)"}
 
 
-def fetch_rss(feeds: list[dict]) -> list[dict]:
+def fetch_rss(feeds: list[dict], lookback_hours: int = 168) -> list[dict]:
     posts = []
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=lookback_hours)
 
     for feed_cfg in feeds:
         name = feed_cfg["name"]
@@ -317,7 +323,7 @@ def main():
     all_papers.extend(fetch_s2_recommendations(seed_ids, api_key))
     all_papers.extend(fetch_s2_authors(cfg["tracked_authors"], api_key, settings["lookback_days"]))
     all_papers.extend(fetch_arxiv(all_categories, settings["arxiv_lookback_hours"]))
-    all_papers.extend(fetch_rss(cfg["rss_feeds"]))
+    all_papers.extend(fetch_rss(cfg["rss_feeds"], settings.get("rss_lookback_hours", 168)))
 
     log.info("Total raw candidates: %d", len(all_papers))
 

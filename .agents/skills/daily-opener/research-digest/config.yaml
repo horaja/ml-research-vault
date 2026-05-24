@@ -302,5 +302,6 @@ settings:
   max_papers: 10
   s2_api_key: s2k-YbXEbvM0Ek7htFpf12iqgtLrTQ1ffqoG05XGSuYV
   lookback_days: 7
-  arxiv_lookback_hours: 48
+  arxiv_lookback_hours: 168
+  rss_lookback_hours: 168
   title_fuzzy_threshold: 90

@@ -14,8 +14,8 @@ Create a compact daily note that orients the research day. It is a research laun
 
 ## procedure
 1. Identify the active project from `AGENTS.md`.
-2. Use the existing daily-notes convention if present.
-3. If no daily path is clear, propose the path before creating it.
+2. Use the existing daily-notes convention if present (`01-daily-notes/YYYY/YYYY.MM.DD.md`).
+3. Create the year subdirectory if it does not exist; write today's note directly without asking for permission.
 4. Create or update only today's daily note.
 5. Run the research digest phase (see below).
 6. Do not create other durable notes from the opener.
@@ -165,8 +165,8 @@ If any query changes were made, append at the bottom of the digest section:
 
 ## shared rules
 - Read `AGENTS.md` first. Use `PROMPTS.md` as the workflow registry if present.
-- Default to propose-only unless the user explicitly asks to apply.
-- Ask permission before creating, rewriting, moving, renaming, deleting, or reorganizing persistent notes.
+- **Exception to the vault-wide propose-only default:** today's daily note at `01-daily-notes/YYYY/YYYY.MM.DD.md` may be created and updated without per-run permission. This skill is run as a 6am routine; blocking on confirmation defeats the routine. Do not create or modify any other persistent notes from this skill.
+- Ask permission before creating, rewriting, moving, renaming, deleting, or reorganizing persistent notes other than today's daily note.
 - Preserve Obsidian links and valuable messy details.
 - Keep filenames short. Use folders, not noisy filename prefixes.
 - Use minimal frontmatter only when it helps retrieval.
