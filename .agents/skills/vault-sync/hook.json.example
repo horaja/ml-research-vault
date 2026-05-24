@@ -1,0 +1,16 @@
+{
+  "_comment": "Paste into the cluster's ~/.claude/settings.json (merge with any existing 'hooks' key). The Stop hook runs sync.sh after every Claude Code agent session ends. Verify the exact schema with `claude --help` or the Claude Code hooks docs for your installed version; adjust if the matcher/command keys differ.",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/vault/.agents/skills/vault-sync/sync.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

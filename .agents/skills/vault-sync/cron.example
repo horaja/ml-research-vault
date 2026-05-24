@@ -1,0 +1,15 @@
+# vault-sync cron entry — install on the cluster with `crontab -e`.
+#
+# Pulls the vault every 15 minutes and pushes any pending drops.
+# Logs to ~/.vault-sync.log; rotate or truncate periodically.
+#
+# Requires:
+#   - VAULT_DIR exported in the cron environment (cron does NOT read your
+#     shell rc by default — set it here explicitly, or source a small env file).
+#   - SSH key with GitHub access loaded into ssh-agent OR a credential helper
+#     that does not need an interactive unlock.
+
+VAULT_DIR=/home/<you>/vault
+PATH=/usr/local/bin:/usr/bin:/bin
+
+*/15 * * * * "$VAULT_DIR/.agents/skills/vault-sync/sync.sh" >> "$HOME/.vault-sync.log" 2>&1
