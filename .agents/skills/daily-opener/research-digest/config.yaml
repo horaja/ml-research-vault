@@ -121,10 +121,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: token merging visual efficiency
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -143,10 +145,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: adaptive computation vision
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -165,10 +169,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: patch selection vision language
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -187,10 +193,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: visual grounding manipulation robot
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -209,10 +217,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: visual compute budget efficiency
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -231,10 +241,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: active perception embodied agent
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -253,6 +265,7 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: image tokenization VQ autoregressive
   source: manual
   added: '2026-05-23'
@@ -264,10 +277,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: visual instruction tuning multimodal
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
