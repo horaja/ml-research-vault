@@ -1,13 +1,10 @@
 ---
 type: meeting
-date: {{date}}
-with: [{{with}}]
+date: <% tp.date.now("YYYY-MM-DD") %>
+with: [<% tp.system.prompt("With?") %>]
 project: surf
 status: raw
 ---
-
-# {{title}}
-
 ## context
 
 ## agenda
