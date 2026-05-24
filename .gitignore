@@ -1,3 +1,5 @@
 .DS_Store
 
 .obsidian
+
+.claude/scheduled_tasks.lock
