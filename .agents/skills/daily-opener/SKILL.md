@@ -74,6 +74,7 @@ The digest is an automated research paper discovery step. It fetches papers from
    ```
    pip install -r .agents/skills/daily-opener/research-digest/requirements.txt
    ```
+   If `feedparser` fails to install in your environment (e.g. `sgmllib3k` won't build on the managed env), skip it — RSS lab blogs will be gracefully omitted but S2 and arXiv still run.
 
 2. Fetch raw candidates:
    ```

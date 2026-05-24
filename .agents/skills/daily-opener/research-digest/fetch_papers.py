@@ -9,7 +9,6 @@ import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-import feedparser
 import requests
 import yaml
 
@@ -253,6 +252,12 @@ RSS_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; research-digest/1.0)"}
 
 
 def fetch_rss(feeds: list[dict], lookback_hours: int = 168) -> list[dict]:
+    try:
+        import feedparser
+    except ImportError as e:
+        log.warning("RSS skipped: feedparser unavailable (%s)", e)
+        return []
+
     posts = []
     cutoff = datetime.now(timezone.utc) - timedelta(hours=lookback_hours)
 
