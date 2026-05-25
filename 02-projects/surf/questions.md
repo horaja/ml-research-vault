@@ -9,6 +9,8 @@ project: surf
 - How should the prior, VLA/action, and efficiency/RL modules exchange information?
 - Which outputs from the VLA/action module should trigger refinement?
 - Should adaptive compute be trained as a policy, a threshold rule, or a value-of-information objective?
+- Does global-semantic / attention-score patch selection erode the positional-interaction spatial frame? (@huangNuwaMendingSpatial2026)
+- Does the patch-level objection to routing networks apply when routing operates at view-level rather than patch-level? (@sonSelectivePerceptionRobot2026)
 
 ## action relevance
 - What makes a patch task-relevant for action?
@@ -28,3 +30,7 @@ project: surf
 
 ## implementation
 - Can selector inputs stay independent of selected-patch downstream features and avoid circular dependency?
+
+## active perception
+- How does surf's within-image task-conditioned patch selection map onto Tianqin's question-conditioned active-perception framing? Same problem at different granularities, or genuinely distinct?
+- Can the lab's eye-movement setup produce a human baseline for question-conditioned attention that surf could evaluate against?

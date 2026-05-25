@@ -25,6 +25,9 @@ Repo README/docs report ImageNet-10 validation:
 - full patch budget: Top-1 `0.734`, Top-5 `0.964`, `1.408` GFLOPs
 - line-guided selective low compute: Top-1 `0.758`, Top-5 `0.968`, `0.448` GFLOPs
 
+## additional repo
+- A second local repo exists (unpushed, URL TBD) — noted 2026-05-24, awaiting push. Update this section once available.
+
 ## links
 - [[experiments/e001]]
 - [[concepts/line prior]]

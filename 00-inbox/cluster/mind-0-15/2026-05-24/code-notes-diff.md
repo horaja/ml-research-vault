@@ -24,8 +24,8 @@
 
 ### implementations with no claim/experiment link
 - `docs/contrastive_alignment.md` — a substantial design document covering cross-modal patch scoring (Architecture B), contrastive pre-training with DAA gaze data, TRIPS-inspired summary tokens, and a 7-day implementation plan. This appears to be the planned next step for [[experiments/language conditioning]] and [[claims/language helps]], but no vault note links to it or records its existence.
-- BEHAVIOR-1K eval framework (`slurm_scripts/03–04`, `eval_tests_inner.sh`, `eval_verify_inner.sh`) — implements reconstruction-based evaluation with MAE, patch selectors, and an evaluation pipeline. Maps to [[eval/reconstruction]] and [[eval/behavior]] conceptually, but those vault notes do not reference this codebase.
-- `run_behavior.sh` — runs OmniGibson robot control example. Maps to [[experiments/vla adaptation]] and [[eval/behavior]], but neither vault note references this script or repo.
+- BEHAVIOR-1K eval framework (`slurm_scripts/03–04`, `eval_tests_inner.sh`, `eval_verify_inner.sh`) — implements reconstruction-based evaluation with MAE, patch selectors, and an evaluation pipeline. Maps to [[eval/reconstruction]] and [[behavior env stanford]] conceptually, but those vault notes do not reference this codebase.
+- `run_behavior.sh` — runs OmniGibson robot control example. Maps to [[experiments/vla adaptation]] and [[behavior env stanford]], but neither vault note references this script or repo.
 
 ## roadmap
 ### stale entries
@@ -34,18 +34,18 @@
 ### phantom entries
 - "Strengthen [[experiments/e001]] with kill baselines from [[eval/baselines]]" — no baseline comparison code found in this repo. May exist in `line-biased-vision-encoder`.
 - "Run [[experiments/language conditioning]]" — `docs/contrastive_alignment.md` is a detailed design doc for this, but no implementation code exists yet. Status: designed but not implemented.
-- "Use [[eval/reconstruction]] and [[eval/behavior]]" — eval framework code exists in this repo (`slurm_scripts/03–04`) but eval tests are failing due to torch version incompatibility (CVE-2025-32434 requires torch ≥ 2.6; the container has an older version). The eval pipeline is blocked.
+- "Use [[eval/reconstruction]] and [[behavior env stanford]]" — eval framework code exists in this repo (`slurm_scripts/03–04`) but eval tests are failing due to torch version incompatibility (CVE-2025-32434 requires torch ≥ 2.6; the container has an older version). The eval pipeline is blocked.
 - "Use [[experiments/iterative selection]]" — no matching code in this repo.
 
 ## active blockers observed
-1. **BEHAVIOR-1K env segfault**: `behavior_run_343227.log` shows OmniGibson crashing with `AssertionError: Category sink not found in average object specs!` followed by segfault. The vault note [[eval/behavior]] mentions a segfault blocker — this appears to be the same or a related issue, still unresolved as of this run (dated 2026-03-03).
+1. **BEHAVIOR-1K env segfault**: `behavior_run_343227.log` shows OmniGibson crashing with `AssertionError: Category sink not found in average object specs!` followed by segfault. The vault note [[behavior env stanford]] mentions a segfault blocker — this appears to be the same or a related issue, still unresolved as of this run (dated 2026-03-03).
 2. **Eval framework torch version**: `eval_tests_385130.log` shows 4/5 tests failing because `transformers` refuses `torch.load` on torch < 2.6 (CVE-2025-32434). The MAE reconstructor cannot load pretrained weights.
 3. **OmniGibson dependency resolution**: `eval_verify_385135.log` and `eval_verify_385137.log` show `pip` failing to resolve `bddl~=3.7.0` and `pymeshlab~=2022.2` — these packages are not available in the expected versions. The workaround (local bddl3 install) partially succeeds in 385137 but the pymeshlab blocker remains.
 
 ## proposed triage actions (laptop-side)
 - promote: `docs/contrastive_alignment.md` → propose linking from [[experiments/language conditioning]] or a new vault note via PROMPTS.md §24. This is a substantial design artifact that should be visible in the vault graph.
 - investigate: the two-repo split (laptop `line-biased-vision-encoder` vs. cluster `behavior_env`) means most claim-grounding code is not visible from the cluster. Consider whether [[sources/repo]] should note both repos, or whether a second source note is needed.
-- update: [[eval/behavior]] should record the specific `Category sink not found` assertion error and torch version blocker, replacing the vague "segfaulting" note with concrete failure details.
+- update: [[behavior env stanford]] should record the specific `Category sink not found` assertion error and torch version blocker, replacing the vague "segfaulting" note with concrete failure details.
 - update: roadmap "next experiments" items referencing eval framework are currently blocked by dependency issues; this should be reflected in experiment status or the roadmap.
 
 ## confidence notes

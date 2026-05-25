@@ -290,6 +290,18 @@ queries:
   - 0
   - 0
   - 0
+- text: active vision eye movement control
+  source: manual
+  added: '2026-05-24'
+  hit_counts: []
+- text: hierarchical reinforcement learning options
+  source: manual
+  added: '2026-05-24'
+  hit_counts: []
+- text: task conditioned visual attention foveation
+  source: manual
+  added: '2026-05-24'
+  hit_counts: []
 arxiv:
   primary:
   - cs.CV

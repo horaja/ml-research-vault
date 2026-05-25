@@ -75,4 +75,4 @@ Examples:
 - [[eval/baselines]]
 - [[eval/reconstruction]]
 - [[eval/gaze]]
-- [[eval/behavior]]
+- [[behavior env stanford]]

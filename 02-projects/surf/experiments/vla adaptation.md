@@ -10,16 +10,16 @@ status: planned
 A selector that helps classification may also help action prediction if its selected patches preserve task-relevant object and affordance information.
 
 ## setup
-- Dataset/task suite: BEHAVIOR-style household manipulation.
+- Dataset/task suite: Stanford BEHAVIOR environment (https://behavior.stanford.edu).
 - Model: VLA-style policy with selective visual encoder.
 - Prior/selector: line prior first, then language-conditioned or iterative variants.
 - Metrics: task success, compute per action, sample efficiency, generalization.
 
 ## risks
-- BEHAVIOR/OmniGibson setup has a current blocker: offline frame collection was segfaulting in the old note.
+- Older OmniGibson offline frame collection segfaulted; status under current BEHAVIOR_ENV unverified.
 - Task-relevant masks may miss contact-specific regions.
 
 ## links
-- [[eval/behavior]]
+- [[behavior env stanford]]
 - [[eval/reconstruction]]
 - [[synthesis/shape and action]]

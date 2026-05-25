@@ -20,6 +20,9 @@ A line prior scores image patches using line-drawing structure, then selects pat
 - May be confounded by center bias.
 - Needs comparison against language-conditioned variants.
 
+## theory
+- Possible theoretical reading as a nuisance-suppression loss (texture/background as nuisance) — see @rajputMatchingPrincipleGeometric2026. Speculative; not verified.
+
 ## links
 - [[sources/repo]]
 - [[claims/structure helps]]

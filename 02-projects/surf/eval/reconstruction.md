@@ -34,4 +34,4 @@ Random should be near `k / 196` on a 14x14 grid.
 ## links
 - [[concepts/task relevance]]
 - [[eval/baselines]]
-- [[eval/behavior]]
+- [[behavior env stanford]]

@@ -41,7 +41,7 @@ See [[synthesis/architecture]].
 ## next experiments
 - Strengthen [[experiments/e001]] with kill baselines from [[eval/baselines]].
 - Run [[experiments/language conditioning]] to test instruction-conditioned spatial selection.
-- Use [[eval/reconstruction]] and [[eval/behavior]] to connect selection with task relevance.
+- Use [[eval/reconstruction]] and [[behavior env stanford]] to connect selection with task relevance.
 - Use [[experiments/iterative selection]] to test whether refinement policies improve compute allocation.
 
 ## central papers

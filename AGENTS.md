@@ -232,13 +232,21 @@ Do not over-sanitize rough notes. Messiness can contain valuable signal.
 
 ### 4.1 Links
 
-Prefer normal Obsidian links:
+Prefer normal Obsidian links for vault objects (concepts, claims, experiments, syntheses, meetings, sources):
 
 ```md
-[[paper name]]
 [[shape bias]]
 [[prior vs random]]
 ```
+
+**Papers are the exception.** Reference papers via Pandoc citation keys, not wikilinks:
+
+```md
+@huangNuwaMendingSpatial2026
+@kimMultitaskRealrobotData2024
+```
+
+This is a deliberate trade-off: the user prefers Pandoc-ready prose over Obsidian-graph connectivity for paper nodes. Do not wrap citekeys in `[[ ]]`. Do not "fix" existing `@citekey` references back to wikilinks.
 
 Links should be genuine, not decorative.
 Do not create backlinks just because two notes share a vague theme.

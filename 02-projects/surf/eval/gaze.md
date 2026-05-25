@@ -10,7 +10,9 @@ status: planned
 Does the prior attend to regions where humans look during manipulation?
 
 ## data
-The old plan uses DAA gaze data: image frames, language descriptions, and left/right gaze coordinates. A durable DAA paper note is missing.
+The old plan uses DAA gaze data: image frames, language descriptions, and left/right gaze coordinates.
+
+Alternative real-robot gaze / multi-task data source: @kimMultitaskRealrobotData2024 — evaluate as complement or replacement given the DAA→BEHAVIOR domain-shift caveat below.
 
 Creates an [[oracle map]] via per-frame vergence-modulated Gaussians centered at the gaze point.
 

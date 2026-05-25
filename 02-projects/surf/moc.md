@@ -42,7 +42,7 @@ Learning where to look: selective visual computation for VLA-style systems.
 - [[eval/reconstruction]]
 - [[eval/gaze]]
 - [[eval/baselines]]
-- [[eval/behavior]]
+- [[behavior env stanford]]
 
 ## synthesis
 - [[synthesis/architecture]]

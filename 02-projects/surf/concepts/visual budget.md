@@ -17,4 +17,4 @@ For VLA systems, visual budget should include compute per action and task succes
 ## links
 - [[claims/efficiency without collapse]]
 - [[experiments/e001]]
-- [[eval/behavior]]
+- [[behavior env stanford]]

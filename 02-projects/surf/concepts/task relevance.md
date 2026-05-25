@@ -18,5 +18,5 @@ The proposed reconstruction metric approximates task relevance with a mask over 
 
 ## links
 - [[eval/reconstruction]]
-- [[eval/behavior]]
+- [[behavior env stanford]]
 - [[questions]]

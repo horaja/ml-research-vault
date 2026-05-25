@@ -39,7 +39,7 @@ The proposal reports line-drawing guided selective attention at `75.8%` ImageNet
 - Adapt line-drawing selection to action prediction.
 - Implement iterative token selection.
 - Integrate V4-derived guidance.
-- Evaluate on realistic household manipulation tasks such as BEHAVIOR-1K-style environments.
+- Evaluate on realistic household manipulation tasks in the Stanford BEHAVIOR environment (https://behavior.stanford.edu).
 
 ## caution
 Biological motivation is allowed, but do not overclaim biological faithfulness.
