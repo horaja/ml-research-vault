@@ -1,7 +1,7 @@
 ---
 type: experiment
 project: surf
-status: planned
+status: blocked
 ---
 
 # vla adaptation

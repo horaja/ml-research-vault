@@ -11,6 +11,7 @@ Learning where to look: selective visual computation for VLA-style systems.
 ## state
 - [[synthesis/architecture]]
 - [[roadmap]]
+- [[live]]
 - [[questions]]
 - [[reading]]
 - [[sources/repo]]
@@ -34,8 +35,7 @@ Learning where to look: selective visual computation for VLA-style systems.
 
 ## experiments
 - [[experiments/e001]]
-- [[experiments/language conditioning]]
-- [[experiments/iterative selection]]
+- [[experiments/contrastive alignment]]
 - [[experiments/vla adaptation]]
 
 ## evaluation

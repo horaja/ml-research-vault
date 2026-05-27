@@ -1,6 +1,6 @@
 ---
 type: experiment
-status: running
+status: planned
 project: surf
 ---
 

@@ -407,6 +407,22 @@ Paper notes in Obsidian should link to Zotero/PDFs where available, but agents s
 
 Preserve Zotero-generated paper filenames in `04-papers/`.
 
+### 4.7 Checkboxes
+
+Use `- [ ]` checkboxes for ephemeral action items inside daily notes, meeting notes, and project-note todo sections.
+
+States:
+
+- `- [ ]` open
+- `- [x]` done
+- `- [-]` cancelled — no longer needed, but not done. Use instead of deleting so the trace survives.
+
+Do not promote checkboxes into standalone notes. If a checkbox grows into a durable research object (claim, experiment, question), create the proper note and check the source box.
+
+Daily-note `priorities`, `experiments`, and `durable updates` lines should be `- [ ]` when they describe action; prose bullets are only for context that isn't actionable.
+
+Meeting notes from 2026-05-24 onward should include an `## Action items` section with `- [ ]` items. Older meeting notes are left as-is unless explicitly reprocessed.
+
 ---
 
 ## 5. Note Types

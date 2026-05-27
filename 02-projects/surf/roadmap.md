@@ -22,7 +22,7 @@ See [[synthesis/architecture]].
 - [[claims/v4 relevance]]
 
 ## evidence
-- [[experiments/e001]] motivates the prior module with a line-guided patch selection result.
+- [[experiments/e001]] (complete) is the line-guided patch selection result motivating the prior module.
 - [[sources/proposal]] preserves the larger VLA/action and adaptive-computation framing.
 - [[99-attachments/images/model_architecture.jpeg|model architecture sketch]] records the current three-module architecture.
 
@@ -39,10 +39,8 @@ See [[synthesis/architecture]].
 - Gaze alignment improves while task performance does not.
 
 ## next experiments
-- Strengthen [[experiments/e001]] with kill baselines from [[eval/baselines]].
-- Run [[experiments/language conditioning]] to test instruction-conditioned spatial selection.
-- Use [[eval/reconstruction]] and [[behavior env stanford]] to connect selection with task relevance.
-- Use [[experiments/iterative selection]] to test whether refinement policies improve compute allocation.
+- [ ] Use [[eval/reconstruction]] and [[behavior env stanford]] to connect selection with task relevance.
+- [ ] Run [[experiments/contrastive alignment]] to test instruction-conditioned spatial selection.
 
 ## central papers
 - [[Chan et al. (2022)]]
