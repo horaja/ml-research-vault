@@ -42,7 +42,7 @@ Examples:
 - Experiments should test whether selection improves task success, compute efficiency, sample efficiency, or generalization.
 
 ## current evidence
-- [[sources/repo]] contains the `line-biased-vision-encoder` source artifact for the line-prior vision path.
+- [[sources/line-biased-vision-encoder]] contains the `line-biased-vision-encoder` source artifact for the line-prior vision path.
 - [[experiments/e001]] records the preliminary line-guided patch selection result that motivates the prior module.
 - [[sources/proposal]] preserves the high-level framing around biologically guided token selection for VLA-style systems.
 - [[99-attachments/images/model_architecture.jpeg|model architecture sketch]] records the three-module architecture.

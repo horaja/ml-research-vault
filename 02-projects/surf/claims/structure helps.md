@@ -10,7 +10,7 @@ status: supported
 Line drawings are a structural prior for patch selection. Preliminary line-guided patch selection results motivate using structure as part of the prior module.
 
 ## evidence
-- Code/result: [[sources/repo]]
+- Code/result: [[sources/line-biased-vision-encoder]]
 - Experiment: [[experiments/e001]]
 - Paper context: [[Chan et al. (2022)]]
 

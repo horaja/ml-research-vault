@@ -14,7 +14,7 @@ Learning where to look: selective visual computation for VLA-style systems.
 - [[live]]
 - [[questions]]
 - [[reading]]
-- [[sources/repo]]
+- [[sources/line-biased-vision-encoder]]
 - [[sources/proposal]]
 
 ## claims

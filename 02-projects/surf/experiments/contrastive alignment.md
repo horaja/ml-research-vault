@@ -10,7 +10,7 @@ project: surf
 A learned cross-modal scorer — projecting patch embeddings and the language embedding into a shared space and selecting top-$k$ patches by cosine similarity — produces more task-relevant selections than the task-agnostic line prior.
 
 ## setup
-- Source: [[sources/repo]] (line-prior backbone) + new repo (URL TBD).
+- Source: [[sources/line-biased-vision-encoder]] (line-prior backbone) + new repo (URL TBD).
 - Visual features: patch embeddings from the line-prior ViT backbone.
 - Language features: frozen text encoder.
 - Scoring: shared-space cosine similarity with learnable temperature $\tau$; top-$k$ selection at inference (softmax over scores for training).

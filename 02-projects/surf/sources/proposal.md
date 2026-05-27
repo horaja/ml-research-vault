@@ -45,7 +45,7 @@ The proposal reports line-drawing guided selective attention at `75.8%` ImageNet
 Biological motivation is allowed, but do not overclaim biological faithfulness.
 
 ## links
-- [[sources/repo]]
+- [[sources/line-biased-vision-encoder]]
 - [[roadmap]]
 - [[synthesis/architecture]]
 - [[claims/v4 relevance]]

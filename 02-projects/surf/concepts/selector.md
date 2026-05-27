@@ -15,7 +15,7 @@ A selector maps an image, optional prior features, and optional instruction cont
 - output: selected visual evidence for the VLA/action module
 
 ## implementation example
-[[sources/repo]] contains a selector that scores line drawing density with spatial weighting and feeds selected ViT patch embeddings forward.
+[[sources/line-biased-vision-encoder]] contains a selector that scores line drawing density with spatial weighting and feeds selected ViT patch embeddings forward.
 
 ## variants
 - Contrastive language-conditioned selector.
