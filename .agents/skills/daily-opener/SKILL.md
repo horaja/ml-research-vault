@@ -161,6 +161,8 @@ If any query changes were made, append at the bottom of the digest section:
 - No decorative Obsidian links. Only link to vault notes when there is a genuine, specific connection (e.g., a paper provides evidence for `[[claims/structure helps]]`).
 - No AI slop. No "this exciting paper," no "researchers have made a breakthrough." Say what the paper does and why it matters.
 - Machine-generated sections are clearly marked with `(auto)` in the heading.
+- **`## priorities` items MUST be checkboxes (`- [ ]`), not plain bullets.** Same for any "Today / This week / Soon" sub-items. Daily priorities are actionable commitments — they need to be checkable.
+- **Do not fabricate deadlines, day counts, or "locked this week" framings.** Only cite a deadline if it is explicitly written in the source note (frontmatter, body, prior daily, meeting note). Before treating an experiment as unresolved, read its file — if `status: complete` or marked for archive, do NOT surface it as a pending commitment. Quoting a deadline you invented is worse than omitting it.
 
 ---
 
