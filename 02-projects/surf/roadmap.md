@@ -44,7 +44,7 @@ See [[synthesis/architecture]].
 
 ## central papers
 - [[Chan et al. (2022)]]
-- [[Jiang et al. (2025)]]
+- @jiangTRIPSEfficientVisionandLanguage2025
 - [[Mees et al. (2023)]]
 - [[He et al. (2021)]]
 - [[Bolya et al. (2023)]]

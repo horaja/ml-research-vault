@@ -6,7 +6,7 @@ project: surf
 # reading
 
 ## Next
-- [[Jiang et al. (2025)]]
+- @jiangTRIPSEfficientVisionandLanguage2025
   - why: nearest note for text-guided patch selection / TRIPS-style mechanism.
 - [[Mees et al. (2023)]]
   - why: language-conditioned spatial grounding for manipulation.
