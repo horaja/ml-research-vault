@@ -18,6 +18,7 @@ A selector that helps classification may also help action prediction if its sele
 - Task-relevant masks may miss contact-specific regions.
 
 ## links
+- [[sources/behavior-1k]]
 - [[behavior env stanford]]
 - [[eval/reconstruction]]
 - [[synthesis/shape and action]]

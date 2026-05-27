@@ -22,6 +22,7 @@ Tasks targeted at the current Stanford BEHAVIOR environment (https://behavior.st
 An archived implementation note records a blocker where offline frame collection was segfaulting under the older OmniGibson setup; revisit under BEHAVIOR_ENV.
 
 ## links
+- [[sources/behavior-1k]]
 - [[experiments/vla adaptation]]
 - [[eval/reconstruction]]
 - [[concepts/task relevance]]
