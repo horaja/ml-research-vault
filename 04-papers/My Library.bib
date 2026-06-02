@@ -1084,6 +1084,17 @@
   file = {/Users/husain/Zotero/storage/FVQSZFAA/Kirkpatrick et al. - 2017 - Overcoming catastrophic forgetting in neural networks.pdf}
 }
 
+@inproceedings{korchinskiLearnYourOwn2026,
+  title = {Learn from Your Own Latents and Not from Tokens: {{A}} Sample-Complexity Theory},
+  shorttitle = {Learn from Your Own Latents and Not from Tokens},
+  author = {Korchinski, D. and Favero, Alessandro and Wyart, M.},
+  date = {2026-05-26},
+  url = {https://www.semanticscholar.org/paper/5c3b99265603cd596f1c50dc5c0de8808a9f4317},
+  urldate = {2026-06-02},
+  abstract = {Generative models, from diffusion models to large language models, achieve remarkable performance but at a cost in training data orders of magnitude larger than what biological learners require. An alternative paradigm has emerged in which networks are trained to predict their \textbackslash emph\{own\} latent representations of related views or masked regions, as in data2vec and JEPA -- an idea related to predictive-coding accounts of the cortex. Despite strong empirical results, the theoretical understanding of these methods remains limited. Central questions include: by how much does latent prediction actually improve data efficiency? Is there a benefit to stacking such methods into multi-scale hierarchies? We answer both using as data a tractable probabilistic context-free grammar that captures the compositional structure of natural language and images. Such a grammar generates strings of visible tokens by recursively applying production rules along a tree of hidden symbols of depth \$L\$. For such data, supervised or token-level SSL require a number of samples \textbackslash emph\{exponential\} in \$L\$ to recover the latent tree; we prove that latent prediction achieves this with a number of samples \textbackslash emph\{constant\} in \$L\$, up to logarithmic factors. We confirm this bound with (i) a hierarchical clustering algorithm, (ii) an end-to-end neural network whose predictor-clusterer modules predict their own latents at each level via gradient descent, and (iii) the first sample-complexity analysis of data2vec, which we show implicitly performs hierarchical latent prediction. This suggests that explicit stacking such as H-JEPA is largely redundant.},
+  file = {/Users/husain/Zotero/storage/57KPJ4ZI/Korchinski et al. - 2026 - Learn from your own latents and not from tokens A sample-complexity theory.pdf}
+}
+
 @online{kornblithSimilarityNeuralNetwork2019,
   title = {Similarity of {{Neural Network Representations Revisited}}},
   author = {Kornblith, Simon and Norouzi, Mohammad and Lee, Honglak and Hinton, Geoffrey},
@@ -1149,6 +1160,21 @@
   abstract = {Significance             The nervous system processes phenomenal amounts of information. This processing must be conducted efficiently. In telecommunications systems, efficiency is increased by transmitting multiple signals through a single communication channel, or multiplexing. Neurons also multiplex. Here, we demonstrate a strategy for multiplexing different features of aperiodic stimuli: Cortical neurons use the rate of asynchronous spiking to encode stimulus intensity while using the timing of synchronous spikes to encode abrupt changes in stimulus intensity. This is possible because high-contrast features (e.g., edges) evoke spikes that transiently synchronize across neurons, whereas low-contrast features evoke sustained asynchronous spiking whose rate is proportional to stimulus intensity. Differentially synchronized spiking evoked in the same neurons by different stimulus features enables the formation of multiplexed representations.           ,              Multiplexing refers to the simultaneous encoding of two or more signals. Neurons have been shown to multiplex, but different stimuli require different multiplexing strategies. Whereas the frequency and amplitude of periodic stimuli can be encoded by the timing and rate of the same spikes, natural scenes, which comprise areas over which intensity varies gradually and sparse edges where intensity changes abruptly, require a different multiplexing strategy. Recording in vivo from neurons in primary somatosensory cortex during tactile stimulation, we found that stimulus onset and offset (edges) evoked highly synchronized spiking, whereas other spikes in the same neurons occurred asynchronously. Stimulus intensity modulated the rate of asynchronous spiking, but did not affect the timing of synchronous spikes. From this, we hypothesized that spikes driven by high- and low-contrast stimulus features can be distinguished on the basis of their synchronization, and that differentially synchronized spiking can thus be used to form multiplexed representations. Applying a Bayesian decoding method, we verified that information about high- and low-contrast features can be recovered from an ensemble of model neurons receiving common input. Equally good decoding was achieved by distinguishing synchronous from asynchronous spikes and applying reverse correlation methods separately to each spike type. This result, which we verified with patch clamp recordings in vitro, demonstrates that neurons receiving common input can use the rate of asynchronous spiking to encode the intensity of low-contrast features while using the timing of synchronous spikes to encode the occurrence of high-contrast features. We refer to this strategy as synchrony-division multiplexing.},
   langid = {english},
   file = {/Users/husain/Zotero/storage/UASS6W3V/Lankarany et al. - 2019 - Differentially synchronized spiking enables multiplexed neural coding.pdf}
+}
+
+@article{leeGazePrizeShaping2025,
+  title = {Gaze on the {{Prize}}: {{Shaping Visual Attention}} with {{Return-Guided Contrastive Learning}}},
+  shorttitle = {Gaze on the {{Prize}}},
+  author = {Lee, Andrew and Chuang, Ian and Gao, Dechen and Fukazawa, Kai and Soltani, Iman},
+  date = {2025},
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2510.08442},
+  url = {https://arxiv.org/abs/2510.08442},
+  urldate = {2026-06-01},
+  abstract = {Visual Reinforcement Learning (RL) agents must learn to act based on high-dimensional image data where only a small fraction of the pixels is task-relevant. This forces agents to waste exploration and computational resources on irrelevant features, leading to sample-inefficient and unstable learning. To address this, inspired by human visual foveation, we introduce Gaze on the Prize. This framework augments visual RL with a learnable foveal attention mechanism (Gaze), guided by a self-supervised signal derived from the agent's experience pursuing higher returns (the Prize). Our key insight is that return differences reveal what matters most: If two similar representations produce different outcomes, their distinguishing features are likely task-relevant, and the gaze should focus on them accordingly. This is realized through return-guided contrastive learning that trains the attention to distinguish between the features relevant to success and failure. We group similar visual representations into positives and negatives based on their return differences and use the resulting labels to construct contrastive triplets. These triplets provide the training signal that teaches the attention mechanism to produce distinguishable representations for states associated with different outcomes. Our method achieves up to 2.52x improvement in sample efficiency and can solve challenging tasks from the ManiSkill3 benchmark that the baseline fails to learn, without modifying the underlying algorithm or hyperparameters.},
+  version = {2},
+  keywords = {Artificial Intelligence (cs.AI),Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,Robotics (cs.RO)},
+  file = {/Users/husain/Zotero/storage/B9J3UGJG/Lee et al. - 2025 - Gaze on the Prize Shaping Visual Attention with Return-Guided Contrastive Learning.pdf}
 }
 
 @misc{leeLecture16_boltzmannmachine,
@@ -2439,6 +2465,17 @@
   file = {/Users/husain/Zotero/storage/G3E8AMTP/Xu and Dong - Flow-based Deep Generative Models.pdf}
 }
 
+@inproceedings{xuVisionPulseDynamicVisual2026,
+  title = {{{VisionPulse}}: {{Dynamic Visual Sparsity}} for {{Efficient Multimodal Reasoning}}},
+  shorttitle = {{{VisionPulse}}},
+  author = {Xu, Heng and Jin, Sheng and Ma, Yanbiao and Lu, Zhiwu},
+  date = {2026-05-29},
+  url = {https://www.semanticscholar.org/paper/VisionPulse%3A-Dynamic-Visual-Sparsity-for-Efficient-Xu-Jin/8ca56d80ff32ff046efa7012deaafff1091c470d},
+  urldate = {2026-06-02},
+  abstract = {With the rapid advancement of large multimodal models (LMMs), inference-time overhead has become a key bottleneck for real-world deployment. Existing methods typically prune visual tokens at prefill, assuming the required visual evidence remains static during reasoning. However, we empirically show that visual evidence is strongly step-dependent: only a sparse subset of visual tokens is critical at each decoding step, and the critical set evolves across reasoning. Furthermore, we identify a coupled bottleneck where redundant visual context can steer the model toward query-irrelevant regions, lengthening the reasoning trace. Guided by these insights, we propose VisionPulse, a step-wise visual token pruning framework during reasoning. VisionPulse computes a lightweight visual attention mass to estimate the step-wise retention budget by exploiting its strong positive correlation with LMMs'effective visual token usage and retain only the most critical tokens under this budget. By enforcing visual sparsity during reasoning, VisionPulse filters redundant visual context while preserving relevant visual evidence, shortening reasoning traces naturally. Extensive experiments show that VisionPulse only retains 5\% of visual tokens per step with reasoning traces shortened by 11.2\%, while keeping accuracy almost unchanged.},
+  file = {/Users/husain/Zotero/storage/A8TZCNY4/Xu et al. - 2026 - VisionPulse Dynamic Visual Sparsity for Efficient Multimodal Reasoning.pdf}
+}
+
 @online{yangMultiTaskReinforcementLearning2020,
   title = {Multi-{{Task Reinforcement Learning}} with {{Soft Modularization}}},
   author = {Yang, Ruihan and Xu, Huazhe and Wu, Yi and Wang, Xiaolong},
@@ -2546,6 +2583,21 @@
   abstract = {The information generated by cone photoreceptors in the retina is compressed and transferred to higher processing centers through three distinct types of ganglion cells known as magno, parvo and konio cells. These ganglion cells, which travel from the retina to the lateral geniculate nucleus (LGN) and then to the primary visual cortex, have different structural and functional characteristics, and are organized in distinct layers in the LGN and the primary visual cortex. Magno cells are large, have thick axons and usually collect input from many retinal cells. Parvo cells are smaller, with fine axons and less myelin than mango cells. Konio cells are diverse small cells with wide fields of input consisting of different cells types. The three cellular pathways also differ in function. Magno cells respond rapidly to changing stimuli, while parvo cells need time to respond. The distinct patterns of structure and function in these cells have provided an opportunity for clinical assessment of their function. Functional assessment of these cells is currently used in the field of ophthalmology where frequency-doubling technology perimetry selectively assesses the function of magno cells. Evidence has accrued that the three pathways show characteristic patterns of malfunctions in multiple sclerosis, schizophrenia, Parkinson’s and Alzheimer’s diseases, and several other disorders. The combination of behavioral assessment with other techniques, such as event related potentials and functional magnetic resonance imaging, seems to bear promising future clinical applications.},
   pmcid = {PMC3306093},
   file = {/Users/husain/Zotero/storage/9JA4F5R7/Yoonessi and Yoonessi - 2011 - Functional Assessment of Magno, Parvo and Konio-Cellular Pathways; Current State and Future Clinical.pdf}
+}
+
+@article{yuAC^2VLAActionContextAwareAdaptive2026,
+  title = {{{AC}}\textasciicircum 2-{{VLA}}: {{Action-Context-Aware Adaptive Computation}} in {{Vision-Language-Action Models}} for {{Efficient Robotic Manipulation}}},
+  shorttitle = {{{AC}}\textasciicircum 2-{{VLA}}},
+  author = {Yu, Wenda and Wang, Tianshi and Li, Fengling and Li, Jingjing and Zhu, Lei},
+  date = {2026},
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2601.19634},
+  url = {https://arxiv.org/abs/2601.19634},
+  urldate = {2026-06-02},
+  abstract = {Vision-Language-Action (VLA) models have demonstrated strong performance in robotic manipulation, yet their closed-loop deployment is hindered by the high latency and compute cost of repeatedly running large vision-language backbones at every timestep. We observe that VLA inference exhibits structured redundancies across temporal, spatial, and depth dimensions, and that most existing efficiency methods ignore action context, despite its central role in embodied tasks. To address this gap, we propose Action-Context-aware Adaptive Computation for VLA models (AC\textasciicircum 2-VLA), a unified framework that conditions computation on current visual observations, language instructions, and previous action states. Based on this action-centric context, AC\textasciicircum 2-VLA adaptively performs cognition reuse across timesteps, token pruning, and selective execution of model components within a unified mechanism. To train the adaptive policy, we introduce an action-guided self-distillation scheme that preserves the behavior of the dense VLA policy while enabling structured sparsification that transfers across tasks and settings. Extensive experiments on robotic manipulation benchmarks show that AC\textasciicircum 2-VLA achieves up to a 1.79\textbackslash times speedup while reducing FLOPs to 29.4\% of the dense baseline, with comparable task success.},
+  version = {1},
+  keywords = {FOS: Computer and information sciences,Multimedia (cs.MM),Robotics (cs.RO)},
+  file = {/Users/husain/Zotero/storage/AIHDWSB4/Yu et al. - 2026 - AC^2-VLA Action-Context-Aware Adaptive Computation in Vision-Language-Action Models for Efficient R.pdf}
 }
 
 @article{zachariouVentralDorsalVisual2014,

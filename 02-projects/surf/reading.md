@@ -20,6 +20,7 @@ project: surf
 - Hierarchical Control/RL
 	- @frankMechanismsHierarchicalReinforcement2012
 	- @badreMechanismsHierarchicalReinforcement2012
+- 
 
 ## Deep read
 - @huangNuwaMendingSpatial2026 tests whether global-semantic / attention-score pruning erodes the positional-interaction spatial frame; direct relevance to [[synthesis/architecture]].

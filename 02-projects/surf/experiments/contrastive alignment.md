@@ -32,7 +32,7 @@ Pending.
 Learned visual scorer with language zeroed matching this method — would imply language carries no spatial information for the task and the gain is from the learned scorer alone.
 
 ## next action
-Run gaze-pretrain → BEHAVIOR_ENV fine-tune; log per-baseline numbers; record commit hash and config.
+Read @leeGazePrizeShaping2025; Run gaze-pretrain → BEHAVIOR_ENV fine-tune; log per-baseline numbers; record commit hash and config.
 
 ## links
 - [[claims/language helps]]
