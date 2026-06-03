@@ -308,6 +308,34 @@ queries:
   hit_counts:
   - 1
   - 1
+- text: information bottleneck representation learning
+  source: manual
+  added: '2026-06-02'
+  hit_counts: []
+- text: rate-distortion neural representation
+  source: manual
+  added: '2026-06-02'
+  hit_counts: []
+- text: optimal stopping sequential decision
+  source: manual
+  added: '2026-06-02'
+  hit_counts: []
+- text: sample complexity policy learning
+  source: manual
+  added: '2026-06-02'
+  hit_counts: []
+- text: active sensing partial observability
+  source: manual
+  added: '2026-06-02'
+  hit_counts: []
+- text: sequential hypothesis testing neural
+  source: manual
+  added: '2026-06-02'
+  hit_counts: []
+- text: anytime inference neural network
+  source: manual
+  added: '2026-06-02'
+  hit_counts: []
 arxiv:
   primary:
   - cs.CV

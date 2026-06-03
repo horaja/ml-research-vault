@@ -42,6 +42,11 @@ See [[synthesis/architecture]].
 - [ ] Use [[eval/reconstruction]] and [[behavior env stanford]] to connect selection with task relevance.
 - [ ] Run [[experiments/contrastive alignment]] to test instruction-conditioned spatial selection.
 
+## tooling
+- [ ] Audit tracked S2 author IDs in the digest config — `s2_author` returned 0–1 papers for 10+ consecutive runs; Tai Sing Lee, Chelsea Finn, Sergey Levine known to publish frequently.
+- [ ] Wire up `hit_count` tracking in `fetch_papers.py` so the 7-day retirement rule can apply to low-yield queries.
+- [ ] Configure a Claude Code hook that sends host-computer notifications when Claude needs a permission prompt.
+
 ## central papers
 - [[Chan et al. (2022)]]
 - @jiangTRIPSEfficientVisionandLanguage2025

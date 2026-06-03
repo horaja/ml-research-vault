@@ -419,7 +419,7 @@ States:
 
 Do not promote checkboxes into standalone notes. If a checkbox grows into a durable research object (claim, experiment, question), create the proper note and check the source box.
 
-Daily-note `priorities`, `experiments`, and `durable updates` lines should be `- [ ]` when they describe action; prose bullets are only for context that isn't actionable.
+In daily notes (`01-daily-notes/`), agents must never auto-emit `- [ ]` checkboxes — default to plain `- ` bullets. An external TODO pipeline reads daily-note checkboxes; auto-emitted ones pollute the user's task list. The user (or an agent, when explicitly asked) may add checkboxes. The `## priorities` section also must not use timeline buckets (`**Today:**`, `**This week:**`, `**Soon:**`).
 
 Meeting notes from 2026-05-24 onward should include an `## Action items` section with `- [ ]` items. Older meeting notes are left as-is unless explicitly reprocessed.
 
@@ -1087,10 +1087,8 @@ date: YYYY-MM-DD
 ## Open questions from yesterday
 - ...
 
-## Project priorities
-- Today:
-- This week:
-- Soon:
+## priorities
+-
 
 ## Experiments
 - Running:

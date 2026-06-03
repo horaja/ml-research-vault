@@ -14,6 +14,7 @@ Use at the beginning of a work session to orient on the current research state. 
 - recent experiment summaries under the active project's `experiments/`
 - recent meeting notes under `05-meetings/`
 - paper notes with `status: unread` or `status: reading` under `04-papers/`
+- citekeys / paper references in the active project's `reading.md` that do not yet have a corresponding note under `04-papers/` (these are still in flight even though no paper note exists)
 
 ## procedure
 1. Identify the active project from `AGENTS.md`.
@@ -21,6 +22,7 @@ Use at the beginning of a work session to orient on the current research state. 
 3. Find the most recent daily note (lexicographic max under `01-daily-notes/`). Read its priorities, experiments, and risks sections.
 4. List experiment notes with `status: planned` or `status: running`.
 5. List paper notes with `status: unread` or `status: reading`. Cap at 10.
+   - Also surface paper references in the active project's `reading.md` that do not have a corresponding note under `04-papers/` yet. Treat these as in-flight even without a paper note. Cap at 5 additional.
 6. List the 3 most recently modified meeting notes.
 7. Surface anything in `00-inbox/` that has not been triaged.
 8. Do not read the full vault. Do not summarize archived projects.
@@ -31,7 +33,7 @@ Use at the beginning of a work session to orient on the current research state. 
 - next experiments from the roadmap
 - open experiments (planned or running) with their question
 - top 3 open questions worth attacking next
-- unread / in-progress papers, with one-line hooks
+- unread / in-progress papers, plus reading-list entries without paper notes, with one-line hooks
 - recent meeting topics (titles only)
 - inbox backlog count
 - anything stale: experiments running for more than a week, papers reading for more than two weeks, roadmap items unchanged for more than a month
