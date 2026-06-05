@@ -123,10 +123,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: token merging visual efficiency
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -149,10 +151,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: adaptive computation vision
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -175,10 +179,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: patch selection vision language
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -201,10 +207,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: visual grounding manipulation robot
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -227,10 +235,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: visual compute budget efficiency
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -253,10 +263,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: active perception embodied agent
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -279,10 +291,12 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: image tokenization VQ autoregressive
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -305,6 +319,7 @@ queries:
   - 0
   - 0
   - 0
+  - 0
 - text: active vision eye movement control
   source: manual
   added: '2026-05-24'
@@ -312,10 +327,12 @@ queries:
   - 1
   - 1
   - 0
+  - 0
 - text: hierarchical reinforcement learning options
   source: manual
   added: '2026-05-24'
   hit_counts:
+  - 0
   - 0
   - 0
   - 0
@@ -326,10 +343,12 @@ queries:
   - 1
   - 1
   - 0
+  - 0
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 0
   - 0
   - 0
 - text: rate-distortion neural representation
@@ -338,10 +357,12 @@ queries:
   hit_counts:
   - 0
   - 0
+  - 0
 - text: optimal stopping sequential decision
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 0
   - 0
   - 0
 - text: sample complexity policy learning
@@ -350,10 +371,12 @@ queries:
   hit_counts:
   - 0
   - 0
+  - 0
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 0
   - 0
   - 0
 - text: sequential hypothesis testing neural
@@ -362,10 +385,12 @@ queries:
   hit_counts:
   - 0
   - 0
+  - 0
 - text: anytime inference neural network
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 0
   - 0
   - 0
 arxiv:
