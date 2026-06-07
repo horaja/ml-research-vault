@@ -14,6 +14,8 @@ The old plan uses DAA gaze data: image frames, language descriptions, and left/r
 
 Alternative real-robot gaze / multi-task data source: @kimMultitaskRealrobotData2024 — evaluate as complement or replacement given the DAA→BEHAVIOR domain-shift caveat below.
 
+Open: does Chuang et al. (GIAVA, 2026) release DAA-like continuous human eye-tracking data? If yes, candidate complement/replacement given the DAA→BEHAVIOR shift. Verify before adopting.
+
 Creates an [[oracle map]] via per-frame vergence-modulated Gaussians centered at the gaze point.
 
 ## metrics

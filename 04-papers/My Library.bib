@@ -460,6 +460,21 @@
   file = {/Users/husain/Zotero/storage/N73VEPGH/Cho et al. - 2026 - Improving Visual Token Reduction via Rectifying Distortions for Efficient Multimodal LLM Inference.pdf}
 }
 
+@article{chuangLookFocusAct2025,
+  title = {Look, {{Focus}}, {{Act}}: {{Efficient}} and {{Robust Robot Learning}} via {{Human Gaze}} and {{Foveated Vision Transformers}}},
+  shorttitle = {Look, {{Focus}}, {{Act}}},
+  author = {Chuang, Ian and Zou, Jinyu and Lee, Andrew and Gao, Dechen and Soltani, Iman},
+  date = {2025},
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2507.15833},
+  url = {https://arxiv.org/abs/2507.15833},
+  urldate = {2026-06-07},
+  abstract = {Human vision is a highly active process driven by gaze, which directs attention to task-relevant regions through foveation, dramatically reducing visual processing. In contrast, robot learning systems typically rely on passive, uniform processing of raw camera images. In this work, we explore how incorporating human-like active gaze into robotic policies can enhance efficiency and robustness. We develop GIAVA (Gaze Integrated Active-Vision ALOHA), a robot vision system that emulates human head and neck movement, and gaze adjustment for foveated processing. Extending the AV-ALOHA robot platform, we introduce a framework for simultaneously collecting eye-tracking, perspective control, and robot manipulation demonstration data from a human operator. We also open-source a simulation benchmark and dataset for training robot policies that incorporate human gaze. Inspired by recent work in foveated image segmentation and given the widespread use of Vision Transformers (ViTs) in robot learning, we integrate gaze information into ViTs using a foveated patch tokenization scheme. Compared to uniform patch tokenization, this significantly reduces the number of tokens, and thus computation. Our results show that our method for foveated robot vision drastically reduces computational overhead, and enhances robustness to background distractors. Notably, on certain high-precision tasks, foveated vision also improves performance, as reflected in higher success rates. Together, these findings suggest that human-inspired foveated visual processing offers untapped potential and should be further considered as a useful inductive bias in robotic vision systems. https://ian-chuang.github.io/gaze-av-aloha/},
+  version = {2},
+  keywords = {Artificial Intelligence (cs.AI),Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,Robotics (cs.RO)},
+  file = {/Users/husain/Zotero/storage/2S9Q3YU6/Chuang et al. - 2025 - Look, Focus, Act Efficient and Robust Robot Learning via Human Gaze and Foveated Vision Transformer.pdf}
+}
+
 @article{chungClassificationGeometryGeneral2018,
   title = {Classification and {{Geometry}} of {{General Perceptual Manifolds}}},
   author = {Chung, SueYeon and Lee, Daniel D. and Sompolinsky, Haim},
@@ -2535,6 +2550,21 @@
   urldate = {2026-06-02},
   abstract = {With the rapid advancement of large multimodal models (LMMs), inference-time overhead has become a key bottleneck for real-world deployment. Existing methods typically prune visual tokens at prefill, assuming the required visual evidence remains static during reasoning. However, we empirically show that visual evidence is strongly step-dependent: only a sparse subset of visual tokens is critical at each decoding step, and the critical set evolves across reasoning. Furthermore, we identify a coupled bottleneck where redundant visual context can steer the model toward query-irrelevant regions, lengthening the reasoning trace. Guided by these insights, we propose VisionPulse, a step-wise visual token pruning framework during reasoning. VisionPulse computes a lightweight visual attention mass to estimate the step-wise retention budget by exploiting its strong positive correlation with LMMs'effective visual token usage and retain only the most critical tokens under this budget. By enforcing visual sparsity during reasoning, VisionPulse filters redundant visual context while preserving relevant visual evidence, shortening reasoning traces naturally. Extensive experiments show that VisionPulse only retains 5\% of visual tokens per step with reasoning traces shortened by 11.2\%, while keeping accuracy almost unchanged.},
   file = {/Users/husain/Zotero/storage/A8TZCNY4/Xu et al. - 2026 - VisionPulse Dynamic Visual Sparsity for Efficient Multimodal Reasoning.pdf}
+}
+
+@article{yangLookZoomUnderstand2025,
+  title = {Look, {{Zoom}}, {{Understand}}: {{The Robotic Eyeball}} for {{Embodied Perception}}},
+  shorttitle = {Look, {{Zoom}}, {{Understand}}},
+  author = {Yang, Jiashu and Han, Yifan and Xie, Yucheng and Guo, Ning and Lian, Wenzhao},
+  date = {2025},
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2511.15279},
+  url = {https://arxiv.org/abs/2511.15279},
+  urldate = {2026-06-07},
+  abstract = {In embodied AI, visual perception should be active rather than passive: the system must decide where to look and at what scale to sense to acquire maximally informative data under pixel and spatial budget constraints. Existing vision models coupled with fixed RGB-D cameras fundamentally fail to reconcile wide-area coverage with fine-grained detail acquisition, severely limiting their efficacy in open-world robotic applications. We study the task of language-guided active visual perception: given a single RGB image and a natural language instruction, the agent must output pan, tilt, and zoom adjustments of a real PTZ (pan-tilt-zoom) camera to acquire the most informative view for the specified task. We propose EyeVLA, a unified framework that addresses this task by integrating visual perception, language understanding, and physical camera control within a single autoregressive vision-language-action model. EyeVLA introduces a semantically rich and efficient hierarchical action encoding that compactly tokenizes continuous camera adjustments and embeds them into the VLM vocabulary for joint multimodal reasoning. Through a data-efficient pipeline comprising pseudo-label generation, iterative IoU-controlled data refinement, and reinforcement learning with Group Relative Policy Optimization (GRPO), we transfer the open-world understanding of a pre-trained VLM to an embodied active perception policy using only 500 real-world samples. Evaluations on 50 diverse real-world scenes across five independent evaluation runs demonstrate that EyeVLA achieves an average task completion rate of 96\%. Our work establishes a new paradigm for instruction-driven active visual information acquisition in multimodal embodied systems.},
+  version = {2},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,Robotics (cs.RO)},
+  file = {/Users/husain/Zotero/storage/B9D5VXYK/Yang et al. - 2025 - Look, Zoom, Understand The Robotic Eyeball for Embodied Perception.pdf}
 }
 
 @online{yangMultiTaskReinforcementLearning2020,
