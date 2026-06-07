@@ -43,7 +43,7 @@ See [[synthesis/architecture]].
 - [ ] Run [[experiments/contrastive alignment]] to test instruction-conditioned spatial selection.
 
 ## tooling
-- [ ] Audit tracked S2 author IDs in the digest config — `s2_author` returned 0–1 papers for 10+ consecutive runs; Tai Sing Lee, Chelsea Finn, Sergey Levine known to publish frequently.
+- [ ] Fix `s2_author` returning 0 (15+ consecutive runs). Likely cause: `fetch_s2_authors()` uses `/author/{id}/papers?limit=100` without sort param — for prolific authors the first 100 are by default ordering (citationCount?), not date, so recent papers never enter the 7-day filter. Verify against Levine's ID before fixing. Secondary cause: empty `publicationDate` on preprints excludes them from the date filter.
 - [ ] Wire up `hit_count` tracking in `fetch_papers.py` so the 7-day retirement rule can apply to low-yield queries.
 - [ ] Configure a Claude Code hook that sends host-computer notifications when Claude needs a permission prompt.
 
