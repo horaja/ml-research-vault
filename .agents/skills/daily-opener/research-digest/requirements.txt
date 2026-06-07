@@ -1,7 +1,2 @@
 pyyaml>=6.0
 requests>=2.28
-
-# Optional: RSS lab-blog fetching. If install fails in your environment
-# (e.g. sgmllib3k won't build), the digest still produces S2 + arXiv results;
-# fetch_papers.py imports feedparser lazily inside fetch_rss().
-feedparser>=6.0

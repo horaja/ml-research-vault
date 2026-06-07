@@ -8,6 +8,7 @@ import os
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 
 import requests
 import yaml
@@ -249,15 +250,92 @@ def fetch_arxiv(categories: list[str], lookback_hours: int = 48) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 RSS_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; research-digest/1.0)"}
+ATOM_NS = "{http://www.w3.org/2005/Atom}"
+DC_DATE = "{http://purl.org/dc/elements/1.1/}date"
+
+
+def _parse_feed_date(s: str) -> datetime | None:
+    """Parse ISO 8601 (Atom) or RFC 822 (RSS) date to UTC. Return None if unparseable."""
+    s = s.strip()
+    if not s:
+        return None
+    try:
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except ValueError:
+        pass
+    try:
+        dt = parsedate_to_datetime(s)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except (TypeError, ValueError):
+        return None
+
+
+def _parse_rss_entries(root: ET.Element) -> list[dict]:
+    entries = []
+    for item in root.iterfind(".//item"):
+        pub_text = item.findtext("pubDate") or item.findtext(DC_DATE) or ""
+        entries.append({
+            "title": (item.findtext("title") or "").strip(),
+            "link": (item.findtext("link") or "").strip(),
+            "summary": (item.findtext("description") or "").strip(),
+            "published_dt": _parse_feed_date(pub_text),
+        })
+    return entries
+
+
+def _parse_atom_entries(root: ET.Element) -> list[dict]:
+    entries = []
+    for entry in root.iterfind(f"{ATOM_NS}entry"):
+        link = ""
+        for lnk in entry.findall(f"{ATOM_NS}link"):
+            if lnk.get("rel", "alternate") == "alternate":
+                link = lnk.get("href", "")
+                break
+        if not link:
+            link = (entry.findtext(f"{ATOM_NS}id") or "").strip()
+
+        summary = (
+            entry.findtext(f"{ATOM_NS}summary")
+            or entry.findtext(f"{ATOM_NS}content")
+            or ""
+        ).strip()
+
+        pub_text = (
+            entry.findtext(f"{ATOM_NS}published")
+            or entry.findtext(f"{ATOM_NS}updated")
+            or ""
+        )
+        entries.append({
+            "title": (entry.findtext(f"{ATOM_NS}title") or "").strip(),
+            "link": link,
+            "summary": summary,
+            "published_dt": _parse_feed_date(pub_text),
+        })
+    return entries
+
+
+def _parse_feed(content: bytes) -> list[dict]:
+    """Parse an RSS 2.0 or Atom feed body. Returns entries with normalized fields."""
+    try:
+        root = ET.fromstring(content)
+    except ET.ParseError as e:
+        log.warning("Feed parse error: %s", e)
+        return []
+    tag = root.tag.split("}", 1)[-1]
+    if tag == "rss":
+        return _parse_rss_entries(root)
+    if tag == "feed":
+        return _parse_atom_entries(root)
+    log.warning("Unknown feed root tag: %s", tag)
+    return []
 
 
 def fetch_rss(feeds: list[dict], lookback_hours: int = 168) -> list[dict]:
-    try:
-        import feedparser
-    except ImportError as e:
-        log.warning("RSS skipped: feedparser unavailable (%s)", e)
-        return []
-
     posts = []
     cutoff = datetime.now(timezone.utc) - timedelta(hours=lookback_hours)
 
@@ -268,34 +346,30 @@ def fetch_rss(feeds: list[dict], lookback_hours: int = 168) -> list[dict]:
         try:
             r = requests.get(url, headers=RSS_HEADERS, timeout=15)
             r.raise_for_status()
-            d = feedparser.parse(r.text)
-            for entry in d.entries:
-                pub = entry.get("published_parsed") or entry.get("updated_parsed")
-                if pub:
-                    pub_dt = datetime(*pub[:6], tzinfo=timezone.utc)
-                    if pub_dt < cutoff:
-                        continue
-                    pub_str = pub_dt.strftime("%Y-%m-%d")
-                else:
-                    pub_str = ""
-
+            entries = _parse_feed(r.content)
+            kept = 0
+            for entry in entries:
+                pub_dt = entry["published_dt"]
+                if pub_dt is not None and pub_dt < cutoff:
+                    continue
                 posts.append({
-                    "title": entry.get("title", ""),
+                    "title": entry["title"],
                     "authors": [],
-                    "abstract": entry.get("summary", ""),
+                    "abstract": entry["summary"],
                     "venue": name,
-                    "year": None,
+                    "year": pub_dt.year if pub_dt else None,
                     "citation_count": 0,
                     "arxiv_id": "",
                     "doi": "",
                     "s2_id": "",
-                    "url": entry.get("link", ""),
+                    "url": entry["link"],
                     "tldr": "",
                     "source": "rss",
                     "query": "",
-                    "published": pub_str,
+                    "published": pub_dt.strftime("%Y-%m-%d") if pub_dt else "",
                 })
-            log.info("RSS %s: %d recent posts", name, len([p for p in posts if p["venue"] == name]))
+                kept += 1
+            log.info("RSS %s: %d recent posts", name, kept)
         except Exception as e:
             log.warning("RSS failed for %s: %s", name, e)
 
