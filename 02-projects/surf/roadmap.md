@@ -57,3 +57,4 @@ See [[synthesis/architecture]].
 
 ## stale directions
 - Routing networks for functional module selection are likely the wrong abstraction for spatial patch selection.
+- SNNs
