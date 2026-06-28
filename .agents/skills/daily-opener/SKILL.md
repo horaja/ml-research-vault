@@ -100,22 +100,22 @@ The digest is an automated research paper discovery step. It fetches papers from
 
    **Core (2-3):** Directly useful to the active project. Advances a specific open question, proposes a relevant method, introduces a benchmark worth evaluating on, or comes from a tracked author on a related topic.
 
-   **Adjacent (2-3):** Trending or important in neighboring areas — vision transformer architectures, multimodal LLM reasoning, VLA / robot foundation models, efficient inference, image tokenization, embodied AI. Papers "everyone in the field is talking about."
+   **Adjacent (2-3):** Trending or important in neighboring areas — vision transformer architectures, multimodal LLM reasoning, VLA / robot foundation models, efficient inference, image tokenization, embodied AI. Papers "everyone in the field is talking about." **Bar:** exclude incremental token-pruning / token-merging / metric-optimization variants ("Nth efficiency tweak on a known benchmark") unless the paper threatens a specific surf claim or baseline (e.g. a new structural prior, a result that would falsify `structure helps` / `language helps` / `iterative selection`, or a baseline surf must beat). Default to dropping the slot rather than filling it with genre noise.
 
-   **Horizon (1-2):** Important ML ideas that are seemingly unrelated — optimization insights, scaling laws, representation learning breakthroughs, theoretical results. If a major conference just dropped proceedings, shift toward its best papers.
+   **Horizon (1-2):** Important ML ideas that are seemingly unrelated — optimization insights, scaling laws, representation learning breakthroughs, theoretical results, computational neuroscience of vision (mid-level vision, V4 / topographic organization, active/foveated vision). If a major conference just dropped proceedings, shift toward its best papers.
 
-   The goal is a well-rounded morning briefing, not an echo chamber. Do NOT just surface papers matching the researcher's exact topic. Diversify.
+   The goal is a well-rounded morning briefing, not an echo chamber. Diversify across the three tiers, but quality-gate over quantity: a 5-paper digest with no filler beats a 10-paper digest padded with incremental efficiency papers. Better to under-fill a tier than to surface a paper the researcher would be bored to read.
 
 7. Separate RSS blog posts from papers. Blog posts go in a different section.
 
 8. Write the digest into the daily note (see format below).
 
 9. Evaluate query health:
-   - If a query produced zero results for 7+ consecutive days, retire it.
-   - If multiple highly-scored papers share a theme not covered by existing queries, add a new query.
-   - If a query is too broad, refine it.
-   - Log any changes in the daily note.
-   - Update `.agents/skills/daily-opener/research-digest/config.yaml` with changes and hit count shifts.
+   - Per-query hit recording and zero-yield retirement are now **automated** in `fetch_papers.py` (it appends each run's candidate count to `hit_counts` and moves queries with `query_retire_window` consecutive zero-yield runs into `retired_queries`). Do NOT hand-edit `hit_counts` — read `_meta.query_hits` and `_meta.retired_queries` from the candidates JSON instead.
+   - Surface any auto-retirements from `_meta.retired_queries` under `**query health:**`.
+   - If multiple highly-scored papers share a theme not covered by existing queries, add a new query to `config.yaml` (the only manual config edit still expected of you).
+   - If a query is too broad or off-target, refine its text.
+   - Log any added/refined queries in the daily note.
 
 10. If `fetch_papers.py` exits non-zero (every source returned zero — pipeline failure, not a quiet news day), write `### digest (auto)\n*skipped — pipeline failure (see /tmp/raw_candidates.json _meta.counts)*` and continue. If only some sources are zero but the overall total is nonzero, the digest is still valid; note the affected sources in `**query health:**` rather than skipping.
 

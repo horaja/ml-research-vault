@@ -110,314 +110,66 @@ tracked_authors:
   s2_id: '145563465'
   tier: horizon
 queries:
-- text: token pruning vision transformer
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: token merging visual efficiency
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: selective visual attention VLA
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: adaptive computation vision
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: visual token selection language model
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: patch selection vision language
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: vision language action model
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: visual grounding manipulation robot
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
 - text: shape prior object recognition neural
   source: manual
   added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: visual compute budget efficiency
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: multimodal reasoning visual tokens
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: active perception embodied agent
   source: manual
   added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: vision transformer architecture scaling
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: image tokenization VQ autoregressive
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-- text: visual instruction tuning multimodal
-  source: manual
-  added: '2026-05-23'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: active vision eye movement control
   source: manual
   added: '2026-05-24'
-  hit_counts:
-  - 1
-  - 1
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: hierarchical reinforcement learning options
   source: manual
   added: '2026-05-24'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: task conditioned visual attention foveation
   source: manual
   added: '2026-05-24'
-  hit_counts:
-  - 1
-  - 1
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: rate-distortion neural representation
   source: manual
   added: '2026-06-02'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: optimal stopping sequential decision
   source: manual
   added: '2026-06-02'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: sample complexity policy learning
   source: manual
   added: '2026-06-02'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: sequential hypothesis testing neural
   source: manual
   added: '2026-06-02'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
 - text: anytime inference neural network
   source: manual
   added: '2026-06-02'
-  hit_counts:
-  - 0
-  - 0
-  - 0
-  - 0
+  hit_counts: []
+- text: V4 visual cortex shape representation
+  source: manual
+  added: '2026-06-28'
+  hit_counts: []
+- text: topographic map visual cortex
+  source: manual
+  added: '2026-06-28'
+  hit_counts: []
+- text: mid-level vision shape texture
+  source: manual
+  added: '2026-06-28'
+  hit_counts: []
 arxiv:
   primary:
   - cs.CV
@@ -448,3 +200,5 @@ settings:
   arxiv_lookback_hours: 168
   rss_lookback_hours: 168
   title_fuzzy_threshold: 90
+  query_retire_window: 7
+  hit_history_cap: 60

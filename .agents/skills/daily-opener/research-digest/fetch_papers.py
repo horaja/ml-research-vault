@@ -377,6 +377,87 @@ def fetch_rss(feeds: list[dict], lookback_hours: int = 168) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Query hit tracking + retirement (config write-back)
+# ---------------------------------------------------------------------------
+
+def record_query_hits(cfg: dict, keyword_papers: list[dict]) -> dict[str, int]:
+    """Append this run's per-query candidate count to each query's hit_counts.
+
+    A "hit" is the number of keyword-search candidates a query returned this run.
+    Recording happens here, deterministically, rather than in the LLM digest step —
+    which historically left every counter at zero, defeating the retirement rule.
+    """
+    counts: dict[str, int] = {}
+    for p in keyword_papers:
+        q = p.get("query", "")
+        if q:
+            counts[q] = counts.get(q, 0) + 1
+    cap = cfg["settings"].get("hit_history_cap", 60)
+    for q in cfg.get("queries", []):
+        hc = q.setdefault("hit_counts", [])
+        hc.append(counts.get(q["text"], 0))
+        if len(hc) > cap:
+            del hc[:-cap]
+    return counts
+
+
+def retire_dead_queries(cfg: dict, run_date: str) -> list[str]:
+    """Move queries with `window` consecutive zero-yield runs to retired_queries.
+
+    Trace-preserving: retired queries are kept (with date + reason), not deleted.
+    A coherent keyword query rarely returns zero candidates, so this is a safety
+    valve for genuinely dead queries, not an aggressive pruner.
+    """
+    window = cfg["settings"].get("query_retire_window", 7)
+    active, retired_now = [], []
+    for q in cfg.get("queries", []):
+        hc = q.get("hit_counts", [])
+        if len(hc) >= window and not any(hc[-window:]):
+            q = dict(q)
+            q["retired"] = run_date
+            q["reason"] = f"{window} consecutive zero-yield runs"
+            cfg.setdefault("retired_queries", []).append(q)
+            retired_now.append(q["text"])
+        else:
+            active.append(q)
+    cfg["queries"] = active
+    return retired_now
+
+
+def _render_query(q: dict, retired: bool = False) -> str:
+    lines = [f"- text: {q['text']}",
+             f"  source: {q.get('source', 'manual')}",
+             f"  added: '{q['added']}'"]
+    if retired:
+        lines.append(f"  retired: '{q['retired']}'")
+        lines.append(f"  reason: {q['reason']}")
+    hc = q.get("hit_counts", [])
+    if hc:
+        lines.append("  hit_counts:")
+        lines += [f"  - {v}" for v in hc]
+    else:
+        lines.append("  hit_counts: []")
+    return "\n".join(lines)
+
+
+def write_config_queries(config_path: str, cfg: dict) -> None:
+    """Rewrite only the queries / retired_queries region, preserving the rest verbatim."""
+    text = open(config_path).read()
+    start = text.index("\nqueries:\n") + 1
+    end = text.index("\narxiv:\n") + 1
+    if cfg.get("queries"):
+        block = "queries:\n" + "\n".join(_render_query(q) for q in cfg["queries"]) + "\n"
+    else:
+        block = "queries: []\n"
+    retired = cfg.get("retired_queries", [])
+    if retired:
+        block += "retired_queries:\n" + "\n".join(
+            _render_query(q, retired=True) for q in retired) + "\n"
+    with open(config_path, "w") as f:
+        f.write(text[:start] + block + text[end:])
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -403,6 +484,15 @@ def main():
     arxiv_papers = fetch_arxiv(all_categories, settings["arxiv_lookback_hours"])
     rss_posts = fetch_rss(cfg["rss_feeds"], settings.get("rss_lookback_hours", 168))
 
+    # Record per-query yield and retire dead queries, then persist to config.
+    # Deterministic replacement for the LLM-side hit tracking that never ran.
+    run_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    query_hits = record_query_hits(cfg, s2_keyword)
+    retired = retire_dead_queries(cfg, run_date)
+    write_config_queries(args.config, cfg)
+    if retired:
+        log.info("Retired %d zero-yield queries: %s", len(retired), ", ".join(retired))
+
     all_papers = s2_keyword + s2_recommend + s2_author + arxiv_papers + rss_posts
 
     counts = {
@@ -416,6 +506,8 @@ def main():
         "ts": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "counts": counts,
         "total": len(all_papers),
+        "query_hits": query_hits,
+        "retired_queries": retired,
     }
 
     log.info("Per-source counts: %s", counts)
