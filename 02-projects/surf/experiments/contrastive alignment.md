@@ -34,6 +34,9 @@ Learned visual scorer with language zeroed matching this method — would imply 
 ## next action
 TBD — @leeGazePrizeShaping2025 determined not to be the blocker (2026-06-02). Reconstruct blocking action items, including papers to read, before resuming.
 
+- [ ] Find papers relevant to this experiment; build enough understanding to explain the design to Dr. Lee and make the key decisions.
+- [ ] Draft a detailed spec (decisions locked) that claude code can execute against.
+
 ## links
 - [[claims/language helps]]
 - [[concepts/selector]]

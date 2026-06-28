@@ -1,3 +1,10 @@
+@online{260310469DepthCacheDepthGuided,
+  title = {[2603.10469] {{DepthCache}}: {{Depth-Guided Training-Free Visual Token Merging}} for {{Vision-Language-Action Model Inference}}},
+  url = {https://arxiv.org/abs/2603.10469},
+  urldate = {2026-06-13},
+  file = {/Users/husain/Zotero/storage/CZ9TAJKH/2603.html}
+}
+
 @online{aguiarLearningFlowFunctions2024,
   title = {Learning Flow Functions of Spiking Systems},
   author = {Aguiar, Miguel and Das, Amritam and Johansson, Karl H.},
@@ -256,6 +263,21 @@
   pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
   file = {/Users/husain/Zotero/storage/GC657FYQ/Cai et al. - 2025 - Continuous Domain Generalization.pdf;/Users/husain/Zotero/storage/LR53EZ2C/2505.html}
+}
+
+@article{caiFlashVLMTextGuidedVisual2025,
+  title = {{{FlashVLM}}: {{Text-Guided Visual Token Selection}} for {{Large Multimodal Models}}},
+  shorttitle = {{{FlashVLM}}},
+  author = {Cai, Kaitong and Zhang, Jusheng and Yang, Jing and Fan, Yijia and Xie, Pengtao and Wang, Jian and Wang, Keze},
+  date = {2025},
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2512.20561},
+  url = {https://arxiv.org/abs/2512.20561},
+  urldate = {2026-06-09},
+  abstract = {Large vision-language models (VLMs) typically process hundreds or thousands of visual tokens per image or video frame, incurring quadratic attention cost and substantial redundancy. Existing token reduction methods often ignore the textual query or rely on deep attention maps, whose instability under aggressive pruning leads to degraded semantic alignment.  We propose FlashVLM, a text guided visual token selection framework that dynamically adapts visual inputs to the query. Instead of relying on noisy attention weights, FlashVLM computes an explicit cross modal similarity between projected image tokens and normalized text embeddings in the language model space. This extrinsic relevance is fused with intrinsic visual saliency using log domain weighting and temperature controlled sharpening. In addition, a diversity preserving partition retains a minimal yet representative set of background tokens to maintain global context.  Under identical token budgets and evaluation protocols, FlashVLM achieves beyond lossless compression, slightly surpassing the unpruned baseline while pruning up to 77.8 percent of visual tokens on LLaVA 1.5, and maintaining 92.8 percent accuracy even under 94.4 percent compression. Extensive experiments on 14 image and video benchmarks demonstrate that FlashVLM delivers state of the art efficiency performance trade offs while maintaining strong robustness and generalization across mainstream VLMs.},
+  version = {1},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences},
+  file = {/Users/husain/Zotero/storage/E9Q22ZIX/Cai et al. - 2025 - FlashVLM Text-Guided Visual Token Selection for Large Multimodal Models.pdf}
 }
 
 @online{campbellUnderstandingLimitsVision2024,
@@ -895,6 +917,17 @@
   file = {/Users/husain/Zotero/storage/ZCX2I4LG/He et al. - 2021 - Masked Autoencoders Are Scalable Vision Learners.pdf;/Users/husain/Zotero/storage/6LWKM2BP/2111.html}
 }
 
+@inproceedings{heModelKnowsWhich2026,
+  title = {The {{Model Knows Which Tokens Matter}}: {{Automatic Token Selection}} via {{Noise Gating}}},
+  shorttitle = {The {{Model Knows Which Tokens Matter}}},
+  author = {He, Landi and Yang, Xiaoyu and Xu, Lijian},
+  date = {2026-03-07},
+  url = {https://www.semanticscholar.org/paper/cad7509eb8a3cb2b074c33e7f57c242853e2b149},
+  urldate = {2026-06-09},
+  abstract = {Visual tokens dominate inference cost in vision-language models (VLMs), yet many carry redundant information. Existing pruning methods alleviate this but typically rely on attention magnitude or similarity scores. We reformulate visual token pruning as capacity constrained communication: given a fixed budget K, the model must allocate limited bandwidth to maximally preserve visual information. We propose AutoSelect, which attaches a lightweight Scorer and Denoiser to a frozen VLM and trains with only the standard next token prediction loss, without auxiliary objectives or extra annotations. During training, a variance preserving noise gate modulates each token's information flow according to its predicted importance so that gradients propagate through all tokens; a diagonal attention Denoiser then recovers the perturbed representations. At inference, only the Scorer and a hard top-K selection remain, adding negligible latency. On ten VLM benchmarks, AutoSelect retains 96.5\% of full model accuracy while accelerating LLM prefill by 2.85x with only 0.69 ms overhead, and transfers to different VLM backbones without architecture-specific tuning. Code is available at https://github.com/MedHK23/AutoSelect.},
+  file = {/Users/husain/Zotero/storage/56L98WYR/He et al. - 2026 - The Model Knows Which Tokens Matter Automatic Token Selection via Noise Gating.pdf}
+}
+
 @inproceedings{hintonSpikingBoltzmannMachines1999,
   title = {Spiking {{Boltzmann Machines}}},
   booktitle = {Advances in {{Neural Information Processing Systems}}},
@@ -965,12 +998,48 @@
   file = {/Users/husain/Zotero/storage/VRMVTT68/wireframeModels.html}
 }
 
+@online{jiangBetterYouLearn2025,
+  title = {The {{Better You Learn}}, {{The Smarter You Prune}}: {{Towards Efficient Vision-language-action Models}} via {{Differentiable Token Pruning}}},
+  shorttitle = {The {{Better You Learn}}, {{The Smarter You Prune}}},
+  author = {Jiang, Titong and Jiang, Xuefeng and Ma, Yuan and Wen, Xin and Li, Bailin and Zhan, Kun and Jia, Peng and Liu, Yahui and Sun, Sheng and Lang, Xianpeng},
+  date = {2025},
+  doi = {10.48550/ARXIV.2509.12594},
+  url = {https://arxiv.org/abs/2509.12594},
+  urldate = {2026-06-13},
+  abstract = {We present LightVLA, a simple yet effective differentiable token pruning framework for vision-language-action (VLA) models. While VLA models have shown impressive capability in executing real-world robotic tasks, their deployment on resource-constrained platforms is often bottlenecked by the heavy attention-based computation over large sets of visual tokens. LightVLA addresses this challenge through adaptive, performance-driven pruning of visual tokens: It generates dynamic queries to evaluate visual token importance, and adopts Gumbel softmax to enable differentiable token selection. Through fine-tuning, LightVLA learns to preserve the most informative visual tokens while pruning tokens which do not contribute to task execution, thereby improving efficiency and performance simultaneously. Notably, LightVLA requires no heuristic magic numbers and introduces no additional trainable parameters, making it compatible with modern inference frameworks. Experimental results demonstrate that LightVLA outperforms different VLA models and existing token pruning methods across diverse tasks on the LIBERO benchmark, achieving higher success rates with substantially reduced computational overhead. Specifically, LightVLA reduces FLOPs and latency by 59.1\% and 38.2\% respectively, with a 2.6\% improvement in task success rate. Meanwhile, we also investigate the learnable query-based token pruning method LightVLA* with additional trainable parameters, which also achieves satisfactory performance. Our work reveals that as VLA pursues optimal performance, LightVLA spontaneously learns to prune tokens from a performance-driven perspective. To the best of our knowledge, LightVLA is the first work to apply adaptive visual token pruning to VLA tasks with the collateral goals of efficiency and performance, marking a significant step toward more efficient, powerful and practical real-time robotic systems.},
+  pubstate = {prepublished},
+  version = {2},
+  keywords = {Computation and Language (cs.CL),Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,Robotics (cs.RO)},
+  file = {/Users/husain/Zotero/storage/3W24RHE6/Jiang et al. - 2025 - The Better You Learn, The Smarter You Prune Towards Efficient Vision-language-action Models via Dif.pdf}
+}
+
+@online{jiangBetterYouLearn2025a,
+  title = {The {{Better You Learn}}, {{The Smarter You Prune}}: {{Towards Efficient Vision-language-action Models}} via {{Differentiable Token Pruning}}},
+  shorttitle = {The {{Better You Learn}}, {{The Smarter You Prune}}},
+  author = {Jiang, Titong and Jiang, Xuefeng and Ma, Yuan and Wen, Xin and Li, Bailin and Zhan, Kun and Jia, Peng and Liu, Yahui and Sun, Sheng and Lang, Xianpeng},
+  date = {2025-09-16},
+  url = {https://arxiv.org/abs/2509.12594v2},
+  urldate = {2026-06-13},
+  abstract = {We present LightVLA, a simple yet effective differentiable token pruning framework for vision-language-action (VLA) models. While VLA models have shown impressive capability in executing real-world robotic tasks, their deployment on resource-constrained platforms is often bottlenecked by the heavy attention-based computation over large sets of visual tokens. LightVLA addresses this challenge through adaptive, performance-driven pruning of visual tokens: It generates dynamic queries to evaluate visual token importance, and adopts Gumbel softmax to enable differentiable token selection. Through fine-tuning, LightVLA learns to preserve the most informative visual tokens while pruning tokens which do not contribute to task execution, thereby improving efficiency and performance simultaneously. Notably, LightVLA requires no heuristic magic numbers and introduces no additional trainable parameters, making it compatible with modern inference frameworks. Experimental results demonstrate that LightVLA outperforms different VLA models and existing token pruning methods across diverse tasks on the LIBERO benchmark, achieving higher success rates with substantially reduced computational overhead. Specifically, LightVLA reduces FLOPs and latency by 59.1\% and 38.2\% respectively, with a 2.6\% improvement in task success rate. Meanwhile, we also investigate the learnable query-based token pruning method LightVLA* with additional trainable parameters, which also achieves satisfactory performance. Our work reveals that as VLA pursues optimal performance, LightVLA spontaneously learns to prune tokens from a performance-driven perspective. To the best of our knowledge, LightVLA is the first work to apply adaptive visual token pruning to VLA tasks with the collateral goals of efficiency and performance, marking a significant step toward more efficient, powerful and practical real-time robotic systems.},
+  langid = {english},
+  organization = {arXiv.org},
+  file = {/Users/husain/Zotero/storage/BSAZCCT3/Jiang et al. - 2025 - The Better You Learn, The Smarter You Prune Towards Efficient Vision-language-action Models via Dif.pdf}
+}
+
 @article{jiangComputationalConstraintsUnderlying,
   title = {Computational Constraints Underlying Shape and Texture Functional Domain Organization in Macaque {{V4}}},
   author = {Jiang, Dunhan and Wang, Tainye and Bian, Yingjue and Tang, Shiming and Lee, Tai Sing},
   abstract = {V4, an intermediate visual area in the ventral pathway of the primate visual system, is known to contain neurons selective to visual stimulus attributes of intermediate complexity. Recent studies have shown that macaque V4 is organized into neuronal columns, each tuned to specific natural image features, and topologically arranged across the cortical surface to form functionally specialized domains. Using digital twins of V4 constructed from a large-scale wide-field imaging dataset, we demonstrate that shape- and texture-preferring neurons — previously identified in single-unit studies — are spatially clustered into functional domains. The segregated spatial organization suggests the existence of parallel modules for surface and boundary processing. Unlike artificial neural networks trained for ImageNet classification, which exhibit a strong texture bias, we found that V4 cortical columns and functional domains are more evenly balanced between shape and texture preferences. Finally, we show that computational constraints of feature similarity and retinotopy constraints are necessary and sufficient to explain many observed properties of the organization of the V4 topological map of natural image feature preferences.},
   langid = {english},
   file = {/Users/husain/Zotero/storage/RW4ZWRH2/Jiang et al. - Computational constraints underlying shape and texture functional domain organization in macaque V4.pdf}
+}
+
+@article{jiangComputationalConstraintsUnderlyinga,
+  title = {Computational Constraints Underlying Shape and Texture Functional Domain Organization in Macaque {{V4}}},
+  author = {Jiang, Dunhan and Wang, Tianye and Bian, Yingjue and Tang, Shiming and Lee, Tai Sing},
+  abstract = {V4, an intermediate visual area in the ventral pathway of the primate visual system, is known to contain neurons selective to visual stimulus attributes of intermediate complexity. Recent studies have shown that macaque V4 is organized into neuronal columns, each tuned to specific natural image features, and topologically arranged across the cortical surface to form functionally specialized domains. Using digital twins of V4 constructed from a large-scale wide-field imaging dataset, we demonstrate that shape- and texture-preferring neurons — previously identified in single-unit studies — are spatially clustered into functional domains. The segregated spatial organization suggests the existence of parallel modules for surface and boundary processing. Unlike artificial neural networks trained for ImageNet classification, which exhibit a strong texture bias, we find that V4 cortical columns and functional domains are more evenly balanced between shape and texture preferences. Finally, we show that computational constraints of feature similarity and retinotopy constraints are necessary and sufficient to explain many observed properties of the organization of the V4 topological map of natural image feature preferences.},
+  langid = {english},
+  file = {/Users/husain/Zotero/storage/8JPWYSRA/Jiang et al. - Computational constraints underlying shape and texture functional domain organization in macaque V4.pdf}
 }
 
 @online{jiangTRIPSEfficientVisionandLanguage2025,
@@ -988,6 +1057,19 @@
   pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
   file = {/Users/husain/Zotero/storage/UTMNTIW2/Jiang et al. - 2025 - TRIPS Efficient Vision-and-Language Pre-training with Text-Relevant Image Patch Selection.pdf;/Users/husain/Zotero/storage/P3MQDJ7L/2305.html}
+}
+
+@article{jingwenInformationdependentEyehandCoordination2026,
+  title = {Information-Dependent Eye-Hand Coordination Emerges from Active Vision},
+  author = {Jingwen, Zhao and Verdel, Dorian and Tan, Ying and Burdet, Etienne},
+  date = {2026-06-02},
+  publisher = {Neuroscience},
+  doi = {10.64898/2026.05.29.726887},
+  url = {http://biorxiv.org/lookup/doi/10.64898/2026.05.29.726887},
+  urldate = {2026-06-13},
+  abstract = {Abstract           In daily activities, humans rely on visual information to plan hand movements, making the extraction of task-relevant information through eye gaze a key aspect of motor control. Behavioral studies have revealed characteristic saccade-pursuit patterns, likely governed by shared neural circuits, which enable an efficient reduction of task-related uncertainty. However, a unifying computational principle explaining the emergence of these patterns in continuous tasks such as reading or driving is still lacking. Here we propose a dual stochastic model predictive control formulation of active vision, in which eye movements are continuously controlled to minimize task-relevant uncertainty and build an internal model used for hand movement planning. Through experiments manipulating the amount, density, and difficulty of future visual information, we show how eye movement patterns adapt to the information context while maintaining an invariant extraction horizon. A saccade-pursuit pattern naturally emerges from the model, which accurately predicts both eye and hand movement features observed in experiments. These results provide a principled framework for understanding the continuous regulation of human eye movements and open new perspectives for applications in robotic assistance and active perception.},
+  langid = {english},
+  file = {/Users/husain/Zotero/storage/WW4QE3WF/Jingwen et al. - 2026 - Information-dependent eye-hand coordination emerges from active vision.pdf}
 }
 
 @online{kamataFullySpikingVariational2021,
@@ -1239,6 +1321,40 @@
   file = {/Users/husain/Zotero/storage/L2CZBJH4/Li et al. - 2024 - An artificial visual neuron with multiplexed rate and time-to-first-spike coding.pdf}
 }
 
+@online{liCogVLACognitionAlignedVisionLanguageAction2026,
+  title = {{{CogVLA}}: {{Cognition-Aligned Vision-Language-Action Model}} via {{Instruction-Driven Routing}} \& {{Sparsification}}},
+  shorttitle = {{{CogVLA}}},
+  author = {Li, Wei and Zhang, Renshan and Shao, Rui and He, Jie and Nie, Liqiang},
+  date = {2026-05-27},
+  eprint = {2508.21046},
+  eprinttype = {arXiv},
+  eprintclass = {cs.CV},
+  doi = {10.48550/arXiv.2508.21046},
+  url = {http://arxiv.org/abs/2508.21046},
+  urldate = {2026-06-13},
+  abstract = {Recent Vision-Language-Action (VLA) models built on pre-trained Vision-Language Models (VLMs) require extensive post-training, resulting in high computational overhead that limits scalability and deployment.We propose CogVLA, a Cognition-Aligned Vision-Language-Action framework that leverages instruction-driven routing and sparsification to improve both efficiency and performance. CogVLA draws inspiration from human multimodal coordination and introduces a 3-stage progressive architecture. 1) Encoder-FiLM based Aggregation Routing (EFA-Routing) injects instruction information into the vision encoder to selectively aggregate and compress dual-stream visual tokens, forming a instruction-aware latent representation. 2) Building upon this compact visual encoding, LLM-FiLM based Pruning Routing (LFP-Routing) introduces action intent into the language model by pruning instruction-irrelevant visually grounded tokens, thereby achieving token-level sparsity. 3) To ensure that compressed perception inputs can still support accurate and coherent action generation, we introduce V-L-A Coupled Attention (CAtten), which combines causal vision-language attention with bidirectional action parallel decoding. Extensive experiments on the LIBERO benchmark and real-world robotic tasks demonstrate that CogVLA achieves state-of-the-art performance with success rates of 97.4\% and 70.0\%, respectively, while reducing training costs by 2.5-fold and decreasing inference latency by 2.8-fold compared to OpenVLA. CogVLA is open-sourced and publicly available at https://github.com/JiuTian-VL/CogVLA.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  file = {/Users/husain/Zotero/storage/8642TEDZ/Li et al. - 2026 - CogVLA Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsificati.pdf}
+}
+
+@online{liCogVLACognitionAlignedVisionLanguageAction2026a,
+  title = {{{CogVLA}}: {{Cognition-Aligned Vision-Language-Action Model}} via {{Instruction-Driven Routing}} \& {{Sparsification}}},
+  shorttitle = {{{CogVLA}}},
+  author = {Li, Wei and Zhang, Renshan and Shao, Rui and He, Jie and Nie, Liqiang},
+  date = {2026-05-27},
+  eprint = {2508.21046},
+  eprinttype = {arXiv},
+  eprintclass = {cs.CV},
+  doi = {10.48550/arXiv.2508.21046},
+  url = {http://arxiv.org/abs/2508.21046},
+  urldate = {2026-06-13},
+  abstract = {Recent Vision-Language-Action (VLA) models built on pre-trained Vision-Language Models (VLMs) require extensive post-training, resulting in high computational overhead that limits scalability and deployment.We propose CogVLA, a Cognition-Aligned Vision-Language-Action framework that leverages instruction-driven routing and sparsification to improve both efficiency and performance. CogVLA draws inspiration from human multimodal coordination and introduces a 3-stage progressive architecture. 1) Encoder-FiLM based Aggregation Routing (EFA-Routing) injects instruction information into the vision encoder to selectively aggregate and compress dual-stream visual tokens, forming a instruction-aware latent representation. 2) Building upon this compact visual encoding, LLM-FiLM based Pruning Routing (LFP-Routing) introduces action intent into the language model by pruning instruction-irrelevant visually grounded tokens, thereby achieving token-level sparsity. 3) To ensure that compressed perception inputs can still support accurate and coherent action generation, we introduce V-L-A Coupled Attention (CAtten), which combines causal vision-language attention with bidirectional action parallel decoding. Extensive experiments on the LIBERO benchmark and real-world robotic tasks demonstrate that CogVLA achieves state-of-the-art performance with success rates of 97.4\% and 70.0\%, respectively, while reducing training costs by 2.5-fold and decreasing inference latency by 2.8-fold compared to OpenVLA. CogVLA is open-sourced and publicly available at https://github.com/JiuTian-VL/CogVLA.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  file = {/Users/husain/Zotero/storage/INPVVCW2/Li et al. - 2026 - CogVLA Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsificati.pdf;/Users/husain/Zotero/storage/AKVU4B4R/2508.html}
+}
+
 @article{liComputationalTheoryManifold2023,
   title = {Toward a Computational Theory of Manifold Untangling: From Global Embedding to Local Flattening},
   shorttitle = {Toward a Computational Theory of Manifold Untangling},
@@ -1257,6 +1373,42 @@
   file = {/Users/husain/Zotero/storage/E5GGJALQ/Li and Wang - 2023 - Toward a computational theory of manifold untangling from global embedding to local flattening.pdf}
 }
 
+@online{liCTVAMCerebelloThalamicInspiredVisionAction2026,
+  title = {{{CT-VAM}}: {{A Cerebello-Thalamic-Inspired Vision-Action Model}} for {{Efficient Visuomotor Control}}},
+  shorttitle = {{{CT-VAM}}},
+  author = {Li, Jiacheng and Guo, Yize and Guo, Jiabin and Liu, Qingchen and Qin, Jiahu},
+  date = {2026-06-08},
+  eprint = {2606.09572},
+  eprinttype = {arXiv},
+  eprintclass = {cs.RO},
+  doi = {10.48550/arXiv.2606.09572},
+  url = {http://arxiv.org/abs/2606.09572},
+  urldate = {2026-06-10},
+  abstract = {Vision-language-action models have shown strong promise for robot manipulation, yet raw language is primarily needed to specify task intent rather than to be repeatedly processed during high-frequency low-level execution. Motivated by this separation, we propose a cerebello-thalamic-inspired vision-action model (CT-VAM) for efficient task-conditioned visuomotor control. CT-VAM acts as a compact local execution policy that predicts action chunks from dualview visual observations, proprioception, and a lightweight task condition, potentially enabling a practical cloud-edge paradigm in which high-level semantic reasoning can be handled by large models while fast closed-loop control runs on local hardware. To fuse heterogeneous inputs effectively, CT-VAM introduces TARS (Thalamic Action Routing Stream), a stream-separated conditional attention decoder that independently routes action, visual and task streams, preventing dense sensory tokens from overwhelming compact task-relevant conditions. With only 68M parameters, CT-VAM achieves LIBERO success rates competitive with substantially larger VLA models, while reducing inference latency. Together with flow-consistent inpainting for asynchronous chunk execution, CT-VAM supports high-frequency control and demonstrates robust realworld deployment on resource-constrained robotic platforms.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics},
+  file = {/Users/husain/Zotero/storage/UTMKI3KS/Li et al. - 2026 - CT-VAM A Cerebello-Thalamic-Inspired Vision-Action Model for Efficient Visuomotor Control.pdf;/Users/husain/Zotero/storage/GYPGGGFM/2606.html}
+}
+
+@online{liCTVAMCerebelloThalamicInspiredVisionAction2026a,
+  title = {{{CT-VAM}}: {{A Cerebello-Thalamic-Inspired Vision-Action Model}} for {{Efficient Visuomotor Control}}},
+  shorttitle = {{{CT-VAM}}},
+  author = {Li, Jiacheng and Guo, Yize and Guo, Jiabin and Liu, Qingchen and Qin, Jiahu},
+  date = {2026-06-08},
+  eprint = {2606.09572},
+  eprinttype = {arXiv},
+  eprintclass = {cs.RO},
+  doi = {10.48550/arXiv.2606.09572},
+  url = {http://arxiv.org/abs/2606.09572},
+  urldate = {2026-06-13},
+  abstract = {Vision-language-action models have shown strong promise for robot manipulation, yet raw language is primarily needed to specify task intent rather than to be repeatedly processed during high-frequency low-level execution. Motivated by this separation, we propose a cerebello-thalamic-inspired vision-action model (CT-VAM) for efficient task-conditioned visuomotor control. CT-VAM acts as a compact local execution policy that predicts action chunks from dualview visual observations, proprioception, and a lightweight task condition, potentially enabling a practical cloud-edge paradigm in which high-level semantic reasoning can be handled by large models while fast closed-loop control runs on local hardware. To fuse heterogeneous inputs effectively, CT-VAM introduces TARS (Thalamic Action Routing Stream), a stream-separated conditional attention decoder that independently routes action, visual and task streams, preventing dense sensory tokens from overwhelming compact task-relevant conditions. With only 68M parameters, CT-VAM achieves LIBERO success rates competitive with substantially larger VLA models, while reducing inference latency. Together with flow-consistent inpainting for asynchronous chunk execution, CT-VAM supports high-frequency control and demonstrates robust realworld deployment on resource-constrained robotic platforms.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics},
+  file = {/Users/husain/Zotero/storage/6CJFALJA/Li et al. - 2026 - CT-VAM A Cerebello-Thalamic-Inspired Vision-Action Model for Efficient Visuomotor Control.pdf;/Users/husain/Zotero/storage/REV6DI9T/2606.html}
+}
+
 @inproceedings{liDepthCacheDepthGuidedTrainingFree2026,
   title = {{{DepthCache}}: {{Depth-Guided Training-Free Visual Token Merging}} for {{Vision-Language-Action Model Inference}}},
   shorttitle = {{{DepthCache}}},
@@ -1266,6 +1418,23 @@
   urldate = {2026-05-24},
   abstract = {Vision-Language-Action (VLA) models enable generalist robotic manipulation but suffer from high inference latency. This bottleneck stems from the massive number of visual tokens processed by large language backbones. Existing methods either prune or merge tokens uniformly, degrading the spatial reasoning essential for robotic control. We present DepthCache, a training-free framework that leverages depth as a structural prior for visual token compression. It partitions observations into depth-based regions and applies spatially differentiated merge ratios, preserving the near-field workspace while compressing the distant background. To exploit temporal redundancy, DepthCache distributes the merging process across consecutive frames, ensuring consistent representations while reducing per-step computation. A motion-adaptive pipeline further optimizes auxiliary view compression based on end-effector dynamics. The framework requires no model modification, generalizing across diverse VLA architectures. On the LIBERO benchmark, DepthCache achieves up to 1.28x inference speedup with less than 1\% average success rate degradation across three VLA models (pi\_0.5, OpenVLA, GR00T), whereas pruning and merging baselines incur 4--24\% degradation at comparable compression. Real-world experiments on a physical manipulator demonstrate that DepthCache enables faster task throughput and more responsive closed-loop control in latency-sensitive scenarios.},
   file = {/Users/husain/Zotero/storage/2EKUICXF/Li et al. - 2026 - DepthCache Depth-Guided Training-Free Visual Token Merging for Vision-Language-Action Model Inferen.pdf}
+}
+
+@online{liDepthCacheDepthGuidedTrainingFree2026a,
+  title = {{{DepthCache}}: {{Depth-Guided Training-Free Visual Token Merging}} for {{Vision-Language-Action Model Inference}}},
+  shorttitle = {{{DepthCache}}},
+  author = {Li, Yuquan and Ma, Lianjie and Ding, Han and Zhu, Lijun},
+  date = {2026-03-11},
+  eprint = {2603.10469},
+  eprinttype = {arXiv},
+  eprintclass = {cs.RO},
+  doi = {10.48550/arXiv.2603.10469},
+  url = {http://arxiv.org/abs/2603.10469},
+  urldate = {2026-06-13},
+  abstract = {Vision-Language-Action (VLA) models enable generalist robotic manipulation but suffer from high inference latency. This bottleneck stems from the massive number of visual tokens processed by large language backbones. Existing methods either prune or merge tokens uniformly, degrading the spatial reasoning essential for robotic control. We present DepthCache, a training-free framework that leverages depth as a structural prior for visual token compression. It partitions observations into depth-based regions and applies spatially differentiated merge ratios, preserving the near-field workspace while compressing the distant background. To exploit temporal redundancy, DepthCache distributes the merging process across consecutive frames, ensuring consistent representations while reducing per-step computation. A motion-adaptive pipeline further optimizes auxiliary view compression based on end-effector dynamics. The framework requires no model modification, generalizing across diverse VLA architectures. On the LIBERO benchmark, DepthCache achieves up to 1.28x inference speedup with less than 1\% average success rate degradation across three VLA models (pi\_0.5, OpenVLA, GR00T), whereas pruning and merging baselines incur 4--24\% degradation at comparable compression. Real-world experiments on a physical manipulator demonstrate that DepthCache enables faster task throughput and more responsive closed-loop control in latency-sensitive scenarios.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Robotics},
+  file = {/Users/husain/Zotero/storage/YTUEHVCH/Li et al. - 2026 - DepthCache Depth-Guided Training-Free Visual Token Merging for Vision-Language-Action Model Inferen.pdf;/Users/husain/Zotero/storage/MQMDEZFM/2603.html}
 }
 
 @online{liEfficientFormerVisionTransformers2022,
@@ -1773,6 +1942,16 @@
   abstract = {Neural responses in the visual cortex are variable, and there is now an abundance of data characterizing how the magnitude and structure of this variability depends on the stimulus. Current theories of cortical computation fail to account for these data; they either ignore variability altogether or only model its unstructured Poisson-like aspects. We develop a theory in which the cortex performs probabilistic inference such that population activity patterns represent statistical samples from the inferred probability distribution. Our main prediction is that perceptual uncertainty is directly encoded by the variability, rather than the average, of cortical responses. Through direct comparisons to previously published data as well as original data analyses, we show that a sampling-based probabilistic representation accounts for the structure of noise, signal, and spontaneous response variability and correlations in the primary visual cortex. These results suggest a novel role for neural variability in cortical dynamics and computations.},
   langid = {english},
   file = {/Users/husain/Zotero/storage/TZNYA7Y2/Orbán et al. - 2016 - Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex.pdf}
+}
+
+@inproceedings{palaciosVisualInstructionTuning2026,
+  title = {Visual {{Instruction Tuning Aligns Modalities}} through {{Abstraction}}},
+  author = {Palacios, L. and Basile, Lorenzo and Doimo, Diego and Cazzaniga, Alberto},
+  date = {2026-06-02},
+  url = {https://www.semanticscholar.org/paper/397d7e7accda79a898ef8a9a8653c01b7a37affe},
+  urldate = {2026-06-10},
+  abstract = {Visual instruction tuning effectively adapts a pre-trained Large Language Model (LLM) to process image information alongside text. Yet, it remains unclear how visual features are embedded into the layer-wise hierarchy of abstractions of the LLM backbone. Across a diverse set of vision-language architectures, we show that instruction tuning primarily serves as a bridge, embedding visual features directly into the intermediate semantic layers of the LLM, bypassing the early layers devoted to unimodal processing. With probing analyses and causal interventions, we show that these intermediate layers are the semantic core of vision-language processing and play a critical role in the performance on a broad set of multimodal benchmarks. In addition, by comparing the geometry of semantically equivalent visual and textual representations, we find that fine-tuning extends and strengthens the existing abstraction phase, aligning visual features with pre-existing textual ones. Finally, we confirm the functional role of this localized alignment by restricting fine-tuning to intermediate layers alone: this strategy preserves the performance of full fine-tuning on vision-centric benchmarks while reducing training time. Our results suggest that multimodal integration is a localized phenomenon driven by the repurposing of the internal abstraction engine of the LLM.},
+  file = {/Users/husain/Zotero/storage/D75DYKAM/Palacios et al. - 2026 - Visual Instruction Tuning Aligns Modalities through Abstraction.pdf}
 }
 
 @article{panDepthGuidedVisionTransformer2024,
@@ -2431,6 +2610,26 @@
   file = {/Users/husain/Zotero/storage/A6PZUIKP/Wang et al. - 2024 - Large-scale calcium imaging reveals a systematic V4 map for encoding natural scenes.pdf}
 }
 
+@article{wangLargescaleCalciumImaging2024b,
+  title = {Large-Scale Calcium Imaging Reveals a Systematic {{V4}} Map for Encoding Natural Scenes},
+  author = {Wang, Tianye and Lee, Tai Sing and Yao, Haoxuan and Hong, Jiayi and Li, Yang and Jiang, Hongfei and Andolina, Ian Max and Tang, Shiming},
+  date = {2024-07-30},
+  journaltitle = {Nature Communications},
+  shortjournal = {Nat Commun},
+  volume = {15},
+  number = {1},
+  pages = {6401},
+  publisher = {Nature Publishing Group},
+  issn = {2041-1723},
+  doi = {10.1038/s41467-024-50821-z},
+  url = {https://www.nature.com/articles/s41467-024-50821-z},
+  urldate = {2026-06-28},
+  abstract = {How natural scenes are represented by the neuronal populations of a specific visual area such as V4 remain not fully understood. The authors produced a dataset of widefield calcium imaging of macaque V4 responses to a large set of natural images, and used deep learning techniques to elucidate how natural image features are encoded and topologically organized in V4.},
+  langid = {english},
+  keywords = {Colour vision,Extrastriate cortex,Fluorescence imaging,Neural encoding,Object vision},
+  file = {/Users/husain/Zotero/storage/82IVTY4R/Wang et al. - 2024 - Large-scale calcium imaging reveals a systematic V4 map for encoding natural scenes.pdf}
+}
+
 @online{wangManifoldTransformRecurrent2025,
   title = {Manifold {{Transform}} by {{Recurrent Cortical Circuit Enhances Robust Encoding}} of {{Familiar Stimuli}}},
   author = {Wang, Weifan and Niu, Xueyan and Liang, Liyuan and Lee, Tai-Sing},
@@ -2471,6 +2670,26 @@
   langid = {english},
   pubstate = {prepublished},
   file = {/Users/husain/Zotero/storage/5EL7UMEN/Fig4.png;/Users/husain/Zotero/storage/7PXUP5SV/Fig1.png;/Users/husain/Zotero/storage/D6DLTZGV/Fig2.png;/Users/husain/Zotero/storage/LQT25N2J/Wang et al. - 2025 - Manifold Transform by Recurrent Cortical Circuit Enhances Robust Encoding of Familiar Stimuli.pdf;/Users/husain/Zotero/storage/U2TPINNF/Fig3.png}
+}
+
+@article{wangManifoldTransformRecurrent2025c,
+  title = {Manifold Transform by Recurrent Cortical Circuit Enhances Robust Encoding of Familiar Stimuli},
+  author = {Wang, Weifan and Niu, Xueyan and Liang, Liyuan and Lee, Tai-Sing},
+  date = {2025-10-24},
+  journaltitle = {PLOS Computational Biology},
+  shortjournal = {PLoS Comput Biol},
+  volume = {21},
+  number = {10},
+  eprint = {41134866},
+  eprinttype = {pubmed},
+  pages = {e1013587},
+  issn = {1553-734X},
+  doi = {10.1371/journal.pcbi.1013587},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC12551896/},
+  urldate = {2026-06-28},
+  abstract = {A ubiquitous phenomenon observed along the ventral stream of the primate hierarchical visual system is the suppression of neural responses to familiar stimuli at the population level. The observation of the suppression of the neural response in the early visual cortex (V1 and V2) to familiar stimuli that are multiple times larger in size than the receptive fields of individual neurons implicates the plausible development of recurrent circuits for encoding these global stimuli. In this work, we investigated the neural mechanisms of familiarity suppression and showed that a recurrent neural circuit based on Hebbian learning, consisting of neurons with small and local receptive fields, can develop to encode specific global familiar stimuli robustly as a result of familiarity training. We proposed that the learned recurrent circuit implements a manifold transform. The recurrent circuit compresses the dimensions of nuisance variations of a familiar image in the neural response manifold relative to the dimensions for discriminating different familiar stimuli, resulting in increased robustness of the global stimulus representation against noise and other irrelevant perturbations. We demonstrate that a recurrent circuit implements the manifold transform using a mixed strategy of locally linear and globally nonlinear computations, where the local linear computation selectively redistributes recurrent gain to enhance concept discrimination. These results provide testable predictions for neurophysiological experiments., In this research, we explored how the brain can become more efficient at processing familiar visual information. When we repeatedly see something, our brain’s response to it changes. In response to familiar stimuli, neurons across different visual areas of the mammalian visual system become more selective and their overall activities decrease. We developed a computational model to investigate why this happens and what functional advantages these mechanisms might provide. We discovered that familiarity leads to the development of a more efficient and robust neural representation of what we see. It allows us to rapidly and robustly recognize our friend’s face despite changes in lighting conditions, view angle, or facial expression. Our model showed that through repeated exposure, the brain’s neural circuits, even in the early stages of visual processing, rapidly adapt and organize themselves to focus on important and consistent features in our visual environment while becoming less sensitive to irrelevant variations, and distractions.},
+  pmcid = {PMC12551896},
+  file = {/Users/husain/Zotero/storage/EUI9JG3L/Wang et al. - 2025 - Manifold transform by recurrent cortical circuit enhances robust encoding of familiar stimuli.pdf}
 }
 
 @online{wuPointTransformerV32024,
@@ -2600,6 +2819,23 @@
   file = {/Users/husain/Zotero/storage/4INLQ5QL/Yang et al. - 2019 - Task representations in neural networks trained to perform many cognitive tasks.pdf}
 }
 
+@online{yangTightSampleComplexity2026,
+  title = {Tight {{Sample Complexity}} of {{Transformers}}},
+  author = {Yang, Chenxiao and Srebro, Nathan and Li, Zhiyuan},
+  date = {2026-06-08},
+  eprint = {2606.09731},
+  eprinttype = {arXiv},
+  eprintclass = {cs.LG},
+  doi = {10.48550/arXiv.2606.09731},
+  url = {http://arxiv.org/abs/2606.09731},
+  urldate = {2026-06-10},
+  abstract = {We tightly characterize the VC dimension of depth-\$L\$ Transformers with a total of \$W\$ parameters, mapping an input sequence of length \$T\$ to a single output, establishing an upper bound of \$O(L W \textbackslash log (T W))\$ and a nearly matching lower bound of \$Ω(L W \textbackslash log (T W / L))\$. We further tightly characterize the sample complexity of chain-of-thought learning using such a Transformer, showing teacher forcing (i.e. selecting a predictor consistent with the entire chain-of-thought on training data) learns with sample complexity \$O\textbackslash left(L W \textbackslash log \textbackslash left(\textbackslash left(T+T\textasciicircum\{\textbackslash prime\}\textbackslash right) W\textbackslash right)\textbackslash right)\$ and that any learning rule that uses chain-of-thought data requires at least \$Ω\textbackslash left(L W \textbackslash log \textbackslash left(\textbackslash left(T+T\textasciicircum\{\textbackslash prime\}\textbackslash right) W / L\textbackslash right)\textbackslash right)\$ examples, where \$T\$ is the input length and \$T\textasciicircum\{\textbackslash prime\}\$ is the number of autoregressive steps.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Computer Science - Machine Learning},
+  file = {/Users/husain/Zotero/storage/XIGE9VNX/Yang et al. - 2026 - Tight Sample Complexity of Transformers.pdf;/Users/husain/Zotero/storage/RXIRMLEF/2606.html}
+}
+
 @online{yaoSGDViTSaliencyGuidedDynamic2023,
   title = {{{SGDViT}}: {{Saliency-Guided Dynamic Vision Transformer}} for {{UAV Tracking}}},
   shorttitle = {{{SGDViT}}},
@@ -2691,6 +2927,21 @@
   file = {/Users/husain/Zotero/storage/AIHDWSB4/Yu et al. - 2026 - AC^2-VLA Action-Context-Aware Adaptive Computation in Vision-Language-Action Models for Efficient R.pdf}
 }
 
+@online{yuAC^2VLAActionContextAwareAdaptive2026a,
+  title = {{{AC}}\textasciicircum 2-{{VLA}}: {{Action-Context-Aware Adaptive Computation}} in {{Vision-Language-Action Models}} for {{Efficient Robotic Manipulation}}},
+  shorttitle = {{{AC}}\textasciicircum 2-{{VLA}}},
+  author = {Yu, Wenda and Wang, Tianshi and Li, Fengling and Li, Jingjing and Zhu, Lei},
+  date = {2026},
+  doi = {10.48550/ARXIV.2601.19634},
+  url = {https://arxiv.org/abs/2601.19634},
+  urldate = {2026-06-13},
+  abstract = {Vision-Language-Action (VLA) models have demonstrated strong performance in robotic manipulation, yet their closed-loop deployment is hindered by the high latency and compute cost of repeatedly running large vision-language backbones at every timestep. We observe that VLA inference exhibits structured redundancies across temporal, spatial, and depth dimensions, and that most existing efficiency methods ignore action context, despite its central role in embodied tasks. To address this gap, we propose Action-Context-aware Adaptive Computation for VLA models (AC\textasciicircum 2-VLA), a unified framework that conditions computation on current visual observations, language instructions, and previous action states. Based on this action-centric context, AC\textasciicircum 2-VLA adaptively performs cognition reuse across timesteps, token pruning, and selective execution of model components within a unified mechanism. To train the adaptive policy, we introduce an action-guided self-distillation scheme that preserves the behavior of the dense VLA policy while enabling structured sparsification that transfers across tasks and settings. Extensive experiments on robotic manipulation benchmarks show that AC\textasciicircum 2-VLA achieves up to a 1.79\textbackslash times speedup while reducing FLOPs to 29.4\% of the dense baseline, with comparable task success.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {FOS: Computer and information sciences,Multimedia (cs.MM),Robotics (cs.RO)},
+  file = {/Users/husain/Zotero/storage/4GLNIFQW/Yu et al. - 2026 - AC^2-VLA Action-Context-Aware Adaptive Computation in Vision-Language-Action Models for Efficient R.pdf}
+}
+
 @article{zachariouVentralDorsalVisual2014,
   title = {Ventral and {{Dorsal Visual Stream Contributions}} to the {{Perception}} of {{Object Shape}} and {{Object Location}}},
   author = {Zachariou, Valentinos and Klatzky, Roberta and Behrmann, Marlene},
@@ -2750,6 +3001,21 @@
   pubstate = {prepublished},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
   file = {/Users/husain/Zotero/storage/QPQKRH8M/Zhou et al. - 2024 - Spikformer V2 Join the High Accuracy Club on ImageNet with an SNN Ticket.pdf;/Users/husain/Zotero/storage/AGDMY9ND/2401.html}
+}
+
+@article{zhuActiveO3EmpoweringMultimodal2025,
+  title = {Active-{{O3}}: {{Empowering Multimodal Large Language Models}} with {{Active Perception}} via {{GRPO}}},
+  shorttitle = {Active-{{O3}}},
+  author = {Zhu, Muzhi and Zhong, Hao and Zhao, Canyu and Du, Zongze and Huang, Zheng and Liu, Mingyu and Chen, Hao and Zou, Cheng and Chen, Jingdong and Yang, Ming and Shen, Chunhua},
+  date = {2025},
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2505.21457},
+  url = {https://arxiv.org/abs/2505.21457},
+  urldate = {2026-06-09},
+  abstract = {Active vision, also known as active perception, refers to the process of actively selecting where and how to look in order to gather task-relevant information. It is a critical component of efficient perception and decision-making in humans and advanced embodied agents. Recently, the use of Multimodal Large Language Models (MLLMs) as central planning and decision-making modules in robotic systems has gained extensive attention. However, despite the importance of active perception in embodied intelligence, there is little to no exploration of how MLLMs can be equipped with or learn active perception capabilities. In this paper, we first provide a systematic definition of MLLM-based active perception tasks. We point out that the recently proposed GPT-o3 model's zoom-in search strategy can be regarded as a special case of active perception; however, it still suffers from low search efficiency and inaccurate region selection. To address these issues, we propose ACTIVE-O3, a purely reinforcement learning based training framework built on top of GRPO, designed to equip MLLMs with active perception capabilities. We further establish a comprehensive benchmark suite to evaluate ACTIVE-O3 across both general open-world tasks, such as small-object and dense object grounding, and domain-specific scenarios, including small object detection in remote sensing and autonomous driving, as well as fine-grained interactive segmentation. In addition, ACTIVE-O3 also demonstrates strong zero-shot reasoning abilities on the V* Benchmark, without relying on any explicit reasoning data. We hope that our work can provide a simple codebase and evaluation protocol to facilitate future research on active perception in MLLMs.},
+  version = {1},
+  keywords = {Artificial Intelligence (cs.AI),Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences},
+  file = {/Users/husain/Zotero/storage/4WDJFKJD/Zhu et al. - 2025 - Active-O3 Empowering Multimodal Large Language Models with Active Perception via GRPO.pdf}
 }
 
 @online{zhuSpikeGPTGenerativePretrained2024,

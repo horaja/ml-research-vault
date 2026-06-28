@@ -46,6 +46,9 @@ See [[synthesis/architecture]].
 - [ ] Fix `s2_author` returning 0 (15+ consecutive runs). Likely cause: `fetch_s2_authors()` uses `/author/{id}/papers?limit=100` without sort param — for prolific authors the first 100 are by default ordering (citationCount?), not date, so recent papers never enter the 7-day filter. Verify against Levine's ID before fixing. Secondary cause: empty `publicationDate` on preprints excludes them from the date filter.
 - [ ] Wire up `hit_count` tracking in `fetch_papers.py` so the 7-day retirement rule can apply to low-yield queries.
 - [ ] Configure a Claude Code hook that sends host-computer notifications when Claude needs a permission prompt.
+- [ ] Expand lab-blog digest scope beyond surf-relevance to surface big cross-industry news (e.g., OpenAI governance/policy, major releases). Current filter dismisses these as "none warrant action."
+- [ ] Add a feature to email the daily note to horaja@andrew.cmu.edu after the daily opener runs.
+- [ ] Explore how gen AI can further assist research (concrete proposals, not vibes).
 
 ## central papers
 - [[Chan et al. (2022)]]
