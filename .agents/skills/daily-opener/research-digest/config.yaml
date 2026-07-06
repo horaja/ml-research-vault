@@ -120,10 +120,12 @@ queries:
   - 20
   - 20
   - 0
+  - 20
 - text: active perception embodied agent
   source: manual
   added: '2026-05-23'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
@@ -140,6 +142,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: hierarchical reinforcement learning options
   source: manual
   added: '2026-05-24'
@@ -150,6 +153,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
 - text: task conditioned visual attention foveation
   source: manual
   added: '2026-05-24'
@@ -160,10 +164,12 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
@@ -180,10 +186,12 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: optimal stopping sequential decision
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
@@ -200,10 +208,12 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
@@ -220,6 +230,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: anytime inference neural network
   source: manual
   added: '2026-06-02'
@@ -228,6 +239,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
 - text: V4 visual cortex shape representation
@@ -240,6 +252,7 @@ queries:
   - 9
   - 9
   - 0
+  - 0
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
@@ -250,10 +263,12 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: mid-level vision shape texture
   source: manual
   added: '2026-06-28'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
