@@ -135,6 +135,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: active perception embodied agent
   source: manual
   added: '2026-05-23'
@@ -149,6 +150,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -185,6 +187,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: hierarchical reinforcement learning options
   source: manual
   added: '2026-05-24'
@@ -195,6 +198,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -235,6 +239,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
@@ -260,10 +265,12 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: rate-distortion neural representation
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
@@ -310,10 +317,12 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: sample complexity policy learning
   source: manual
   added: '2026-06-02'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
@@ -360,6 +369,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: sequential hypothesis testing neural
   source: manual
   added: '2026-06-02'
@@ -385,6 +395,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: anytime inference neural network
   source: manual
   added: '2026-06-02'
@@ -393,6 +404,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -435,10 +447,12 @@ queries:
   - 9
   - 9
   - 9
+  - 9
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
@@ -485,10 +499,12 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: instruction conditioned visual token robot
   source: manual
   added: '2026-07-08'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
