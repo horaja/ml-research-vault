@@ -143,6 +143,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: active perception embodied agent
   source: manual
   added: '2026-05-23'
@@ -173,6 +174,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -209,6 +211,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: hierarchical reinforcement learning options
   source: manual
   added: '2026-05-24'
@@ -239,6 +242,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -275,6 +279,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
@@ -305,6 +310,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -341,6 +347,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: optimal stopping sequential decision
   source: manual
   added: '2026-06-02'
@@ -371,6 +378,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -407,6 +415,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
@@ -440,6 +449,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: sequential hypothesis testing neural
   source: manual
   added: '2026-06-02'
@@ -470,6 +480,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -506,6 +517,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: V4 visual cortex shape representation
   source: manual
   added: '2026-06-28'
@@ -536,6 +548,7 @@ queries:
   - 0
   - 9
   - 0
+  - 9
   - 9
   - 9
   - 9
@@ -572,6 +585,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: mid-level vision shape texture
   source: manual
   added: '2026-06-28'
@@ -605,6 +619,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: instruction conditioned visual token robot
   source: manual
   added: '2026-07-08'
@@ -629,6 +644,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: contact affordance structural scene robot
   source: manual
   added: '2026-07-24'
@@ -637,10 +653,12 @@ queries:
   - 17
   - 17
   - 17
+  - 17
 - text: interpretable visual attention keypoint robot manipulation
   source: manual
   added: '2026-07-26'
   hit_counts:
+  - 20
   - 20
   - 20
 arxiv:
