@@ -157,6 +157,7 @@ queries:
   - 0
   - 20
   - 20
+  - 20
 - text: active perception embodied agent
   source: manual
   added: '2026-05-23'
@@ -204,6 +205,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: active vision eye movement control
   source: manual
   added: '2026-05-24'
@@ -247,6 +249,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -298,6 +301,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: task conditioned visual attention foveation
   source: manual
   added: '2026-05-24'
@@ -345,6 +349,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
@@ -388,6 +393,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -439,6 +445,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: optimal stopping sequential decision
   source: manual
   added: '2026-06-02'
@@ -482,6 +489,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -533,6 +541,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
@@ -577,6 +586,7 @@ queries:
   - 20
   - 0
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -627,6 +637,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: anytime inference neural network
   source: manual
   added: '2026-06-02'
@@ -657,6 +668,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -721,6 +733,7 @@ queries:
   - 9
   - 9
   - 9
+  - 9
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
@@ -751,6 +764,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -815,6 +829,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: instruction conditioned visual token robot
   source: manual
   added: '2026-07-08'
@@ -853,11 +868,13 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: contact affordance structural scene robot
   source: manual
   added: '2026-07-24'
   hit_counts:
   - 0
+  - 17
   - 17
   - 17
   - 17
@@ -895,6 +912,7 @@ queries:
   - 20
   - 0
   - 20
+  - 20
 - text: gaze guided robot manipulation learning
   source: manual
   added: '2026-08-03'
@@ -907,6 +925,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
 arxiv:
   primary:
