@@ -130,7 +130,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -171,6 +170,7 @@ queries:
   - 20
   - 0
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -178,7 +178,6 @@ queries:
   source: manual
   added: '2026-05-23'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -235,6 +234,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -242,7 +242,6 @@ queries:
   source: manual
   added: '2026-05-24'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -299,6 +298,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -319,7 +319,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -357,6 +356,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -386,7 +386,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -427,6 +426,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -448,7 +448,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -491,6 +490,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -514,7 +514,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -555,6 +554,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -578,7 +578,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -618,6 +617,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -642,7 +642,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -668,6 +667,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -706,7 +706,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -747,6 +746,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -754,7 +754,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -811,6 +810,7 @@ queries:
   - 20
   - 0
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -834,7 +834,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -868,6 +867,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -882,7 +882,6 @@ queries:
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 9
   - 9
   - 0
   - 9
@@ -942,6 +941,7 @@ queries:
   - 9
   - 9
   - 9
+  - 9
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
@@ -962,7 +962,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1003,6 +1002,7 @@ queries:
   - 20
   - 0
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1026,7 +1026,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1069,6 +1068,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
 - text: instruction conditioned visual token robot
   source: manual
@@ -1133,6 +1133,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: contact affordance structural scene robot
   source: manual
   added: '2026-07-24'
@@ -1180,6 +1181,7 @@ queries:
   - 17
   - 18
   - 18
+  - 18
 - text: interpretable visual attention keypoint robot manipulation
   source: manual
   added: '2026-07-26'
@@ -1225,6 +1227,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: gaze guided robot manipulation learning
   source: manual
   added: '2026-08-03'
@@ -1237,6 +1240,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
