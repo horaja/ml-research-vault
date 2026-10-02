@@ -116,7 +116,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -157,6 +156,7 @@ queries:
   - 20
   - 0
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -180,7 +180,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -221,6 +220,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -244,7 +244,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -285,6 +284,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -306,7 +306,6 @@ queries:
   source: manual
   added: '2026-05-24'
   hit_counts:
-  - 0
   - 20
   - 20
   - 0
@@ -343,6 +342,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -372,7 +372,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -430,11 +429,11 @@ queries:
   - 20
   - 20
   - 0
+  - 20
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 20
   - 0
   - 20
   - 0
@@ -477,6 +476,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -500,7 +500,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -541,6 +540,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -564,7 +564,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -622,13 +621,13 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: sample complexity policy learning
   source: manual
   added: '2026-06-02'
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -675,6 +674,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -692,7 +692,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -733,6 +732,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -757,7 +757,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -814,13 +813,13 @@ queries:
   - 20
   - 20
   - 20
-- text: anytime inference neural network
+  - 20
+- text: early exit adaptive inference neural
   source: manual
   added: '2026-06-02'
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -854,6 +853,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -882,7 +882,6 @@ queries:
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 9
   - 0
   - 9
   - 0
@@ -942,13 +941,13 @@ queries:
   - 10
   - 10
   - 10
+  - 10
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -989,6 +988,7 @@ queries:
   - 20
   - 0
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1012,7 +1012,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1055,6 +1054,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1076,7 +1076,6 @@ queries:
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1117,6 +1116,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1195,6 +1195,7 @@ queries:
   - 0
   - 19
   - 19
+  - 20
 - text: interpretable visual attention keypoint robot manipulation
   source: manual
   added: '2026-07-26'
@@ -1254,6 +1255,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: gaze guided robot manipulation learning
   source: manual
   added: '2026-08-03'
@@ -1296,6 +1298,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
