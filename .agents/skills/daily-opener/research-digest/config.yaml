@@ -114,7 +114,6 @@ queries:
   source: manual
   added: '2026-05-23'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -154,6 +153,7 @@ queries:
   - 20
   - 0
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -178,7 +178,6 @@ queries:
   source: manual
   added: '2026-05-23'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -218,6 +217,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -242,7 +242,6 @@ queries:
   source: manual
   added: '2026-05-24'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -282,6 +281,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -306,7 +306,6 @@ queries:
   source: manual
   added: '2026-05-24'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -340,6 +339,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -370,7 +370,6 @@ queries:
   source: manual
   added: '2026-05-24'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -427,6 +426,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -434,7 +434,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -474,6 +473,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -498,7 +498,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -538,6 +537,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -562,7 +562,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -620,13 +619,13 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
 - text: sample complexity policy learning
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -672,6 +671,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -690,7 +690,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -730,6 +729,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -754,7 +754,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -801,6 +800,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -818,7 +818,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -851,6 +850,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -882,7 +882,6 @@ queries:
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 0
   - 9
   - 9
   - 9
@@ -942,11 +941,11 @@ queries:
   - 10
   - 10
   - 10
+  - 10
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -986,6 +985,7 @@ queries:
   - 20
   - 0
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1010,7 +1010,6 @@ queries:
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -1052,6 +1051,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1074,7 +1074,6 @@ queries:
   source: manual
   added: '2026-07-08'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -1114,6 +1113,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1138,7 +1138,6 @@ queries:
   source: manual
   added: '2026-07-24'
   hit_counts:
-  - 0
   - 17
   - 17
   - 17
@@ -1195,6 +1194,7 @@ queries:
   - 0
   - 19
   - 19
+  - 20
   - 20
   - 20
   - 20
@@ -1260,6 +1260,7 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: gaze guided robot manipulation learning
   source: manual
   added: '2026-08-03'
@@ -1302,6 +1303,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
