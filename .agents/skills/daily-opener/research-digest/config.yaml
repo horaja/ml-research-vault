@@ -115,7 +115,6 @@ queries:
   added: '2026-05-23'
   hit_counts:
   - 20
-  - 20
   - 0
   - 0
   - 20
@@ -168,6 +167,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -179,7 +179,6 @@ queries:
   added: '2026-05-23'
   hit_counts:
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -238,11 +237,11 @@ queries:
   - 20
   - 20
   - 0
+  - 20
 - text: active vision eye movement control
   source: manual
   added: '2026-05-24'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -270,6 +269,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -306,7 +306,6 @@ queries:
   source: manual
   added: '2026-05-24'
   hit_counts:
-  - 20
   - 0
   - 0
   - 20
@@ -328,6 +327,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -370,7 +370,6 @@ queries:
   source: manual
   added: '2026-05-24'
   hit_counts:
-  - 20
   - 0
   - 0
   - 20
@@ -415,6 +414,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -434,7 +434,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -462,6 +461,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -498,7 +498,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -526,6 +525,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -562,7 +562,6 @@ queries:
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -622,11 +621,11 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: sample complexity policy learning
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -685,12 +684,12 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 20
   - 0
   - 0
   - 20
@@ -718,6 +717,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -768,7 +768,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -789,6 +788,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -835,10 +835,10 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -908,7 +908,6 @@ queries:
   - 9
   - 9
   - 9
-  - 9
   - 6
   - 9
   - 9
@@ -922,6 +921,7 @@ queries:
   - 10
   - 10
   - 0
+  - 10
   - 10
   - 10
   - 10
@@ -964,7 +964,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1002,6 +1001,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1011,7 +1011,6 @@ queries:
   added: '2026-06-28'
   hit_counts:
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1070,6 +1069,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
 - text: instruction conditioned visual token robot
   source: manual
   added: '2026-07-08'
@@ -1091,7 +1091,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1102,6 +1101,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1166,7 +1166,6 @@ queries:
   - 17
   - 17
   - 17
-  - 17
   - 18
   - 18
   - 18
@@ -1183,6 +1182,7 @@ queries:
   - 0
   - 19
   - 19
+  - 20
   - 20
   - 20
   - 20
@@ -1205,7 +1205,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1256,6 +1255,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1266,7 +1266,6 @@ queries:
   source: manual
   added: '2026-08-03'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -1326,10 +1325,12 @@ queries:
   - 20
   - 20
   - 0
+  - 20
 - text: spurious correlation shortcut visual VLA policy
   source: manual
   added: '2026-10-15'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
