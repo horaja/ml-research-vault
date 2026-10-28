@@ -114,7 +114,6 @@ queries:
   source: manual
   added: '2026-05-23'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -165,6 +164,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -186,7 +186,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -235,6 +234,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -257,7 +257,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -267,6 +266,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -312,7 +312,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 0
   - 20
@@ -325,6 +324,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -393,7 +393,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -412,6 +411,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -448,7 +448,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 0
   - 20
@@ -494,6 +493,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: rate-distortion neural representation
   source: manual
   added: '2026-06-02'
@@ -512,7 +512,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -558,6 +557,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: optimal stopping sequential decision
   source: manual
   added: '2026-06-02'
@@ -571,7 +571,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -620,6 +619,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
 - text: sample complexity policy learning
@@ -629,7 +629,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -682,6 +681,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -705,7 +705,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -715,6 +714,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -765,7 +765,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -786,6 +785,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -832,7 +832,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -878,11 +877,11 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: V4 visual cortex shape representation
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 9
   - 9
   - 9
   - 9
@@ -942,6 +941,7 @@ queries:
   - 10
   - 10
   - 10
+  - 10
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
@@ -961,7 +961,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1006,6 +1005,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: mid-level vision shape texture
   source: manual
   added: '2026-06-28'
@@ -1016,7 +1016,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1067,6 +1066,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1088,7 +1088,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1099,6 +1098,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1163,7 +1163,6 @@ queries:
   - 17
   - 17
   - 17
-  - 17
   - 18
   - 18
   - 18
@@ -1180,6 +1179,7 @@ queries:
   - 0
   - 19
   - 19
+  - 20
   - 20
   - 20
   - 20
@@ -1202,7 +1202,6 @@ queries:
   source: manual
   added: '2026-07-26'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -1253,6 +1252,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1266,7 +1266,6 @@ queries:
   source: manual
   added: '2026-08-03'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -1323,6 +1322,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1330,6 +1330,7 @@ queries:
   source: manual
   added: '2026-10-15'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
