@@ -127,7 +127,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -163,6 +162,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -184,7 +184,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -233,6 +232,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -255,7 +255,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -265,6 +264,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -310,7 +310,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 0
   - 20
@@ -323,6 +322,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -391,7 +391,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -430,6 +429,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
@@ -446,7 +446,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 0
   - 20
@@ -493,6 +492,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
 - text: rate-distortion neural representation
   source: manual
@@ -510,7 +510,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -557,6 +556,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
 - text: optimal stopping sequential decision
   source: manual
@@ -569,7 +569,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -618,6 +617,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -627,7 +627,6 @@ queries:
   added: '2026-06-02'
   hit_counts:
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -686,6 +685,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
@@ -703,7 +703,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -713,6 +712,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -763,7 +763,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -784,6 +783,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -830,7 +830,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -878,11 +877,11 @@ queries:
   - 20
   - 0
   - 0
+  - 20
 - text: V4 visual cortex shape representation
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 9
   - 9
   - 9
   - 9
@@ -942,6 +941,7 @@ queries:
   - 10
   - 10
   - 10
+  - 10
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
@@ -959,7 +959,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1005,6 +1004,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
 - text: mid-level vision shape texture
   source: manual
@@ -1014,7 +1014,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1065,6 +1064,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1086,7 +1086,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1097,6 +1096,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1161,7 +1161,6 @@ queries:
   - 17
   - 17
   - 17
-  - 17
   - 18
   - 18
   - 18
@@ -1178,6 +1177,7 @@ queries:
   - 0
   - 19
   - 19
+  - 20
   - 20
   - 20
   - 20
@@ -1215,7 +1215,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1251,6 +1250,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1294,7 +1294,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1321,6 +1320,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1339,6 +1339,11 @@ queries:
   - 20
   - 20
   - 20
+  - 20
+- text: spectral token pruning frequency domain vision
+  source: manual
+  added: '2026-11-01'
+  hit_counts: []
 arxiv:
   primary:
   - cs.CV
