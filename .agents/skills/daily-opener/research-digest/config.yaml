@@ -1356,6 +1356,10 @@ queries:
   - 20
   - 20
   - 20
+- text: multi-scale visual feature modulation token selection MLLM
+  source: manual
+  added: '2026-11-17'
+  hit_counts: []
 arxiv:
   primary:
   - cs.CV
