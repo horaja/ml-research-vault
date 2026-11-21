@@ -118,7 +118,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -154,6 +153,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -184,7 +184,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -224,6 +223,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -246,7 +246,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -295,6 +294,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -310,10 +310,10 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -382,7 +382,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -430,6 +429,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
@@ -437,7 +437,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 0
   - 20
@@ -484,6 +483,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -501,7 +501,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -557,6 +556,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
 - text: optimal stopping sequential decision
   source: manual
@@ -573,7 +573,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -609,6 +608,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -644,7 +644,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -686,6 +685,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
@@ -694,7 +694,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -750,11 +749,11 @@ queries:
   - 0
   - 20
   - 20
+  - 0
 - text: sequential hypothesis testing neural
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 20
   - 0
   - 20
   - 20
@@ -775,6 +774,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -821,7 +821,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -878,11 +877,11 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: V4 visual cortex shape representation
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 9
   - 9
   - 9
   - 9
@@ -942,6 +941,7 @@ queries:
   - 11
   - 11
   - 0
+  - 0
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
@@ -950,7 +950,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -999,6 +998,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1022,7 +1022,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -1056,6 +1055,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1077,7 +1077,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1088,6 +1087,7 @@ queries:
   - 0
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1152,7 +1152,6 @@ queries:
   - 17
   - 17
   - 17
-  - 17
   - 18
   - 18
   - 18
@@ -1198,6 +1197,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: interpretable visual attention keypoint robot manipulation
   source: manual
   added: '2026-07-26'
@@ -1206,7 +1206,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1242,6 +1241,7 @@ queries:
   - 20
   - 20
   - 0
+  - 20
   - 20
   - 20
   - 20
@@ -1285,7 +1285,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1326,10 +1325,12 @@ queries:
   - 0
   - 0
   - 20
+  - 0
 - text: spurious correlation shortcut visual VLA policy
   source: manual
   added: '2026-10-15'
   hit_counts:
+  - 20
   - 20
   - 20
   - 20
@@ -1360,12 +1361,14 @@ queries:
   - 20
   - 20
   - 20
+  - 20
 - text: multi-scale visual feature modulation token selection MLLM
   source: manual
   added: '2026-11-17'
   hit_counts:
   - 20
   - 0
+  - 20
 arxiv:
   primary:
   - cs.CV
