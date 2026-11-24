@@ -1369,6 +1369,10 @@ queries:
   - 20
   - 0
   - 20
+- text: patch level visual representation robot manipulation
+  source: manual
+  added: '2026-11-24'
+  hit_counts: []
 arxiv:
   primary:
   - cs.CV
