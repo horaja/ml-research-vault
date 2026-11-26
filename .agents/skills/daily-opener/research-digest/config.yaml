@@ -117,7 +117,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -174,6 +173,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: active perception embodied agent
   source: manual
   added: '2026-05-23'
@@ -183,7 +183,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -238,6 +237,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: active vision eye movement control
   source: manual
   added: '2026-05-24'
@@ -245,7 +245,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -302,6 +301,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: hierarchical reinforcement learning options
   source: manual
   added: '2026-05-24'
@@ -309,7 +309,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -366,6 +365,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: task conditioned visual attention foveation
   source: manual
   added: '2026-05-24'
@@ -381,7 +381,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -430,13 +429,13 @@ queries:
   - 20
   - 0
   - 20
+  - 0
 - text: information bottleneck representation learning
   source: manual
   added: '2026-06-02'
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 0
   - 20
@@ -494,13 +493,13 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: rate-distortion neural representation
   source: manual
   added: '2026-06-02'
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -558,6 +557,7 @@ queries:
   - 0
   - 20
   - 20
+  - 0
 - text: optimal stopping sequential decision
   source: manual
   added: '2026-06-02'
@@ -572,7 +572,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -622,6 +621,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: sample complexity policy learning
   source: manual
   added: '2026-06-02'
@@ -643,7 +643,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -686,6 +685,7 @@ queries:
   - 20
   - 0
   - 20
+  - 0
 - text: active sensing partial observability
   source: manual
   added: '2026-06-02'
@@ -693,7 +693,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -749,12 +748,12 @@ queries:
   - 0
   - 20
   - 20
+  - 0
   - 0
 - text: sequential hypothesis testing neural
   source: manual
   added: '2026-06-02'
   hit_counts:
-  - 0
   - 20
   - 20
   - 20
@@ -814,13 +813,13 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: early exit adaptive inference neural
   source: manual
   added: '2026-06-02'
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -877,12 +876,12 @@ queries:
   - 20
   - 20
   - 20
+  - 0
   - 0
 - text: V4 visual cortex shape representation
   source: manual
   added: '2026-06-28'
   hit_counts:
-  - 9
   - 9
   - 9
   - 9
@@ -942,6 +941,7 @@ queries:
   - 11
   - 0
   - 0
+  - 0
 - text: topographic map visual cortex
   source: manual
   added: '2026-06-28'
@@ -949,7 +949,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1006,6 +1005,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: mid-level vision shape texture
   source: manual
   added: '2026-06-28'
@@ -1021,7 +1021,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 0
@@ -1070,13 +1069,13 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: instruction conditioned visual token robot
   source: manual
   added: '2026-07-08'
   hit_counts:
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1134,6 +1133,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: contact affordance structural scene robot
   source: manual
   added: '2026-07-24'
@@ -1151,7 +1151,6 @@ queries:
   - 17
   - 17
   - 17
-  - 17
   - 18
   - 18
   - 18
@@ -1197,6 +1196,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
   - 0
 - text: interpretable visual attention keypoint robot manipulation
   source: manual
@@ -1205,7 +1205,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1262,6 +1261,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: gaze guided robot manipulation learning
   source: manual
   added: '2026-08-03'
@@ -1284,7 +1284,6 @@ queries:
   - 20
   - 20
   - 20
-  - 20
   - 0
   - 20
   - 20
@@ -1325,6 +1324,7 @@ queries:
   - 0
   - 0
   - 20
+  - 0
   - 0
 - text: spurious correlation shortcut visual VLA policy
   source: manual
@@ -1349,6 +1349,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: spectral token pruning frequency domain vision
   source: manual
   added: '2026-11-01'
@@ -1362,6 +1363,7 @@ queries:
   - 20
   - 20
   - 20
+  - 0
 - text: multi-scale visual feature modulation token selection MLLM
   source: manual
   added: '2026-11-17'
@@ -1369,10 +1371,12 @@ queries:
   - 20
   - 0
   - 20
+  - 0
 - text: patch level visual representation robot manipulation
   source: manual
   added: '2026-11-24'
-  hit_counts: []
+  hit_counts:
+  - 0
 arxiv:
   primary:
   - cs.CV
